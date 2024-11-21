@@ -1,0 +1,11 @@
+/* 교보문고 링크연습 파일 디자인하기 */
+div.container {}
+.container h1 {}
+.container div.info p {}
+.container div.info p a {}
+.container div.info p a span {}
+.container div.price {}
+.container div.price span {}
+.container div.price p {}
+.container div.price p em {}
+.container div.price del {}
