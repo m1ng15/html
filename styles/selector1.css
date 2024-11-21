@@ -3,7 +3,7 @@
 /* 2. 작성 후 디자인에 맞춰서 각 속성과 값 작성하기 */
 /* body는 필요한 경우 아니면 생략, body안 태그부터 선택자로 작성하기 */
 h1 { background-color: rgba(0, 0, 0, 0.3);}
-ol li { background-color: yellow; color: #ff0000;}
+ol li { background-color: yellow; color:  #ff0000;}
 
 /* 선택자 작성하기 예시1 */
 .wrap {}
