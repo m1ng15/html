@@ -1,11 +1,35 @@
 /* 교보문고 링크연습 파일 디자인하기 */
-div.container {}
-.container h1 {}
-.container div.info p {}
-.container div.info p a {}
-.container div.info p a span {}
-.container div.price {}
-.container div.price span {}
-.container div.price p {}
-.container div.price p em {}
-.container div.price del {}
+div#container {}
+#container h1 {}
+#container div.info p {}
+#container div.info p span {}
+#container .info p a {}
+
+#container div.price {}
+#container div.price span {}
+#container div.price p {}
+#container div.price p em {}
+#container div.price del {}
+
+div.tap_menu {}
+.tap_menu a {}
+
+h2#book_event {}
+a {}
+a h3 {}
+a p {}
+
+h2#book_info {}
+h3 {}
+
+div.book {}
+div.book h4 {}
+div.book h4 a {}
+div.book p {}
+div.book p em {}
+
+div.cs_info#book_cs {}
+.cs_info#book_cs h2 {}
+.cs_info#book_cs a {}
+
+p {}
