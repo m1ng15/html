@@ -1,0 +1,89 @@
+#wrap {background-color: gray;}
+#wrap header {
+    background-color: aqua;
+}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {background-color: yellow;}
+#wrap header nav ul {}
+#wrap header nav ul li {}
+#wrap header nav ul li a {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#wrap header .right_menu {background-color: lime;}
+#wrap header .right_menu > a {}
+#wrap header .right_menu ul {}
+#wrap header .right_menu ul li {}
+#wrap header .right_menu ul li a {}
+#wrap header .right_menu ul li a img {}
+
+#wrap main {background-color: beige;}
+#wrap main .path {
+    background-color: #f9f9f9;
+}
+#wrap main .path a {font-size: 14px;}
+#wrap main .path em {
+    font-size: 14px;
+    font-weight: 600;
+}
+#wrap main h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+#wrap main > p { font-size: 18px;}
+#wrap main .bg {
+    background-color: #f9f9f9;
+}
+#wrap main .bg p {font-size: 18px;}
+#wrap main .bg p em {
+    font-size: 30px;
+    font-weight: 500;
+}
+#wrap main .bg h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #36B4E5;
+}
+#wrap main .bg ul.goal_contents {background-color: yellow;}
+#wrap main .bg ul.goal_contents li {}
+#wrap main .bg ul.goal_contents li img {}
+#wrap main .bg ul.goal_contents li span {
+    font-size: 26px;
+    font-weight: 500;
+}
+#wrap main .bg .strategy_contents {}
+#wrap main .bg .strategy_contents dl {}
+#wrap main .bg .strategy_contents dl dt {
+    font-size: 18px;
+    font-weight: 500;
+}
+#wrap main .bg .strategy_contents dl dd {font-size: 16px;}
+
+#wrap footer {
+    background-color: aqua;
+}
+#wrap footer .ft_left {}
+#wrap footer .ft_left .ft_menu {}
+#wrap footer .ft_left .ft_menu a {font-size: 18px;}
+#wrap footer .ft_left .ft_menu a em {
+    font-size: 20px;
+    font-weight: 600;
+}
+#wrap footer .ft_left .ft_menu a img {}
+#wrap footer .ft_left address {
+    font-size: 14px;
+}
+#wrap footer .ft_left address em {font-weight: 600;}
+#wrap footer .ft_left p {
+    background-color: yellow;
+    font-size: 12px;
+}
+
+#wrap footer .ft_right {background-color: tomato;}
+#wrap footer .ft_right .family{font-size: 12px;}
+#wrap footer .ft_right .family img {}
+#wrap footer .ft_right .site  {font-size: 12px;}
+#wrap footer .ft_right .site img{}
