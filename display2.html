@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 연습</title>
+    <style>
+        main {
+            background-color: aqua;
+            padding: 40px 0 20px 45px;
+        }
+        main h1 {
+            background-color: yellow;
+            padding-bottom: 50px;
+            border-top: 3px solid blue;
+            border-left: 4px solid red;
+        }
+        main .box {
+            background-color: lime;
+            display: inline-block;
+            border-top: 5px solid orange;
+        }
+        main .box p {
+            background-color: fuchsia;
+            display: inline-block;
+            border-right: 5px solid blue;
+        }
+        main .box p:nth-child(1) {}
+        main .box p:nth-child(2) {border-right: 5px solid white;}
+        main .box p:nth-child(3) {}
+        main > p {
+            background-color: orange;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>제목</h1>
+        <div class="box">
+            <p>내용1</p>
+            <p>내용2</p>
+            <p>내용3</p>
+        </div>
+        <p>내용4</p>
+    </main>
+</body>
+</html>
