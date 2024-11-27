@@ -130,7 +130,8 @@
     /*밑줄(underline) 별도 굵기 여백 불가능. 글자와 동일한 색상만 적용 가능*/
     text-transform: capitalize;
     /*lowercase: 모두 소문자/uppercase: 모두 대문자/capitalize: 앞글자만 대문자*/
-} #wrap main .bg .strategy_contents dl:nth-child(5) dt {}
+}
+#wrap main .bg .strategy_contents dl:nth-child(5) dt {}
 #wrap main .bg .strategy_contents dl dd {
     color : #555;
     padding: 0 15px;
