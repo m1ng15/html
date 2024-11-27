@@ -2,6 +2,7 @@
 #wrap header {
     background-color: aqua;
 }
+#wrap header * {text-transform: uppercase;}
 #wrap header h1 {}
 #wrap header h1 a {}
 #wrap header h1 a img {}
@@ -9,7 +10,7 @@
 #wrap header nav ul {}
 #wrap header nav ul li {}
 #wrap header nav ul li a {
-    font-size: 18px;
+    font-size: 1.13rem;
     font-weight: 600;
 }
 
@@ -19,48 +20,121 @@
 #wrap header .right_menu ul li {}
 #wrap header .right_menu ul li a {}
 #wrap header .right_menu ul li a img {}
-
-#wrap main {background-color: beige;}
+/*==================================  메인시작*/
+#wrap main {background-color: #fff;}
 #wrap main .path {
     background-color: #f9f9f9;
+    padding: 11.5px 80px 11.5px 0;
+    text-align: right;
 }
-#wrap main .path a {font-size: 14px;}
+#wrap main .path a {
+    font-size: 0.88rem;
+
+}
 #wrap main .path em {
-    font-size: 14px;
+    font-size: 0.88rem;
     font-weight: 600;
 }
+#wrap main .path img {margin: 0 12px;}
 #wrap main h1 {
-    font-size: 50px;
-    font-weight: bold;
+    margin: 44px 0 49px 0;
+    text-align: center;
+    font-size: 3.13rem; font-weight: 700;
 }
-#wrap main > p { font-size: 18px;}
+#wrap main > p { 
+    text-align: center;
+    font-size: 1.13rem;
+    margin-bottom: 47px;
+    color: #555;
+}
 #wrap main .bg {
     background-color: #f9f9f9;
+    text-align: center;
+    padding: 100px 0;
 }
-#wrap main .bg p {font-size: 18px;}
-#wrap main .bg p em {
-    font-size: 30px;
-    font-weight: 500;
+#wrap main .bg p {
+    font-size: 1.13rem;
+    line-height: 1.5;
+    margin-bottom: 60px;
 }
 #wrap main .bg h2 {
-    font-size: 22px;
-    font-weight: 600;
+    text-transform: capitalize;
     color: #36B4E5;
+    font-size: 1.38rem; line-height: 1.5;
+    font-weight: 600; margin-bottom: 20px;
 }
-#wrap main .bg ul.goal_contents {background-color: yellow;}
-#wrap main .bg ul.goal_contents li {}
-#wrap main .bg ul.goal_contents li img {}
+#wrap main .bg h2:nth-of-type(4) {text-transform: uppercase;}
+#wrap main .bg p:nth-child(5) {margin-bottom: 50px;}
+#wrap main .bg p em {
+    font-size: 1.88rem; line-height: 1.5;
+    font-weight: 500;
+}
+#wrap main .bg ul.goal_contents {
+    margin-bottom: 60px;
+}
+#wrap main .bg ul.goal_contents li {
+    color: #fff;
+    height: 250px; width: 250px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: -20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,10%);
+    padding-top: 80.5px; /*원래는 기존 크기에 80.5만큼 공간이 추가됨*/
+    box-sizing: border-box; /*그러나 , 박스의 크기를 다르게 계산하여, 기존 공간은 두고 안쪽으로 padding 값이 들어가게끔 만들어줌*/
+}
+#wrap main .bg ul.goal_contents li:nth-child(1) {
+    background-color: #36B4E5;
+}
+#wrap main .bg ul.goal_contents li:nth-child(2) {
+    margin-left: -20px;
+    background-color: #fff;
+}
+#wrap main .bg ul.goal_contents li:nth-child(3) {
+    margin-left: -20px;
+    background-color: #F3C300;
+}
+#wrap main .bg ul.goal_contents li * {display: block;}
+/*inline : text-align이 적용되도록 함 / block : img와 span이 행으로 나열되도록 함 */
+#wrap main .bg ul.goal_contents li img {
+    display: inline-block;
+}
 #wrap main .bg ul.goal_contents li span {
-    font-size: 26px;
+    font-size: 1.63rem;
     font-weight: 500;
+    line-height: 1.5;
+    margin-top: 10px;
 }
+#wrap main .bg ul.goal_contents li:nth-child(2) span {color: #000;}
+
 #wrap main .bg .strategy_contents {}
-#wrap main .bg .strategy_contents dl {}
-#wrap main .bg .strategy_contents dl dt {
-    font-size: 18px;
-    font-weight: 500;
+#wrap main .bg .strategy_contents dl {
+    background-color: #eee;
+    height: 180px; width: 180px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -15px;
+    padding : 47.5px 15px;
+/*     padding-top: 47.5px;
+    padding-bottom: 47.5px; */
+    box-shadow: 0 0px 10px rgba(0,0,0,10%);
 }
-#wrap main .bg .strategy_contents dl dd {font-size: 16px;}
+#wrap main .bg .strategy_contents dl:nth-child(5) {padding: 34px 0;}
+#wrap main .bg .strategy_contents dl * {line-height: 1.5;}
+#wrap main .bg .strategy_contents dl dt {
+    font-size: 1.13rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-decoration-line: underline; 
+    /*테두리 vs 밑줄 디자인 차이*/
+    /*테두리(border) 별도 색상, 굵기, 여백 추가 입력 가능*/
+    /*밑줄(underline) 별도 굵기 여백 불가능. 글자와 동일한 색상만 적용 가능*/
+    text-transform: capitalize;
+    /*lowercase: 모두 소문자/uppercase: 모두 대문자/capitalize: 앞글자만 대문자*/
+} #wrap main .bg .strategy_contents dl:nth-child(5) dt {}
+#wrap main .bg .strategy_contents dl dd {
+    color : #555;
+    padding: 0 15px;
+}
 
 #wrap footer {
     background-color: aqua;
@@ -69,7 +143,7 @@
 #wrap footer .ft_left .ft_menu {}
 #wrap footer .ft_left .ft_menu a {font-size: 18px;}
 #wrap footer .ft_left .ft_menu a em {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 #wrap footer .ft_left .ft_menu a img {}
