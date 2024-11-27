@@ -1,0 +1,125 @@
+#wrap {background-color: gray;}
+#wrap header {
+    background-color: aqua;
+}
+#wrap header * {text-transform: uppercase;}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {background-color: yellow;}
+#wrap header nav ul {}
+#wrap header nav ul li {}
+#wrap header nav ul li a {
+    font-size: 1.13rem;
+    font-weight: 600;
+}
+
+#wrap header .right_menu {background-color: lime;}
+#wrap header .right_menu > a {}
+#wrap header .right_menu ul {}
+#wrap header .right_menu ul li {}
+#wrap header .right_menu ul li a {}
+#wrap header .right_menu ul li a img {}
+/*==================================  메인시작*/
+#wrap main {background-color: #fff;}
+#wrap main .path {
+    background-color: #f9f9f9;
+    padding: 11.5px 80px 11.5px 0;
+    text-align: right;
+}
+#wrap main .path a {
+    font-size: 0.88rem;
+
+}
+#wrap main .path em {
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+#wrap main .path img {margin: 0 12px;}
+/*===================================== path 끝*/
+#wrap main h1 {
+    margin: 80px 0 25px 0;
+    text-align: center;
+    font-size: 3.13rem; font-weight: 700;
+}
+#wrap main > p { 
+    text-align: center;
+    font-size: 1.19rem;
+    margin-bottom: 50px;
+    color: #555;
+}
+#wrap main .bg {
+    background-color: aqua;
+    padding: 65px 0;
+}
+#wrap main .bg ul.row1 {background-color: yellow;}
+#wrap main .bg ul.row1 li {}
+#wrap main .bg ul.row1 li img {
+    display: inline-block;
+}
+#wrap main .bg ul.row1 li.contents {
+    display: inline-block;
+}
+#wrap main .bg ul.row1 li.contents p {}
+#wrap main .bg ul.row1 li.contents p span {}
+#wrap main .bg ul.row1 li.contents h2 {}
+
+#wrap main .bg ul.row2 {background-color: orange;}
+#wrap main .bg ul.row2 li {}
+#wrap main .bg ul.row2 li img {}
+#wrap main .bg ul.row2 li.contents {}
+#wrap main .bg ul.row2 li.contents p {}
+#wrap main .bg ul.row2 li.contents p span {}
+#wrap main .bg ul.row2 li.contents h2 {}
+
+#wrap main .bg ul.row3 {background-color: palevioletred;}
+#wrap main .bg ul.row3 li {}
+#wrap main .bg ul.row3 li img {}
+#wrap main .bg ul.row3 li.contents {}
+#wrap main .bg ul.row3 li.contents p {}
+#wrap main .bg ul.row3 li.contents p span {}
+#wrap main .bg ul.row3 li.contents h2 {}
+
+#wrap main .bg ul.row4 {background-color: powderblue;}
+#wrap main .bg ul.row4 li {}
+#wrap main .bg ul.row4 li img {}
+#wrap main .bg ul.row4 li.contents {}
+#wrap main .bg ul.row4 li.contents p {}
+#wrap main .bg ul.row4 li.contents p span {}
+#wrap main .bg ul.row4 li.contents h2 {}
+
+#wrap main .bg ul.row5 {background-color: plum;}
+#wrap main .bg ul.row5 li {}
+#wrap main .bg ul.row5 li img {}
+#wrap main .bg ul.row5 li.contents {}
+#wrap main .bg ul.row5 li.contents p {}
+#wrap main .bg ul.row5 li.contents p span {}
+#wrap main .bg ul.row5 li.contents h2 {}
+
+
+
+#wrap footer {
+    background-color: magenta;
+}
+#wrap footer .ft_left {}
+#wrap footer .ft_left .ft_menu {}
+#wrap footer .ft_left .ft_menu a {font-size: 18px;}
+#wrap footer .ft_left .ft_menu a em {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+#wrap footer .ft_left .ft_menu a img {}
+#wrap footer .ft_left address {
+    font-size: 14px;
+}
+#wrap footer .ft_left address em {font-weight: 600;}
+#wrap footer .ft_left p {
+    background-color: yellow;
+    font-size: 12px;
+}
+
+#wrap footer .ft_right {background-color: tomato;}
+#wrap footer .ft_right .family{font-size: 12px;}
+#wrap footer .ft_right .family img {}
+#wrap footer .ft_right .site  {font-size: 12px;}
+#wrap footer .ft_right .site img{}
