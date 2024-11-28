@@ -37,6 +37,7 @@
 }
 #wrap main .path img {margin: 0 12px;}
 /*===================================== path 끝*/
+/*===================================== 제목/부제목 시작*/
 #wrap main h1 {
     margin: 80px 0 25px 0;
     text-align: center;
@@ -48,53 +49,87 @@
     margin-bottom: 50px;
     color: #555;
 }
+/*===================================== 메인배경 시작*/
 #wrap main .bg {
-    background-color: aqua;
+    background-color: #f9f9f9;
     padding: 65px 0;
 }
-#wrap main .bg ul.row1 {background-color: yellow;}
+
+#wrap main .bg ul {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+#wrap main .bg ul li {display: inline-block;}
+#wrap main .bg ul li img {width: 758px;}
+#wrap main .bg ul li.contents {
+    width: 358px;
+    margin-bottom: 20px;
+}
+/*짝수번째 row : padding 상하값 설정*/
+#wrap main .bg ul:nth-child(even) {padding: 43px 0;}
+/*contents 개별 margin 값 설정*/
+#wrap main .bg ul:nth-child(odd) li.contents {margin-left: 20px;}
+#wrap main .bg ul:nth-child(even) li.contents {margin-right: 20px;}
+/*=====================================================01~05 contents 공통 태그*/
+#wrap main .bg ul li.contents p span {
+    font-size: 6.25em;
+    font-weight: 700;
+    color: rgba(0,0,0,10%);
+    letter-spacing: -5px;
+}
+#wrap main .bg ul li.contents h2 {
+    font-size: 1.88em;
+    font-weight: 600;
+    letter-spacing: -2px;
+    padding-bottom: 22px;
+}
+#wrap main .bg ul li.contents p {
+    color: #555;
+    line-height: 150%;
+    letter-spacing: -1px;
+}
+/*====================================================01종합식품사업*/
+#wrap main .bg ul.row1 {}
 #wrap main .bg ul.row1 li {}
-#wrap main .bg ul.row1 li img {
-    display: inline-block;
-}
-#wrap main .bg ul.row1 li.contents {
-    display: inline-block;
-}
-#wrap main .bg ul.row1 li.contents p {}
+#wrap main .bg ul.row1 li img {}
+#wrap main .bg ul.row1 li.contents {}
 #wrap main .bg ul.row1 li.contents p span {}
 #wrap main .bg ul.row1 li.contents h2 {}
+#wrap main .bg ul.row1 li.contents p {}
 
-#wrap main .bg ul.row2 {background-color: orange;}
+/*====================================================02점포사업*/
+#wrap main .bg ul.row2 {}
 #wrap main .bg ul.row2 li {}
-#wrap main .bg ul.row2 li img {}
 #wrap main .bg ul.row2 li.contents {}
-#wrap main .bg ul.row2 li.contents p {}
 #wrap main .bg ul.row2 li.contents p span {}
 #wrap main .bg ul.row2 li.contents h2 {}
-
-#wrap main .bg ul.row3 {background-color: palevioletred;}
+#wrap main .bg ul.row2 li.contents p {}
+#wrap main .bg ul.row2 li img {}
+/*====================================================03컨센션사업*/
+#wrap main .bg ul.row3 {}
 #wrap main .bg ul.row3 li {}
-#wrap main .bg ul.row3 li img {}
 #wrap main .bg ul.row3 li.contents {}
-#wrap main .bg ul.row3 li.contents p {}
 #wrap main .bg ul.row3 li.contents p span {}
 #wrap main .bg ul.row3 li.contents h2 {}
-
-#wrap main .bg ul.row4 {background-color: powderblue;}
+#wrap main .bg ul.row3 li.contents p {}
+#wrap main .bg ul.row3 li img {}
+/*====================================================04서비스사업*/
+#wrap main .bg ul.row4 {}
 #wrap main .bg ul.row4 li {}
-#wrap main .bg ul.row4 li img {}
 #wrap main .bg ul.row4 li.contents {}
-#wrap main .bg ul.row4 li.contents p {}
 #wrap main .bg ul.row4 li.contents p span {}
 #wrap main .bg ul.row4 li.contents h2 {}
-
-#wrap main .bg ul.row5 {background-color: plum;}
+#wrap main .bg ul.row4 li.contents p {}
+#wrap main .bg ul.row4 li img {}
+/*====================================================05수출사업*/
+#wrap main .bg ul.row5 {}
 #wrap main .bg ul.row5 li {}
 #wrap main .bg ul.row5 li img {}
 #wrap main .bg ul.row5 li.contents {}
-#wrap main .bg ul.row5 li.contents p {}
 #wrap main .bg ul.row5 li.contents p span {}
 #wrap main .bg ul.row5 li.contents h2 {}
+#wrap main .bg ul.row5 li.contents p {}
 
 
 
