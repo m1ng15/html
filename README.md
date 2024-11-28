@@ -101,3 +101,17 @@
 * 적용방법 : 와이드 형태의 데스크탑은 사이트 너비 바깥쪽 여백을 고정할 수 없기 때문에 margin으로 특정 값(px, % 등)을 입력할 수 없다.
 * `가운데 정렬 요소 선택자 {width : 1000~1400px}; margin: 0 auto;`
 * ★컨텐츠 너비를 가지고 있는 큰 레이아웃에 주로 사용하는 방법이다
+-----
+## img 태그와 background-image CSS속성 차이
+* img 태그는 이미지만으로 구성된 인라인태그로 크기를 입력하지 않아도 자동으로 원본크기를 유지하며 추가적으로 모든 css 입력이 가능하다. 예 ) width, height, padding, margin, border 등등...
+* backgound-image 속성은 태그가 아닌 꾸미기 속성이기 때문에 img 태그와 다르게 자동으로 원본크기가 나타나지 않으며
+배경이미지가 들어간 요소의 크기 안에서만 나타난다. 또한 추가적인 css 속성을 주려면 background- 로 시작하는 속성만 가능하고
+그 외 속성은 모두 불가능하다.
+-----
+## background 통합속성은 background적용 선택자가 1개일 때 사용한다.
+`background:color url() repeat position`
+## background 개별속성은 적용선택자가 2개 이상일 때(nth등 포함) 사용한다.
+`background-color`
+`background-image`
+`background-repeat`
+`background-position`

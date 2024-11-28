@@ -1,0 +1,87 @@
+#wrap {background-color: #fff;}
+
+#wrap header {}
+
+#wrap main {}
+#wrap main .path{
+    background-color: #f9f9f9;
+    text-align: right;
+    padding: 10px 0;
+}
+#wrap main .path a {
+    font-size: 0.88em;
+}
+#wrap main .path img {
+    padding: 0 12px;
+}
+#wrap main .path em {
+    font-weight: 700;
+}
+#wrap main>p,h1 {text-align: center;}
+#wrap main h1 {
+    font-size: 3.13em;
+    font-weight: 700;
+    letter-spacing: -2px;
+    padding: 158px 0 25px 0;
+}
+#wrap main>p {
+    font-size: 1.19em;
+    font-weight: 500;
+    letter-spacing: -2px;
+    padding-bottom: 40px;
+}
+
+#wrap main .bg {
+    background-color: f9f9f9;
+
+}
+#wrap main .bg ul.coperate {
+    width: 1140px; margin: 0 auto;
+    padding-top: 40px;
+}
+#wrap main .bg ul.coperate li {
+    width: 250px; height: 250px;
+    border: 1px solid #888;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 80% 85%;
+    background-size: 100px auto;
+    background-image: url(../images/ir/cr01.png);
+    padding: 30px;
+    margin-right: 42.5px;
+}
+#wrap main .bg ul.coperate li:nth-child(1) {}
+#wrap main .bg ul.coperate li:nth-child(2) {background-image: url(../images/ir/cr02.png);}
+#wrap main .bg ul.coperate li:nth-child(3) {background-image: url(../images/ir/cr03.png);}
+#wrap main .bg ul.coperate li:nth-child(4) {margin-right: 0;}
+/* #wrap main .bg ul.coperate li:nth-child(1) {
+    background-image: url(../images/ir/cr01.png);
+    background-repeat: no-repeat;
+
+    background-position: 80% 85%;
+}
+#wrap main .bg ul.coperate li:nth-child(2) {
+    background-image: url(../images/ir/cr02.png);
+    background-repeat: no-repeat;
+    background-position: 80% 85%;
+}
+#wrap main .bg ul.coperate li:nth-child(3) {
+    background-image: url(../images/ir/cr03.png);
+    background-repeat: no-repeat;
+    background-position: 80% 85%;
+}
+#wrap main .bg ul.coperate li:nth-child(4) {
+    background: lime url(../images/ir/cr01.png) no-repeat 80% 85%;
+} */
+#wrap main .bg ul.coperate li h2 {
+    font-size: 1.38em;
+    font-weight: 600;
+    letter-spacing: -2px;
+    padding-bottom: 20px;
+}
+#wrap main .bg ul.coperate li p {
+    font-size: 1.13em;
+    line-height: 1.5;
+}
+
+#wrap footer {}
