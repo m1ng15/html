@@ -38,11 +38,12 @@
 #wrap main .bg ul.coperate {
     width: 1140px; margin: 0 auto;
     padding-top: 40px;
+    overflow: hidden;
 }
 #wrap main .bg ul.coperate li {
     width: 250px; height: 250px;
     border: 1px solid #888;
-    display: inline-block;
+    float: left;
     background-repeat: no-repeat;
     background-position: 80% 85%;
     background-size: 100px auto;
