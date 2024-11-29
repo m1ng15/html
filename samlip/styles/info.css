@@ -2,11 +2,12 @@
 #wrap header {
     background-color: aqua;
 }
+#wrap header::after {clear: both; display: block; content: "";}
 #wrap header * {text-transform: uppercase;}
 #wrap header h1 {}
 #wrap header h1 a {}
 #wrap header h1 a img {}
-#wrap header nav {background-color: yellow;}
+#wrap header nav {background-color: yellow; float: left;}
 #wrap header nav ul {}
 #wrap header nav ul li {}
 #wrap header nav ul li a {
@@ -14,7 +15,7 @@
     font-weight: 600;
 }
 
-#wrap header .right_menu {background-color: lime;}
+#wrap header .right_menu {background-color: lime; float: right;}
 #wrap header .right_menu > a {}
 #wrap header .right_menu ul {}
 #wrap header .right_menu ul li {}
@@ -35,7 +36,11 @@
     font-size: 0.88rem;
     font-weight: 600;
 }
-#wrap main .path img {margin: 0 12px;}
+#wrap main .path img {
+    position: relative;
+    top: 3px;
+    margin: 0 12px;
+}
 #wrap main h1 {
     margin: 44px 0 49px 0;
     text-align: center;
@@ -50,6 +55,7 @@
 #wrap main .bg {
     background-color: #f9f9f9;
     text-align: center;
+    width: 1140px; margin: 0 auto;
     padding: 100px 0;
 }
 #wrap main .bg p {
@@ -106,12 +112,13 @@
 }
 #wrap main .bg ul.goal_contents li:nth-child(2) span {color: #000;}
 
-#wrap main .bg .strategy_contents {}
+#wrap main .bg .strategy_contents {display: inline-block;}
+#wrap main .bg .strategy_contents::after {clear: both; display: block; content: "";}
 #wrap main .bg .strategy_contents dl {
     background-color: #eee;
     height: 180px; width: 180px;
     border-radius: 50%;
-    display: inline-block;
+    float: left;
     margin-left: -15px;
     padding : 47.5px 15px;
 /*     padding-top: 47.5px;
@@ -119,7 +126,7 @@
     box-shadow: 0 0px 10px rgba(0,0,0,10%);
 }
 #wrap main .bg .strategy_contents dl:nth-child(5) {padding: 34px 0;}
-#wrap main .bg .strategy_contents dl * {line-height: 1.5;}
+#wrap main .bg .strategy_contents dl * {line-height: 1.5; text-align: center;}
 #wrap main .bg .strategy_contents dl dt {
     font-size: 1.13rem;
     font-weight: 500;

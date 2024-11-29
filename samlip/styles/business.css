@@ -89,6 +89,7 @@
     line-height: 150%;
     letter-spacing: -1px;
 }
+#wrap main .bg ul li.contents p span {position: relative; top: 35px;}
 /*====================================================01종합식품사업*/
 #wrap main .bg ul.row1 {}
 #wrap main .bg ul.row1 li {}
@@ -102,7 +103,7 @@
 #wrap main .bg ul.row2 {}
 #wrap main .bg ul.row2 li {}
 #wrap main .bg ul.row2 li.contents {}
-#wrap main .bg ul.row2 li.contents p span {}
+#wrap main .bg ul.row2 li.contents p span {position: relative; bottom: 10px;}
 #wrap main .bg ul.row2 li.contents h2 {}
 #wrap main .bg ul.row2 li.contents p {}
 #wrap main .bg ul.row2 li img {}
