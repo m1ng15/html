@@ -1,0 +1,98 @@
+#wrap {background-color: darkgray;}
+#wrap header {
+    background-color: rgba(0,0,0,0.1);
+    padding: 21px 80px;
+    /* header는 모든 사이트에서 높이 고정되는 경우가 90% 이상이다. */
+    height: 80px;
+}
+#wrap header h1 {
+    background-color: aqua;
+    float: left;
+    padding: 3px 0;
+}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {
+    background-color: coral;
+    float: right;
+}
+#wrap header nav ul.path {}
+#wrap header nav ul.path::after {clear: both; display: block; content: "";}
+#wrap header nav ul.path li {
+    float: left;
+    padding: 10px 0;
+    margin-right: 80px;
+}
+#wrap header nav ul.path li:nth-child(4) {
+    margin: 0; padding: 0;
+}
+#wrap header nav ul.path li a {
+    color: #fff;
+    font-size: 1.13em;
+    font-weight: 600;
+}
+#wrap header nav ul.path li:nth-child(4) a {
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: block;
+}
+
+#wrap main {background-color: lime;}
+/* =============================================메인 1~4행 공통선택자 */
+#wrap main .container {
+    background-color: beige;
+    width: 1440px; margin: 0 auto;
+}
+#wrap main .container .contents {
+    background-color: hotpink;
+}
+#wrap main .container .contents .txt {
+    background-color: aqua;
+    color: #fff;
+}
+#wrap main .container .contents .txt h1 {
+    font-size: 4.38em;
+    font-weight: 700;
+    line-height: 130%;
+}
+#wrap main .container .contents .txt h1 span {color: #5EE1FF;}
+#wrap main .container .contents .txt p {
+    font-size: 1.56em;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -2px;
+}
+/* =============================================메인 1행 결제편리함 */
+#wrap main .pay {
+    background-image: url(../images/row1.jpg);
+}
+#wrap main .pay .contents {overflow: hidden; position: relative;}
+#wrap main .pay .contents .txt {
+    float: left;
+    padding-top: 231px;
+    padding-bottom: 312px;
+}
+#wrap main .pay .contents .txt h1 { background-color: blue;}
+#wrap main .pay .contents .txt h1 span {}
+#wrap main .pay .contents .txt p {}
+#wrap main .pay .contents .txt .bnr_btn_wrap {
+    background-color: purple;
+}
+#wrap main .pay .contents .txt .bnr_btn_wrap a.prev {float: left;}
+#wrap main .pay .contents .txt .bnr_btn_wrap a.prev img{}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress {}
+#wrap main .pay .contents .txt .bnr_btn_wrap a.pause {}
+#wrap main .pay .contents .txt .bnr_btn_wrap a.pause img {}
+#wrap main .pay .contents .txt .bnr_btn_wrap a.next {float: right;}
+#wrap main .pay .contents .txt .bnr_btn_wrap a.next img {}
+
+#wrap main .pay .contents .scroll {
+    float: right;
+    position: absolute;
+    bottom: 0; right: 0;
+    background-color: darkolivegreen;
+}
+#wrap main .pay .contents .scroll span:nth-child(1) {}
+#wrap main .pay .contents .scroll span.scroll_bg  {}
+#wrap main .pay .contents .scroll 
