@@ -208,3 +208,42 @@
 #wrap main .service .contents .cards .card2 .card_txt .see_more a {}
 #wrap main .service .contents .cards .card2 .card_txt .see_more a span {}
 #wrap main .service .contents .cards .card2 .card_txt .see_more a img {}
+
+/* =========================================================메인 3행 different */
+#wrap main .different {
+    background-image: url(../images/row3.jpg);
+    background-size: cover;
+}
+#wrap main .different .contents {
+    overflow: hidden;
+    background-color: aqua;
+}
+#wrap main .different .contents .txt {
+    background-color: magenta;
+    padding-top: 310px;
+    float: left;
+}
+#wrap main .different .contents .txt p.sub_title {}
+#wrap main .different .contents .txt h1 {}
+#wrap main .different .contents .txt p {}
+
+#wrap main .different .contents .service_g {}
+#wrap main .different .contents .service_g .service1 {}
+#wrap main .different .contents .service_g .service1 .contents {}
+#wrap main .different .contents .service_g .service1 .contents p.num {}
+#wrap main .different .contents .service_g .service1 .contents p.title {}
+
+#wrap main .different .contents .service_g .service2 {}
+#wrap main .different .contents .service_g .service2 .contents {}
+#wrap main .different .contents .service_g .service2 .contents p.num {}
+#wrap main .different .contents .service_g .service2 .contents p.title {}
+
+#wrap main .different .contents .service_g .service3 {}
+#wrap main .different .contents .service_g .service3 .contents {}
+#wrap main .different .contents .service_g .service3 .contents p.num {}
+#wrap main .different .contents .service_g .service3 .contents p.title {}
+
+#wrap main .different .contents .service_g .service4 {}
+#wrap main .different .contents .service_g .service4 .contents {}
+#wrap main .different .contents .service_g .service4 .contents p.num {}
+#wrap main .different .contents .service_g .service4 .contents p.title {}
