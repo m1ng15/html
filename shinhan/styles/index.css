@@ -43,12 +43,12 @@
 #wrap main .container .contents {
     width: 1440px; /*내가 보는 화면 높이에 요소가 딱 떨어지게 만들어줌*/
     margin: 0 auto;
+    height: 100vh;
     background-color: rgba(255,255,255,0.1); /*제거용*/
 }
 #wrap main .container .contents .txt {
-    background-color: orange;
     color: #fff;
-    height: 100vh;
+    
 }
 #wrap main .container .contents .txt h1 {
     font-size: 4.38em;
@@ -125,10 +125,8 @@
 }
 #wrap main .service .contents {
     overflow: hidden;
-    background-color: aqua;
 }
 #wrap main .service .contents .txt {
-    background-color: magenta;
     padding-top: 310px;
     float: left;
 }
@@ -137,7 +135,6 @@
 #wrap main .service .contents .txt p {}
 
 #wrap main .service .contents .cards {
-    background-color: yellow;
     float: right;
     position: relative; top: 157px; bottom: 126px;
 }
@@ -159,6 +156,7 @@
 }
 #wrap main .service .contents .cards .card_txt p {
     margin: 35px 0;
+    font-size: 1em;
     line-height: 1.5; letter-spacing: -0.02em;
     color: #555;
 }
@@ -215,35 +213,76 @@
     background-size: cover;
 }
 #wrap main .different .contents {
-    overflow: hidden;
-    background-color: aqua;
+
+    text-align: center;
 }
 #wrap main .different .contents .txt {
-    background-color: magenta;
-    padding-top: 310px;
-    float: left;
+    padding-top: 153px;
 }
 #wrap main .different .contents .txt p.sub_title {}
+#wrap main .different .contents .txt p.sub_title h1{}
 #wrap main .different .contents .txt h1 {}
 #wrap main .different .contents .txt p {}
 
-#wrap main .different .contents .service_g {}
-#wrap main .different .contents .service_g .service1 {}
-#wrap main .different .contents .service_g .service1 .contents {}
-#wrap main .different .contents .service_g .service1 .contents p.num {}
-#wrap main .different .contents .service_g .service1 .contents p.title {}
+#wrap main .different .contents ol {
+    overflow: hidden;
+    margin-top: 118px;
+}
 
-#wrap main .different .contents .service_g .service2 {}
-#wrap main .different .contents .service_g .service2 .contents {}
-#wrap main .different .contents .service_g .service2 .contents p.num {}
-#wrap main .different .contents .service_g .service2 .contents p.title {}
+#wrap main .different .contents ol li {
+    border: 20px solid rgba(255,255,255,0.5);
+    height: 290px; width: 290px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 93.33px;
+    padding: 67px 0;
+    position: relative; /*after 가상요소의 부모설정*/
+    float: left;
+}
+#wrap main .different .contents ol li::after {
+    content: ''; display: block;
+    background-color: #fff;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    position: absolute; left: 0; top: 0; z-index: 0;
+}
+#wrap main .different .contents ol li:nth-child(4) {
+    margin-right: 0;
+}
 
-#wrap main .different .contents .service_g .service3 {}
-#wrap main .different .contents .service_g .service3 .contents {}
-#wrap main .different .contents .service_g .service3 .contents p.num {}
-#wrap main .different .contents .service_g .service3 .contents p.title {}
+#wrap main .different .contents ol li h2,p {
+    position: relative; z-index: 100;
+    font-size: 1.56em; font-weight: 600;
+}
+#wrap main .different .contents ol li {}
+#wrap main .different .contents ol li p.num {
+    background-color: #5E91FF; color: #fff;
+    display: inline-block;
+    padding: 8.5px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+#wrap main .different .contents ol .li h2 {
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+}
 
-#wrap main .different .contents .service_g .service4 {}
-#wrap main .different .contents .service_g .service4 .contents {}
-#wrap main .different .contents .service_g .service4 .contents p.num {}
-#wrap main .different .contents .service_g .service4 .contents p.title {}
+#wrap main .different .contents ol {}
+#wrap main .different .contents ol li {}
+#wrap main .different .contents ol li p.num {}
+#wrap main .different .contents ol li h2 {}
+
+/* =========================================================메인 4행 자주 묻는 질문*/
+#wrap main .question {
+}
+#wrap main .questiont .contents {
+
+    text-align: center;
+}
+#wrap main .question .contents .txt {
+    padding-top: 153px;
+}
+#wrap main .question .question.txt p.sub_title {}
+#wrap main .question.question .txt p.sub_title h1{}
+#wrap main .question .question .txt h1 {}
+#wrap main .question .question .txt p {}
