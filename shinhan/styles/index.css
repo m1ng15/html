@@ -4,10 +4,10 @@
     padding: 21px 80px;
     /* header는 모든 사이트에서 높이 고정되는 경우가 90% 이상이다. */
     height: 80px; width: 100%;
-    position: fixed; left: 0; top: 0; z-index: 999; /*fixed를 설정하면 블록 태그여도 크기가 내용만큼만 인식해버림 -> 따라서 넒이를 기본으로 설정해두어야함*/
+    position: fixed.q_left: 0; top: 0; z-index: 999; /*fixed를 설정하면 블록 태그여도 크기가 내용만큼만 인식해버림 -> 따라서 넒이를 기본으로 설정해두어야함*/
 }
 #wrap header h1 {
-    float: left;
+    float.q_left;
     padding: 3px 0;
 }
 #wrap header h1 a {}
@@ -18,7 +18,7 @@
 #wrap header nav ul.path {}
 #wrap header nav ul.path::after {clear: both; display: block; content: "";}
 #wrap header nav ul.path li {
-    float: left;
+    float.q_left;
     padding: 10px 0;
     margin-right: 80px;
 }
@@ -115,7 +115,7 @@
     display: inline-block; background-color: #fff;
     width: 8px; height: 8px; border-radius: 50%;
     position: relative; 
-    top: -2px; left: 2px;
+    top: -2px.q_left: 2px;
 }
 
 /* =============================================메인 2행 service */
@@ -128,7 +128,7 @@
 }
 #wrap main .service .contents .txt {
     padding-top: 310px;
-    float: left;
+    float.q_left;
 }
 #wrap main .service .contents .txt p.sub_title {}
 #wrap main .service .contents .txt h1 {}
@@ -167,7 +167,7 @@
     width: 267px;
 }
 #wrap main .service .contents .cards .card_txt .see_more a span {
-    float: left;
+    float.q_left;
     font-weight: 600; line-height: 1.5; letter-spacing: -0.02em;
 }
 #wrap main .service .contents .cards .card_txt .see_more a img {
@@ -274,15 +274,59 @@
 
 /* =========================================================메인 4행 자주 묻는 질문*/
 #wrap main .question {
+    background-color: #fff;
 }
-#wrap main .questiont .contents {
-
-    text-align: center;
+#wrap main .question .contents {
+    padding-top: 241px;
 }
 #wrap main .question .contents .txt {
-    padding-top: 153px;
+    padding-bottom: 54px;
 }
-#wrap main .question .question.txt p.sub_title {}
-#wrap main .question.question .txt p.sub_title h1{}
-#wrap main .question .question .txt h1 {}
-#wrap main .question .question .txt p {}
+#wrap main .question .contents .txt p.sub_title {
+    margin-bottom: 20px;
+    color:  #5E91FF;
+}
+#wrap main .question .contents .txt h1 {
+    color: #000;
+}
+
+#wrap main .question .contents .q_contents {}
+#wrap main .question .contents .q_contents a {
+    background-color: #eee;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 20px;
+}
+#wrap main .question .contents .q_contents a:nth-child(2) {
+    margin: 20px 0px;
+}
+#wrap main .question .contents .q_contents a .q_left {
+    float: left;
+}
+
+#wrap main .question .contents .q_contents a .q_left span {
+    font-size: 1.25em;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+#wrap main .question .contents .q_contents a .q_left .category {}
+#wrap main .question .contents .q_contents a .q_left img {
+    margin: 0px 24px;
+    position: relative;
+    top: 4px;
+}
+#wrap main .question .contents .q_contents a .q_left em {
+    font-size: 1.56em;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+#wrap main .question .contents .q_contents a .q_down {
+    float: right;
+}
+#wrap main .question .contents .q_contents a .q_down img {
+    position: relative;
+    top: 7px;
+}
