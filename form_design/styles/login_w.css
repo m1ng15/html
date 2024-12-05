@@ -1,0 +1,71 @@
+#login_wrap {
+    width: 500px; margin: 0 auto;
+}
+#login_wrap .title {
+    padding-top: 84px;
+    padding-bottom: 57px;
+}
+#login_wrap .title h1 {
+    font-size: 4.38em; font-weight: 900;
+    letter-spacing: -0.02em;
+    margin-bottom: 25px;
+}
+#login_wrap .title p {
+    font-size: 1.25em;
+    letter-spacing: -0.02em;
+}
+
+#login_wrap #login_frm {margin-bottom: 62px;}
+#login_wrap #login_frm fieldset {}
+#login_wrap #login_frm fieldset dt {
+    font-size: 1.88em; font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+}
+#login_wrap #login_frm fieldset .login {
+    margin-bottom: 38px;
+}
+#login_wrap #login_frm fieldset .login dt {}
+#login_wrap #login_frm fieldset .login dd {
+    margin-bottom: 38px;
+}
+#login_wrap #login_frm fieldset .login dd:nth-child(4) {
+    margin-bottom: 0;
+}
+#login_wrap #login_frm fieldset input,button {
+    padding: 15px;
+    width: 100%;
+    letter-spacing: -0.02em;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+#login_wrap #login_frm fieldset .login dd input {}
+#login_wrap #login_frm fieldset .login dd input.user_id {}
+#login_wrap #login_frm fieldset .login dd input.user_pw {}
+
+#login_wrap #login_frm fieldset .forgot_pw {}
+#login_wrap #login_frm fieldset .forgot_pw dt {margin-bottom: 32px;}
+#login_wrap #login_frm fieldset .forgot_pw .login_btn {}
+#login_wrap #login_frm fieldset .forgot_pw .login_btn button {
+    font-weight: 700; letter-spacing: -0.02em;
+}
+#login_wrap #login_frm fieldset .forgot_pw .login_btn .submit_btn {
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 18px;
+}
+#login_wrap #login_frm fieldset .forgot_pw .login_btn .link_google_btn {
+    background-color: #fff;
+    color: #222;
+}
+
+#login_wrap .sign_up {
+    color: #555;
+    letter-spacing: -0.02em;
+    text-align: center;
+    
+}
+#login_wrap .sign_up a {
+    font-weight: 700;
+    letter-spacing: -0.02em;   
+}
