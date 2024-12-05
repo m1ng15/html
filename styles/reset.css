@@ -13,6 +13,11 @@ form, fieldset, legend, input, textarea, label, select, option, button {
     /*기존 도형의 크기를 유지한 채, 설정한 값만큼 내용을 안쪽으로 이동시킴(=설정한 값만큼 공간을 만듦) */
     /*원리 : 가장자리부터 안쪽으로 설정한 값만큼의 공간을 만들겠다*/
 }
-button {cursor: pointer;}
 ol, li, ul {list-style: none;}
 a {color: #000; text-decoration: none;}
+button {cursor: pointer; background: none; border: 0;}
+input, textarea {border-radius: 0; border: 0; outline: none;}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+} /*수량 input에 기본적으로 들어있는 수량 위아래 버튼을 없앰*/
