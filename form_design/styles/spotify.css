@@ -1,0 +1,58 @@
+#wrap {
+    width: 500px; margin: 0 auto;
+    background-color: lightgray;
+}
+/* ==================================header */
+#wrap header {
+    text-align: center;
+    padding-top: 97px;
+    padding-bottom: 77px;
+    background-color: palegoldenrod;
+}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+/* ==================================nav */
+#wrap header nav {
+    overflow: hidden; margin-top: 85.95px;
+    width: 281px; display: inline-block;
+    background-color: palegreen;
+}
+#wrap header nav h2:nth-child(1) {float: left;}
+#wrap header nav h2:nth-child(2) {float: right;}
+#wrap header nav h2 {
+    display: inline-block;
+}
+#wrap header nav h2 a {}
+#wrap header nav h2 a.active {}
+/* ==================================form 공통 선택자 */
+#wrap main {
+    background-color: paleturquoise;
+}
+#wrap main #joinFrm {
+    background-color: palevioletred;
+}
+#wrap main #joinFrm dl {}
+#wrap main #joinFrm dl dt {
+    background-color: plum;
+}
+#wrap main #joinFrm dl dd {}
+#wrap main #joinFrm dl dd[input^=user] {}
+#wrap main #joinFrm dl dd[input^=user]::placeholder {}
+#wrap main #joinFrm dl dd button.common_btn {}
+#wrap main #joinFrm dl dd p {}
+#wrap main #joinFrm dl dd p span {}
+#wrap main #joinFrm dl dd p span.actvie {}
+/* ==================================form 개별 선택자 */
+#wrap main #joinFrm dl dd[input$=name] {}
+#wrap main #joinFrm dl dd button.check_btn {}
+#wrap main #joinFrm dl dd[input$=pw] {}
+#wrap main #joinFrm dl dd[input$=repw] {}
+#wrap main #joinFrm dl dd[input$=email] {}
+#wrap main #joinFrm dl dd[input$=tel] {}
+#wrap main #joinFrm dl dd button.code_btn {}
+/* ==================================Sign up btn */
+#wrap main .btn {
+    background-color: pink;
+}
+#wrap main .btn .sign_btn {}

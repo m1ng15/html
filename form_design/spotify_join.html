@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Spotify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/spotify.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><a href="#"><img src="./images/spotify/spotify Logo.png" alt="spotify"></a></h1>
+            <nav>
+                <h2><a href="#">SIGN IN</a></h2>
+                <h2><a href="#" class="active">SIGN UP</a></h2>
+            </nav>
+        </header>
+        <main>
+            <form action="#" method="post" id="joinFrm">
+                <dl>
+                    <dt>USER NAME</dt>
+                    <dd>
+                        <input type="text" name="user_name" placeholder="Enter a user name" required>
+                        <button type="button" class="check_btn common_btn">Check</button>
+                    </dd>
+                    <dd>
+                        <p><span class="active">4~12 characters</span></p>
+                        <p><span>lowercase letters (numbers can be combined)</span></p>
+                    </dd>
+                    <dt>PASSWORD</dt>
+                    <dd>
+                        <input type="password" name="user_pw" placeholder="Set a strong password" required>
+                        <input type="password" name="user_repw" placeholder="Check a password" required>
+                    </dd>
+                    <dd>
+                        <p><span>1 letter</span></p>
+                        <p><span>1 number or special character</span></p>
+                        <p><span>10 characters</span></p>
+                    </dd>
+                    <dt>EMAIL</dt>
+                    <dd>
+                        <input type="text" name="user_email" placeholder="Enter a email" required>
+                    </dd>
+                    <dt>PHONE NUMBER</dt>
+                    <dd>
+                        <input type="number" name="user_tel" placeholder="Enter a phone number" required>
+                        <button type="button" class="code_btn common_btn">Get code</button>
+                    </dd>
+                </dl>
+            </form>
+            <div class="btn">
+                <button type="submit" class="sign_btn">Sign up</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
