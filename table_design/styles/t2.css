@@ -1,0 +1,42 @@
+main {
+    overflow: hidden;
+    width: 782px; margin: 0 auto;
+    padding-top: 30%;
+}
+main .title {
+    overflow: hidden;
+    margin-bottom: 19px;
+}
+main .title h1,p {display: inline-block;}
+main .title h1 {
+    font-size: 1.25rem; font-weight: 700;
+    float: left;}
+main .title p {float: right;}
+main >p {float: right;}
+/* ===============================테이블시작 */
+main .sales_summary th,td {
+    width: calc(100% / 5);
+    text-align: center;
+    padding: 16px 0;
+    font-weight: 500;
+}
+main .sales_summary {
+    width: 100%;
+    margin-bottom: 19px;
+    background-color: #f2f2f2;
+}
+/* ===============================표제목 시작 */
+main .sales_summary thead {
+    border: 2px solid #000;
+    border-left: 0; border-right: 0;
+}
+main .sales_summary thead tr {}
+main .sales_summary thead tr th {}
+main .sales_summary thead tr th:first-child {font-size: 1.06rem; font-weight: 700;}
+/* ===============================표내용 시작 */
+main .sales_summary tbody {}
+main .sales_summary tbody tr {}
+main .sales_summary tbody tr:nth-child(4) {background-color: #A8D18D;}
+main .sales_summary tbody tr th {
+    font-size: 1.06rem; font-weight: 700;
+}
