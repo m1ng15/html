@@ -1,0 +1,47 @@
+#wrap {width: 840px; margin: 0 auto; background-color: lightgrey;}
+#wrap header {}
+#wrap header h1 {padding-top: 21px;}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+/* ====================================main 시작 */
+#wrap main {width: 360px; margin: 0 auto; background-color: aquamarine;}
+#wrap main .main_top {} 
+#wrap main .main_top h1 {
+    font-size: 1.25rem; font-weight: 600; margin-bottom: 14px;
+}
+#wrap main .main_top .sns_group {text-align:center; padding-bottom: 30px; background-color: palegreen;}
+#wrap main .main_top .sns_group li {display: inline-block;}
+#wrap main .main_top .sns_group li p {
+    font-size: 0.88rem; letter-spacing: -0.02em; color: #777;
+    width: 360px; margin-bottom: 14px;
+}
+#wrap main .main_top .sns_group li a {}
+#wrap main .main_top .sns_group li a img {margin-right: 20px;}
+#wrap main .main_top .sns_group li:last-child a img {margin-right: 0;}
+/* ====================================form 시작 */
+/* ====================================공통 */
+#wrap main #joinFrm {}
+#wrap main #joinFrm dl {}
+#wrap main #joinFrm dl dt {
+    font-size: 1.06rem; font-weight: 500;
+    padding-top: 22px; padding-bottom: 10px;
+}
+#wrap main #joinFrm dl dt dd {}
+#wrap main #joinFrm dl dd input[name^=user], select[name=e_address] {
+    border: 1px solid #ddd; border-radius: 3px;
+    width: 360px; padding: 10px;
+}
+#wrap main #joinFrm dl dd input[name^=user]::placeholder {}
+#wrap main #joinFrm dl dd .common_btn {}
+/* ====================================개별 */
+#wrap main #joinFrm dl dd input[name$=email] {}
+#wrap main #joinFrm dl dd input[name$=email] {
+    width: 170px;
+}
+#wrap main #joinFrm dl dd img {}
+#wrap main #joinFrm dl dd select[name=e_address] {
+    width: 170px;
+    background: #fff url(../images/arrow_drop_down.png) no-repeat 90% center;
+}
+#wrap main #joinFrm dl dd select[name=e_address] option {letter-spacing: -0.02em;}
+#wrap main #joinFrm dl dd .email_check_btn {}
