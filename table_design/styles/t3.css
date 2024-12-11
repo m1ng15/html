@@ -1,0 +1,41 @@
+.plan {width: 1110px; margin: 65px auto;}
+/* ===============================표제목 */
+.plan thead {
+    background-color: #fafafa;}
+    border: 2px solid #000;
+    border-left: 0; border-right: 0;
+.plan thead tr {}
+.plan thead tr:nth-child(2) th {
+    border-top: 1px dashed #555;
+    padding: 30px 0;
+}
+.plan thead tr:first-child th:nth-child(2) {
+    padding: 30px 0;
+}
+.plan thead tr th {
+    font-size: 1.13rem; font-weight: 700; line-height: 1.5;
+}
+.plan thead tr th, .plan tbody tr th {text-align: center;}
+.plan thead tr th img {}
+.plan thead tr th h1 {
+    font-size: 1.25rem; font-weight: 600;
+    padding-bottom: 12px;
+}
+.plan thead tr th p {color: #777;}
+/* ===============================표내용 */
+.plan tbody {}
+.plan tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+.plan tbody tr th {
+    width: 250px;
+    padding: 20px 0;
+}
+.plan tbody tr th, td {font-weight: 500;}
+.plan tbody tr td {
+    text-align: center;
+    width: 170px;
+}
+.plan tbody tr td:nth-child(2) {width: 150px;}
+.plan tbody tr td:nth-child(3) {width: 350px;}
+.plan tbody tr td em {font-weight: 700; color: #EE239B;}
