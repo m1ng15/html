@@ -1,0 +1,31 @@
+.book_stock {
+    background-color: #F2F2F2; border-radius: 20px;
+    overflow: hidden; /* flow란, 해당 요소가 차지하는 영역을 의미함 */
+    width: 682px; margin: 35% auto;
+}
+.book_stock tr {}
+.book_stock tr th {
+    padding: 16px;
+    font-weight: 500;
+}
+.book_stock tr td {
+    width: 100px;
+    padding: 16px 0;
+    text-align: center;
+    font-weight: 500;
+}
+/* ======================================개별선택자 */
+.book_stock tr:nth-child(odd) {background-color: #E8E8E8;}
+.book_stock tr:first-child {background-color: #FF0066;}
+.book_stock tr th:first-child {
+    width: 250px;
+}
+.book_stock tr:first-child th {
+    text-align: center; padding: 20px 0;
+    color: #fff; font-size: 1.13rem; font-weight: 700;
+}
+.book_stock tr:nth-child(3) {border: 2px solid #FF0066; }
+.book_stock tr:nth-child(3) th,
+.book_stock tr:nth-child(3) td {color: #FF0066;}
+/* ======================================표제목 */
+
