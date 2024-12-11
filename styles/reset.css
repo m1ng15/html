@@ -9,6 +9,7 @@ form, fieldset, legend, input, textarea, label, select, option, button {
     margin: 0; padding: 0;
     font-style: normal;
     box-sizing: border-box;
+    /* font-family: 'Noto Sans KR', 'pretendard', sans-serif; */
 }
 ol, li, ul {list-style: none;}
 a {color: #000; text-decoration: none;}
