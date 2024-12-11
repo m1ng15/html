@@ -1,17 +1,14 @@
-/* 제목 태그 - 블록 태그 - 인라인 태그 초기화 */
 html,body,h1,h2,h3,h4,h5,h6,
 p,div,dl,dt,dd,ul,ol,li,video,blockquote,hr,a,address,
 span,em,img,strong,sub,sup,del,s,q,mark,code,
 header, nav, main, footer, article, section, aside,
 form, fieldset, legend, input, textarea, label, select, option, button {
-    line-height: 1.0; /*100%*/
-    font-size: 1.0em; /*16px*/
-    font-weight: normal; /*400*/
+    line-height: 1.0;
+    font-size: 1.0em;
+    font-weight: normal;
     margin: 0; padding: 0;
     font-style: normal;
     box-sizing: border-box;
-    /*기존 도형의 크기를 유지한 채, 설정한 값만큼 내용을 안쪽으로 이동시킴(=설정한 값만큼 공간을 만듦) */
-    /*원리 : 가장자리부터 안쪽으로 설정한 값만큼의 공간을 만들겠다*/
 }
 ol, li, ul {list-style: none;}
 a {color: #000; text-decoration: none;}
@@ -20,7 +17,11 @@ input, textarea {appearance: none; border-radius: 0; border: 0; outline: none;}
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     appearance: none;
-} /*수량 input에 기본적으로 들어있는 수량 위아래 버튼을 없앰*/
+}
 fieldset {border: 0;}
-legend {display: none;} /*태그로 의미만 남겨두고 디자인적으로는 안보이도록함*/
+legend {display: none;}
 select, option {outline: none; border: none; appearance: none;}
+table, tr, td, th {
+    padding: 0; margin: 0;
+    border-collapse: collapse;
+}
