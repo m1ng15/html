@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입 | 오늘의 집</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/login.css">
 </head>
@@ -28,7 +28,7 @@
                     <dt>이메일</dt>
                     <dd>
                         <input type="text" name="user_email" placeholder="이메일" required>
-                        <img src="./images/@.png" alt="">
+                        <span>@</span>
                         <select name="e_address">
                             <option value="title">선택해주세요</option>
                             <option value="google">google.com</option>
@@ -36,6 +36,8 @@
                             <option value="daum">kakao.com</option>
                             <option value="other">직접입력</option>
                         </select>
+                    </dd>
+                    <dd>
                         <button type="button" class="email_check_btn common_btn">이메일 인증하기</button>
                     </dd>
                     <dt>비밀번호</dt>
@@ -54,13 +56,12 @@
                     </dd>
                     <dt>약관동의</dt>
                     <dd>
-                        <label class="all_checked"><input type="checkbox" name="agree_terms" value="all" class="active"><span>전체동의</span></label> 
-                        <span>선택항목에 대한 동의 포함</span>
-                        <label><input type="checkbox" name="agree_terms" value="age_check" required><span>만 14세 이상입니다<span class="required">(필수)</span></span></label>
-                        <label><input type="checkbox" name="agree_terms" value="terms_check" required><span>이용약관<span class="required">(필수)</span></span></label>
-                        <label><input type="checkbox" name="agree_terms" value="info_check" required><span>개인정보수집 및 이용동의<span class="required">(필수)</span></span></label>
-                        <label><input type="checkbox" name="agree_terms" value="marketing_check" required><span>개인정보 마케팅 활용 동의<span class="option">(선택)</span></span></label>
-                        <label><input type="checkbox" name="agree_terms" value="sms_check" required><span>이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신<span class="option">(선택)</span></span></label>
+                        <label><input type="checkbox" name="agree_terms" value="all" class="active">전체동의<span>선택항목에 대한 동의 포함</span></label> 
+                        <label><input type="checkbox" name="agree_terms" value="age_check" required>만 14세 이상입니다<span class="required">(필수)</span></label>
+                        <label><input type="checkbox" name="agree_terms" value="terms_check" required>이용약관<span class="required">(필수)</span></label>
+                        <label><input type="checkbox" name="agree_terms" value="info_check" required>개인정보수집 및 이용동의<span class="required">(필수)</span></label>
+                        <label><input type="checkbox" name="agree_terms" value="marketing_check" required>개인정보 마케팅 활용 동의<span class="option">(선택)</span></label>
+                        <label><input type="checkbox" name="agree_terms" value="sms_check" required><span>이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신<span class="option">(선택)</span></label>
                     </dd>
                 </dl>
             </form>
