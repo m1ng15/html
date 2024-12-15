@@ -56,38 +56,40 @@
                     </dd>
                     <dt>약관동의</dt>
                     <dd>
-                        <label>
-                            <input type="checkbox" name="agree_terms" value="all" class="active">
+                        <input type="checkbox" name="agree_terms" value="all" id="all">
+                        <label for="all">
                             <span>전체동의<span> 선택항목에 대한 동의 포함</span></span>
-                        </label> 
-                        <label>
-                            <input type="checkbox" name="agree_terms" value="age_check" required>
+                        </label>
+                        <input type="checkbox" name="agree_terms" value="age_check" id="ageCheck">
+                        <label for="ageCheck">
                             <span>만 14세 이상입니다<span class="required"> (필수)</span></span>
                         </label>
-                        <label>
-                            <input type="checkbox" name="agree_terms" value="terms_check" required>
+                        <input type="checkbox" name="agree_terms" value="terms_check" id="termsCheck">
+                        <label for="termsCheck">
                             <span>이용약관<span class="required"> (필수)</span></span>
-                            <a href="#"><img src="./images/" alt=""></a>
+                            <a href="#"><img src="./images/arrow_forward_ios.png" alt=""></a>
                         </label>
-                        <label>
-                            <input type="checkbox" name="agree_terms" value="info_check" required>
-                            <span>개인정보수집 및 이용동의<span class="required" (필수)</span></span>
+                        <input type="checkbox" name="agree_terms" value="info_check" id="infoCheck">
+                        <label for="infoCheck">
+                            <span>개인정보수집 및 이용동의<span class="required"> (필수)</span></span>
+                            <a href="#"><img src="./images/arrow_forward_ios.png" alt=""></a>
                         </label>
-                        <label>
-                            <input type="checkbox" name="agree_terms" value="marketing_check" required>
+                        <input type="checkbox" name="agree_terms" value="marketing_check" id="marketingCheck">
+                        <label for="marketingCheck">
                             <span>개인정보 마케팅 활용 동의<span class="option"> (선택)</span></span>
+                            <a href="#"><img src="./images/arrow_forward_ios.png" alt=""></a>
                         </label>
-                        <label>
-                            <input type="checkbox" name="agree_terms" value="sms_check" required>
+                        <input type="checkbox" name="agree_terms" value="sms_check" id="smsCheck">
+                        <label for="smsCheck">
                             <span>이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신<span class="option"> (선택)</span></span>
                         </label>
                     </dd>
                 </dl>
             </form>
-            <div class="btn">
+            <div class="main_bottom">
                 <button type="button" name="join_btn">회원가입하기</button>
+                <p>이미 아이디가 있으신가요? <a href="#">로그인</a></p>   
             </div>
-            <p>이미 아이디가 있으신가요?<a href="#">로그인</a></p>   
         </main>
     </div>
 </body>
