@@ -1,0 +1,165 @@
+header {
+    width:1152px; margin:0 auto;
+}
+/* =======================header top */
+header .top {
+    height:48px;
+    /* lnb+mylnb 자식을 정렬하기 위한 flex적용부모 */
+    display:flex; 
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+header .top .lnb {
+    /* 서울특별시 h1~응답소 a 자식을 정렬하기 위한 flex적용부모 */
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}
+header .top .lnb h1 {}
+header .top .lnb h1 a {}
+header .top .lnb h1 a img {}
+header .top .lnb > a {
+    margin-left:20px;
+    letter-spacing:-0.02em;
+}
+header .top .my_lnb {
+}
+header .top .my_lnb a {margin-left:20px; letter-spacing:-0.02em;}
+header .top .my_lnb a:first-child {margin:0}
+/* =======================header bottom */
+header .bottom {
+    height:119px;
+    /* 로고h1~언어div 자식을 묶는 flex적용부모 */
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content: space-between;
+}
+header .bottom h1 {}
+header .bottom h1 a {}
+header .bottom h1 a img {}
+header .bottom #searchFrm {
+    background-color:#fff;
+    width:369px; height:46px;
+    border:2px solid #1e6cb3; padding:0 20px;
+    /* input+button 정렬을 위한 flex부모 */
+    display:flex; flex-flow:row nowrap; 
+    justify-content: space-between; align-items:center;
+}
+header .bottom #searchFrm input[name*=search] {}
+header .bottom #searchFrm input[name*=search]::placeholder {color:#1e6cb3;}
+header .bottom #searchFrm .search_btn {}
+header .bottom .lang {}
+header .bottom .lang select[name*=lang] {
+    border:1px solid #1e6cb3; height:29px; width:93px;
+    padding-left:10px; font-size:0.813rem; margin-right:10px;
+}
+header .bottom .lang select[name*=lang] option {}
+header .bottom .lang .lang_btn {
+    background-color:#1e6cb3; color:#fff; 
+    height:29px; width:30px; font-size:0.813rem;
+}
+/* =======================main */
+main {background-color: hotpink;}
+/* =================================main 1. 상단 이벤트+공지사항 배너 */
+main .visual_container {
+    /* 좌우 배너 자식정렬 부모 flex 대상 */
+    width: 1152px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+/* ==================================왼쪽 */
+main .visual_container .corona_notice {position: relative;}
+main .visual_container .corona_notice img {}
+main .visual_container .corona_notice .close {
+    position: absolute; right: 10px; bottom: 10px;
+    padding: 10px; border-radius: 5px; display: block;
+    background-color: #1e6cb3; color: #fff;
+    letter-spacing: -0.02em;
+}
+/* ==================================오른쪽 */
+main .visual_container .right_container {width: 360px;}
+/* =============================코로나 현황 */
+main .visual_container .right_container .corona {
+    position: relative;
+    margin-bottom: 10px;
+}
+main .visual_container .right_container .corona img {}
+main .visual_container .right_container .corona span {
+    position: absolute;
+    color: #fff; letter-spacing: -0.02em;
+}
+main .visual_container .right_container .corona .date {
+    width: 160px; top: 19px; right: 22px;
+    color: #000;
+} 
+main .visual_container .right_container .corona .data {text-align: center;}
+main .visual_container .right_container .corona .data1,.data2 {width: 140px; top: 80px;}
+main .visual_container .right_container .corona .data1 {left: 30px;}
+main .visual_container .right_container .corona .data2 {right: 30px;}
+main .visual_container .right_container .corona .data3,.data4,.data5 {width: 94px; top:155px;}
+main .visual_container .right_container .corona .data3 {left: 30px;}
+main .visual_container .right_container .corona .data4 {right: 121px;}
+main .visual_container .right_container .corona .data5 {width: 59px; right: 33px;}
+/* ==============================교통 현황 */
+main .visual_container .right_container .traffic {}
+main .visual_container .right_container .traffic a {}
+main .visual_container .right_container .traffic a img {}
+/* =======================================주요서비스 */
+main .service_container {
+    width: 1152px; margin: 0 auto;
+    padding: 50px 0;
+}
+/* ==============================2~5 **공통 제목 디자인** */
+main >* .title {}
+main >* .title h1 {}
+main >* .title .more_view {}
+/* ==============================제목 */
+main .service_container .title {
+    line-height: 100%; letter-spacing: -0.02em;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+main .service_container .title h1 {font-size: 1.44rem; font-weight: 500;}
+main .service_container .title .more_view {
+    border: 1px solid #aaa; padding: 10px;
+}
+/* ==============================내용 */
+main .service_container .contents {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+main .service_container .contents a {
+    display: flex;
+    flex-flow: column nowrap;
+}
+main .service_container .contents a span,em {align-self: center;}
+main .service_container .contents a span {
+    width: 60px; height: 60px;
+    margin-bottom: 15px;
+    background-image: url(../images/service.png);
+}
+main .service_container .contents a em {
+    font-size: 0.81rem; letter-spacing: -0.02em;
+    flex: 1;
+}
+/* ==============================개별 내용 */
+main .service_container .contents a:nth-child(1) span {}
+main .service_container .contents a:nth-child(2) span {background-position-x: -60px;}
+main .service_container .contents a:nth-child(3) span {background-position-x: -120px;}
+main .service_container .contents a:nth-child(4) span {background-position-x: -180px;}
+main .service_container .contents a:nth-child(5) span {background-position-x: -240px;}
+main .service_container .contents a:nth-child(6) span {background-position-x: -300px;}
+main .service_container .contents a:nth-child(7) span {background-position-x: -360px;}
+main .service_container .contents a:nth-child(8) span {background-position-x: -420px;}
+main .service_container .contents a:nth-child(9) span {background-position-x: -480px;}
+main .service_container .contents a:nth-child(10) span {background-position-x: -540px;}
+main .service_container .contents a:nth-child(11) span {background-position-x: -600px;}
+/* =======================footer */
