@@ -308,6 +308,7 @@ footer .top .menu a:last-child::after {display: none;}
 footer .top .sns {
     display: flex; flex-flow: row nowrap;
 }
+footer .top .sns a:hover {background-position-y: -25px;}
 footer .top .sns a {
     background-image: url(../images/sns_sprite.png);
     background-position-y: 0; width: 25px; height: 25px;

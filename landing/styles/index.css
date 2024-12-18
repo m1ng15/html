@@ -1,0 +1,50 @@
+#wrap {}
+/* 전체 공통 디자인 */
+#wrap .container {}
+#wrap .container .gradient {}
+#wrap .container .gradient .contents {}
+/* ========================================bg1. 1행 북극곰을 지켜주세요 */
+#wrap .bg1 {
+    
+    background-image: url(../images/bg1.png);
+    background-position: center; /* 스크린의 사이즈를 줄여도 사진이 가운데에 있음 */
+    background-size: cover; /* 스크린의 크기를 줄여도 사진이 가득차 있음 */
+}
+#wrap .bg1 .gradient {
+    /* baground:linear-gradient(각도, 색상, 색상 색상위치%, 색상) */
+    background: linear-gradient(-45deg,transparent,rgba(0,0,0,0.6) 69%);
+}
+#wrap .bg1 .gradient .contents {
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* 사용자의 스크린에 요소가 꽉차도록 높이를 설정함 */
+    width: 1250px; margin: 0 auto;
+    
+    background-color: paleturquoise;
+}
+/* 로고 이미지 */ /* 대부분의 자식 요소는 부모의 너비를 100% 따라감(블록일 경우) */
+#wrap .bg1 .gradient .contents h1:nth-child(1) {width: 89px; align-self: flex-start;}
+#wrap .bg1 .gradient .contents h1:nth-child(1) a {}
+/* 이미지는 인라인 태그이기 때문에 부모의 너비에 100%로 따라가지않음 + 이미지는 기본 px 단위로 들어오기 때문에 기본 100% 설정이 안됨  */
+#wrap .bg1 .gradient .contents h1:nth-child(1) img {width: 100%;}
+/* 생존의 벼랑 끝에 서 있는~ 제목 */
+#wrap .bg1 .gradient .contents h1:nth-child(2) {background-color: lightyellow;}
+#wrap .bg1 .gradient .contents h1:nth-child(2) span {}
+/* 후원 버튼 */
+#wrap .bg1 .gradient .contents .sponsor_btn {background-color: pink;}
+#wrap .bg1 .gradient .contents .sponsor_btn img {}
+/* 후원 질문 버튼 */
+#wrap .bg1 .gradient .contents .sponsor_q_btn {background-color: lightsalmon; align-self: flex-end;}
+#wrap .bg1 .gradient .contents .sponsor_q_btn img {}
+#wrap .bg1 .gradient .contents .sponsor_q_btn img:nth-child(1) {}
+#wrap .bg1 .gradient .contents .sponsor_q_btn img:nth-child(3) {}
+/* ========================================bg2. 2행 환경 퀴즈 및 참여 */
+/* ========================================bg3. 3행 동영상*/
+/* ========================================bg4. 4행 빙하 50% 감소*/
+/* ========================================bg5. 5행 빙하 인류재앙3*/
+/* ========================================bg6. 6행 지구 전체 위기*/
+/* ========================================bg7. 7행 WWF 소개*/
+/* ========================================bg8. 8행 WWF 활동*/
+/* ========================================bg9. 9행 후원감사선물 */
+/* ========================================bg10. 10행  후원안내사항*/
