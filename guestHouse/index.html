@@ -10,27 +10,29 @@
 </head>
 <body>
     <div id="wrap">
-        <header>
-            <h1><a href="#"><img src="./images/logo.png" alt="호랑가시나무언덕 게스트하우스"></a></h1>
-            <div class="right_hd">
-                <div class="login">
-                    <a href="#">Log-in</a>
-                    <a href="#">Create account</a>
+        <div class="header_bg">
+            <header>
+                <h1><a href="#"><img src="./images/logo.png" alt="호랑가시나무언덕 게스트하우스"></a></h1>
+                <div class="right_hd">
+                    <div class="login">
+                        <a href="#">Log-in</a>
+                        <a href="#">Create account</a>
+                    </div>
+                    <nav>
+                        <a href="#">About</a>
+                        <a href="#">Reservation</a>
+                        <a href="#">Rooms</a>
+                        <a href="#">Facility</a>
+                        <a href="#">Travel</a>
+                        <a href="#">Community</a>
+                    </nav>
                 </div>
-                <nav>
-                    <a href="#">About</a>
-                    <a href="#">Reservation</a>
-                    <a href="#">Rooms</a>
-                    <a href="#">Facility</a>
-                    <a href="#">Travel</a>
-                    <a href="#">Community</a>
-                </nav>
-            </div>
-        </header>
+            </header>
+        </div>
         <main>
-            <div class="container header_img">
-                <div class="contents">
-                    <div class="title1">
+            <div class="container main_title">
+                <div class="contents_bg">
+                    <div class="title">
                         <p>광주 근대화가 시작된 도시, 양림동<br>이 도시 속에 마련된 고즈넉한 작은 쉼터</p>
                         <h1>호랑가시나무언덕<br>게스트 하우스</h1>
                     </div>
@@ -38,7 +40,7 @@
             </div>
             <div class="container img_bnr">
                 <div class="contents">
-                    <div class="small_title">
+                    <div class="hr_title">
                         <span class="dot"></span>
                         <p>Horang Gasi Namu Hill</p>
                     </div>
@@ -56,44 +58,90 @@
                 </div>
             </div>
             <div class="container rooms">
-                <div class="contents">
-                    <div class="title2">
+                <div class="title">
+                    <div class="text">
                         <p>이국적인 적벽돌 건물 안에 마련된</p>
                         <h2>편하고 안락한 객실</h2>
-                        <div class="room_btn">
-                            <button type="button" class="more_rooms">객실 더보기</button>
-                        </div>
                     </div>
-                    <!-- 객실 소개 배너 -->
+                    <div class="room_btn">
+                        <button type="button" class="more_rooms">객실 더보기</button>
+                    </div>
+                </div>
+                <!-- 객실 소개 배너 -->
+                <div class="contents">
                     <div class="rooms_wrap">
+                        <button type="button" class="pre_btn"><img src="./images/pre_btn.png" alt=""></button>
+                        <div class="room_group">
+                            <div class="room">
+                                <a href="#"><img src="./images/room_forsythe.jpg" alt="포사이드방"></a>
+                                <div class="room_info">
+                                    <p class="name"><span>Forsythe room</span>포사이드방</p>
+                                    <p class="detail">2인용 객실 (기준인원 2인) 입니다.<br>싱글침대 2개, 개인 옷걸이, 난방, 타올 2장, <br>드라이기, 조식, 와이파이</p>
+                                </div>
+                            </div>
+                            <div class="room">
+                                <a href="#"><img src="./images/room_swindhart.jpg" alt=서로득방"></a>
+                                <div class="room_info">
+                                    <p class="name"><span>Swinehart room</span>서로득방</p>
+                                    <p class="detail">2인용 객실(기준인원 3명)입니다.<br>싱글침대 3개, 개인 옷걸이, 난방, 타올 6장, 드라이기, <br>조식, 와이파이</p>
+                                </div>
+                            </div>
+                            <div class="room">
+                                <a href="#"><img src="./images/room_shepping.jpg" alt="서서평방"></a>
+                                <div class="room_info">
+                                    <p class="name"><span>Shepping room</span>서서평방</p>
+                                    <p class="detail">1~2인용 객실(기준인원 2명)입니다.<br>싱글침대 1개, 개인 옷걸이, 난방, 타올 2장, 드라이기,<br>조식, 와이파이</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="next_btn"><img src="./images/next_btn.png" alt=""></button>
                     </div>
                 </div>
             </div>
             <div class="container travel">
-                <div class="contents">
-                    <div class="title2">
+                <div class="title">
+                    <div class="text">
                         <p>자연, 예술, 역사, 힐링이 가득한</p>
                         <h2>주변 관광지</h2>
                     </div>
-                    <!-- 여행지 소개 배너 -->
-                    <div class="travel_wrap"></div>
+                </div>
+                <!-- 여행지 소개 배너 -->
+                <div class="contents">
+                    <div class="travel_wrap">
+                        <p class="place"><img src="./images/place1.jpg" alt="오웬기념각"></p>
+                        <div class="active_travel">
+                            <button type="button" class="pre_btn"><img src="./images/pre_btn.png" alt=""></button>
+                            <div class="travel_card">
+                                <p><img src="./images/place2.jpg" alt="광주 삼일만세운동 기념동상"></p>
+                                <div class="travel_info">
+                                    <h3>광주 3&middot;1만세 운동 기념 동상</h3>
+                                    <p>광주 3·1만세운동에 앞장서 만세를 부른 광주수피아여학교 출신 23인의 업적을 기리고 추모하기 위하여 1995년 1월 1일 건립한 동상. 동상 좌대에는 23명의 명단이 새겨져 있으며, 옆면에는 "역사의 별이 되어"라는 추모시가 있다.</p>
+                                    <a href="#">더보기</a>
+                                </div>
+                            </div>
+                            <button type="button" class="next_btn"><img src="./images/next_btn.png" alt=""></button>
+                        </div>
+                        <p class="place"><img src="./images/place3.jpg" alt="양파정"></p>
+                    </div>
                 </div>
             </div>
             <div class="container map">
                 <div class="contents">
                     <img src="./images/map.jpg" alt="게스트하우스 위치">
-                    <h3>찾아오시는 길</h3>
                     <div class="text">
-                        <h4>주소</h4>
-                        <p>(503822) 광주 남구 제중로47번길 18</p>
-                        <h4>숙소전화</h4>
-                        <p>062-654-0976 / 070-4240-0976</p>
-                        <h4>개인전화</h4>
-                        <p>010-4705-0988</p>
-                    </div>
-                    <div class="map_btn">
-                        <button type="button" class="more_traffic">교통안내</button>
-                        <button type="button" class="more_foot">도보안내</button>
+                        <h3>찾아오시는 길</h3>
+                        <div class="map_info">
+                            <h4>주소 |</h4>
+                            <p>(503822) 광주 남구 제중로47번길 18</p>
+                            <h4>숙소전화 |</h4>
+                            <p>062-654-0976 / 070-4240-0976</p>
+                            <h4>개인전화 |</h4>
+                            <p>010-4705-0988</p>
+                        </div>
+                        <div class="map_btn">
+                            <button type="button" class="more_traffic">교통안내</button>
+                            <button type="button" class="more_foot">도보안내</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,14 +149,18 @@
         <footer>
             <div class="ft_left">
                 <div class="ft_menu">
-                    <a href="#"><em>개인정보처리방침</em></a>
+                    <span class="hr_ft"></span>
+                    <a href="#">개인정보보호정책</a>
+                    <span class="hr_ft"></span>
                     <a href="#">이용약관</a>
+                    <span class="hr_ft"></span>
                     <a href="#">사이트맵</a>
+                    <span class="hr_ft"></span>
                 </div>
                 <address>
                     호랑가시나무언덕 게스트하우스 | 사업자등록번호:408-81-88664 |통신판매신고번호:2015-광주남구-0127  <a href="#">[사업자정보확인]</a><br>법인(단체명):(주)아트주 | 대표자:정헌기 | 사업자 주소:광주광역시 남구 제중로 47번길 11(양림동, 2층)
                 </address>
-                <p>&copy; 호랑가시나무언덕 게스트하우스. All right reserved.</p>
+                <br><p>&copy; 호랑가시나무언덕 게스트하우스. All right reserved.</p>
             </div>
         </footer>
     </div>

@@ -2,60 +2,72 @@
     background-color: #fff;
 }
 /* ========================================헤더시작 */
-#wrap header {
+#wrap .header_bg {
     background-color: #fff;
-    width: 100%; height: 100px;
+    width: 1920px; height: 100px;
+    position: fixed; z-index: 999
+}
+#wrap .header_bg header {
+    height: 100px;
     padding: 0 80px; padding-top: 10px;
     display: flex;
     flex-flow: row nowrap;
-    position: fixed;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
-#wrap header h1 {}
-#wrap header h1 a {}
-#wrap header h1 a img {}
-#wrap header .right_hd {
-    background-color: paleturquoise;
-    width: 100%;
-}
-#wrap header .right_hd .login {
-    text-align: right; margin-bottom: 7px;
+#wrap .header_bg header h1 {}
+#wrap .header_bg header h1 a {}
+#wrap .header_bg header h1 a img {}
+#wrap .header_bg header .right_hd {width: 100%;}
+#wrap .header_bg header .right_hd .login {
+    font-size:0.94rem; letter-spacing:-0.02em; font-weight:600;
+    text-align: right; padding-bottom: 7px;
     border-bottom: 1px solid #eee;
 }
-#wrap header .right_hd .login a {}
-#wrap header .right_hd nav {}
-#wrap header .right_hd nav a {}
+#wrap .header_bg header .right_hd .login a {margin-right: 20px; color: #aaa;}
+#wrap .header_bg header .right_hd .login a:last-child,
+#wrap .header_bg header .right_hd nav a:last-child {margin-right: 0;}
+#wrap .header_bg header .right_hd nav {
+    font-size:1.13rem; letter-spacing:-0.02em; font-weight:600;
+    padding: 25px 0;
+}
+#wrap .header_bg header .right_hd nav a {margin-right: 50px;}
 /* ========================================메인시작*/
 #wrap main {}
 /* ==================================================★공통선택자★*/
-#wrap main .container {}
-#wrap main .container .contents {
-    width: 1260px; margin: 0 auto;
-}
-#wrap main .container .contents .title1 {}
-#wrap main .container .contents .title2 {}
-#wrap main .container .contents .title2 p {}
-#wrap main .container .contents .title2 h2 {}
-/* ========================================1행 header_img*/
-#wrap main .header_img {
-    width: 1920px; height: 90vh;
+#wrap main .container {width: 100%; padding: 48px 0;}
+#wrap main .container button {font-size:1.5rem; letter-spacing:-0.02em; font-weight:500;}
+#wrap main .container .contents {width: 100%; margin: 0 auto;}
+#wrap main .container .title {width: 1260px; margin: 0 auto; margin-bottom:78px;}
+#wrap main .container .title .text p {font-size:1.63rem; line-height:1.5em; letter-spacing:-0.02em; font-weight:500;}
+#wrap main .container .title .text h2 {font-size:3.5rem; line-height:1.3em; letter-spacing:-0.02em; font-weight:700; color: #6A8A00;}
+/* ========================================1행 main_title*/
+#wrap main .main_title {
+    height: 90vh; 
     background-image: url(../images/header_img.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
-#wrap main .header_img .contents {}
-#wrap main .header_img .contents .title1 {}
-#wrap main .header_img .contents .title1 p {}
-#wrap main .header_img .contents .title1 h1 {}
+#wrap main .main_title .contents_bg {
+    width: 100%; background-color: rgba(0,0,0,0.2);
+    position: absolute; bottom: 96px; left: 0;
+}
+#wrap main .main_title .contents_bg .title {
+    height: 272px; margin-bottom:0;
+    padding: 20px 0; color: #fff;
+}
+#wrap main .main_title .contents_bg .title p {font-size:1.63rem; line-height:1.5em; letter-spacing:-0.02em; font-weight:500;}
+#wrap main .main_title .contents_bg .title h1 {font-size:3.5rem; line-height:1.3em; letter-spacing:-0.02em; font-weight:700;}
 /* ========================================2행 img_bnr*/
-#wrap main .img_bnr {background-color: lemonchiffon; padding: 110px 0; padding-top: 10px;}
+#wrap main .img_bnr {padding: 110px 0;}
 #wrap main .img_bnr .contents{text-align: center; }
-#wrap main .img_bnr .contents .small_title {margin-bottom: 78px;}
-#wrap main .img_bnr .contents .small_title .dot {
+#wrap main .img_bnr .contents .hr_title {margin-bottom: 78px;}
+#wrap main .img_bnr .contents .hr_title .dot {
     display: inline-block; background-color: #6A8A00;
     width: 14px; height: 14px; border-radius: 50%;
     margin-bottom:27px;
 }
-#wrap main .img_bnr .contents .small_title p {}
+#wrap main .img_bnr .contents .hr_title p {}
 #wrap main .img_bnr .contents .bnr_wrap {}
 #wrap main .img_bnr .contents .bnr_wrap img {margin-bottom: 56px;}
 #wrap main .img_bnr .contents .bnr_wrap .progress {}
@@ -70,44 +82,123 @@
 #wrap main .rooms {
     background-color: #eee;
 }
-#wrap main .rooms .contents {}
-#wrap main .rooms .contents .title2 {}
-#wrap main .rooms .contents .title2 p {}
-#wrap main .rooms .contents .title2 h2 {}
-#wrap main .rooms .contents .title2 .room_btn {}
-#wrap main .rooms .contents .title2 .room_btn button {}
-#wrap main .rooms .contents .rooms_wrap {
-    width: 1760px;
+#wrap main .rooms .title {display: flex; flex-flow: row nowrap; justify-content: space-between;}
+#wrap main .rooms .title .text p {}
+#wrap main .rooms .title .text h2 {}
+#wrap main .rooms .title .room_btn {align-self: flex-end;}
+#wrap main .rooms .title .room_btn button {
+    background-color: #6A8A00; color: #fff;
+    padding: 15px 25px; border-radius: 10px;
 }
+#wrap main .rooms .contents {}
+#wrap main .rooms .contents .rooms_wrap {
+    width: 1420px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: center;
+}
+#wrap main .rooms .contents .rooms_wrap button {padding: 45px 20px;}
+#wrap main .rooms .contents .rooms_wrap .pre_btn {margin-right: 15px;}
+#wrap main .rooms .contents .rooms_wrap .pre_btn img {}
+#wrap main .rooms .contents .rooms_wrap .next_btn {margin-left: 15px;}
+#wrap main .rooms .contents .rooms_wrap .next_btn img {}
+#wrap main .rooms .contents .rooms_wrap .room_group {display: flex; flex-flow: row nowrap;}
+#wrap main .rooms .contents .rooms_wrap .room_group .room {margin-right: 22px;}
+#wrap main .rooms .contents .rooms_wrap .room_group .room:last-child {margin-right: 0;}
+#wrap main .rooms .contents .rooms_wrap .room_group .room a {}
+#wrap main .rooms .contents .rooms_wrap .room_group .room a img {}
+#wrap main .rooms .contents .rooms_wrap .room_group .room .room_info {
+    margin-top: 36px; padding-left: 15px; padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+#wrap main .rooms .contents .rooms_wrap .room_group .room .room_info .name {
+    font-size:1.69rem; letter-spacing:-0.02em; font-weight:600;
+    margin-bottom: 39px;
+}
+#wrap main .rooms .contents .rooms_wrap .room_group .room .room_info .name span {
+    display: block; color: #6A8A00;
+    font-size:0.88rem; line-height:1.5em; letter-spacing:-0.02em;
+}
+#wrap main .rooms .contents .rooms_wrap .room_group .room .room_info .detail {font-size:1.13rem; line-height:1.7em; letter-spacing:-0.02em;}
 /* ========================================4행 주변 관광지*/
-#wrap main .travel {background-color: lemonchiffon;}
+#wrap main .travel {}
+#wrap main .travel .title {text-align: right;}
+#wrap main .travel .title .text p {}
+#wrap main .travel .title .text h2 {}
 #wrap main .travel .contents {}
-#wrap main .travel .contents .title2 {}
-#wrap main .travel .contents .title2 p {}
-#wrap main .travel .contents .title2 h2 {}
-#wrap main .travel .contents .travel_wrap {}
+#wrap main .travel .contents .travel_wrap {
+    width: 1260px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#wrap main .travel .contents .travel_wrap .place {position: relative;}
+#wrap main .travel .contents .travel_wrap .place::before {
+    content: ""; display: block; background-color: rgba(255,255,255,0.6);
+    width: 100%; height: 310px; position: absolute;
+}
+#wrap main .travel .contents .travel_wrap .place img {}
+#wrap main .travel .contents .travel_wrap .active_travel {
+    width: 680px; height: 100%;
+    display: flex; flex-flow: row nowrap;
+}
+#wrap main .travel .contents .travel_wrap .active_travel button {padding: 45px 20px;}
+#wrap main .travel .contents .travel_wrap .active_travel button img {width: 24px;}
+#wrap main .travel .contents .travel_wrap .active_travel .pre_btn {margin-right: 15px;}
+#wrap main .travel .contents .travel_wrap .active_travel .pre_btn img {}
+#wrap main .travel .contents .travel_wrap .active_travel .travel_card {padding: 15px 0;}
+#wrap main .travel .contents .travel_wrap .active_travel .travel_card p {}
+#wrap main .travel .contents .travel_wrap .active_travel .travel_card p img {}
+#wrap main .travel .contents .travel_wrap .active_travel .travel_card .travel_info {margin-top: 35px; text-align: center;}
+#wrap main .travel .contents .travel_wrap .active_travel .travel_card .travel_info h3 {font-size:1.69rem; letter-spacing:-0.02em; font-weight:600;}
+#wrap main .travel .contents .travel_wrap .active_travel .travel_card .travel_info p {
+    font-size:1.13rem; line-height:1.7em; letter-spacing:-0.02em;
+    margin: 27px 0;
+}
+#wrap main .travel .contents .travel_wrap .active_travel .travel_card .travel_info a {font-size:1.25rem; letter-spacing:-0.02em; font-weight:500; color: #6A8A00; border-bottom: 1px solid #6A8A00;}
+#wrap main .travel .contents .travel_wrap .active_travel .next_btn {margin-left: 15px;}
+#wrap main .travel .contents .travel_wrap .active_travel .next_btn img {}
 /* ========================================5행 찾아오시는 길*/
 #wrap main .map {
     background-color: #eee;
 }
-#wrap main .map .contents {}
+#wrap main .map .contents {
+    width: 1260px; padding: 0 54px;
+    display: flex; flex-flow: row nowrap;
+}
 #wrap main .map .contents img {}
-#wrap main .map .contents h3 {}
-#wrap main .map .contents .text {}
-#wrap main .map .contents .text h4 {}
-#wrap main .map .contents .text p {}
-#wrap main .map .contents .map_btn {}
-#wrap main .map .contents .map_btn button {}
-#wrap main .map .contents .map_btn .more_traffic {}
+#wrap main .map .contents .text {width: 100%; margin-left: 84px;}
+#wrap main .map .contents .text h3 {font-size:1.63rem; line-height:1.5em; letter-spacing:-0.02em; font-weight:500;}
+#wrap main .map .contents .text .map_info {margin: 20px 0;}
+#wrap main .map .contents .text .map_info h4 {color: #6A8A00; font-size:1.25rem; letter-spacing:-0.02em; font-weight:500; margin-bottom: 6px;}
+#wrap main .map .contents .text .map_info p {font-size:1.25rem; line-height:1.5em; letter-spacing:-0.02em; margin-bottom: 13px;}
+#wrap main .map .contents .text .map_info p:last-child {margin-bottom: 0;}
+#wrap main .map .contents .text .map_btn {}
+#wrap main .map .contents .text .map_btn button {
+    width: 100%; padding: 15px; border-radius: 50px;
+    background: #6A8A00 url(../images/map_btn.png) no-repeat;
+    background-position: right 15px center; padding-right: 64px;
+    color: #fff;
+    display: flex; flex-flow: column nowrap;
+    align-items: flex-end;
+}
+#wrap main .map .contents .map_btn .more_traffic {margin-bottom: 10px;}
 #wrap main .map .contents .map_btn .more_foot {}
 /* ========================================푸터시작*/
 #wrap footer {
     background-color: #5E4B4B;
     color: #fff;
+    padding: 57px 80px;
 }
-#wrap footer .ft_left {}
-#wrap footer .ft_left .ft_menu {}
-#wrap footer .ft_left .ft_menu a {}
-#wrap footer .ft_left .ft_menu a em {}
+#wrap footer .ft_left {letter-spacing:-0.02em;}
+#wrap footer .ft_left .ft_menu {margin-bottom: 20px; background-position-y: center;}
+#wrap footer .ft_left a {color: #fff;}
+#wrap footer .ft_left .ft_menu a {margin: 0 13px;}
+#wrap footer .ft_left .ft_menu .hr_ft {
+    display: inline-block; 
+    background-color: #fff;
+    height: 16px; width: 1px;
+    position: relative; top: 2px;
+}
+#wrap footer .ft_left address, p {line-height:1.7em;}
 #wrap footer .ft_left address {}
 #wrap footer .ft_left p {}
