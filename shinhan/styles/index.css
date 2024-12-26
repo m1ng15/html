@@ -4,7 +4,7 @@
     padding: 21px 80px;
     /* header는 모든 사이트에서 높이 고정되는 경우가 90% 이상이다. */
     height: 80px; width: 100%;
-    position: fixed.q_left: 0; top: 0; z-index: 999; /*fixed를 설정하면 블록 태그여도 크기가 내용만큼만 인식해버림 -> 따라서 넒이를 기본으로 설정해두어야함*/
+    position: fixed; left: 0; top: 0; z-index: 999; /*fixed를 설정하면 블록 태그여도 크기가 내용만큼만 인식해버림 -> 따라서 넒이를 기본으로 설정해두어야함*/
 }
 #wrap header h1 {
     float.q_left;
