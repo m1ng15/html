@@ -1,0 +1,137 @@
+#wrap {
+    background-color: #fff;
+}
+/* ========================================헤더시작 */
+#wrap .header_bg {
+    background-color: #fff;
+    width: 1920px;
+    position: fixed; top: 0; left: 0; z-index: 999;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+#wrap .header_bg header {
+    width: 1760px; margin: 0 auto;
+    height: 100px;
+    padding-top: 10px;
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+#wrap .header_bg header h1 {}
+#wrap .header_bg header h1 a {}
+#wrap .header_bg header h1 a img {}
+#wrap .header_bg header .right_hd {width: calc(100% - 250px);}
+#wrap .header_bg header .right_hd .login {
+    font-size:0.94rem; letter-spacing:-0.02em; font-weight:600;
+    text-align: right; padding-bottom: 7px;
+    border-bottom: 1px solid #eee;
+}
+#wrap .header_bg header .right_hd .login a {margin-right: 20px; color: #aaa;}
+#wrap .header_bg header .right_hd .login a:last-child,
+#wrap .header_bg header .right_hd nav a:last-child {margin-right: 0;}
+#wrap .header_bg header .right_hd nav {
+    font-size:1.13rem; letter-spacing:-0.02em; font-weight:600;
+    padding: 25px 0;
+}
+#wrap .header_bg header .right_hd nav a {margin-right: 50px;}
+#wrap .header_img {
+    height: 40vh;
+    background-image: url(../images/main_visual23.jpg);
+    background-position: center; background-size: cover;
+}
+/* ========================================메인시작*/
+#wrap main {width: 1260px; margin: 0 auto;}
+/* =====================페이지 경로 */
+#wrap main .path {
+    display: flex; flex-flow: row nowrap; justify-content: flex-end;
+    align-items: center;
+    padding-top: 15px;
+    background-color: palegoldenrod;
+}
+#wrap main .path li {}
+#wrap main .path li a {}
+#wrap main .path li span {
+    display: inline-block;
+    background-image: url(../images/page_arrow.png);
+    width: 16px; height: 16px;
+    position: relative; top: 2px;
+}
+/* =====================메인 헤더 */
+#wrap main .main_top {background-color: paleturquoise;}
+#wrap main .main_top .title {padding: 10px 0; margin-bottom: 58px;}
+#wrap main .main_top .title p {font-size:1.63rem; line-height:1.5em; letter-spacing:-0.02em; font-weight:500; color:#6A8A00;}
+#wrap main .main_top .title h1 {font-size:3.5rem; line-height:1.3em; letter-spacing:-0.02em; font-weight:700; margin-bottom: 25px;}
+#wrap main .main_top .title .hr_title {
+    display: inline-block;
+    width: 60px; height: 3px; background-color: #6A8A00;
+}
+#wrap main .main_top .house_info {}
+
+#wrap main .main_top .house_info p {background-color: orange;}
+#wrap main .main_top .house_info p span {
+    background-color: yellow;
+    background-position: left center;
+}
+#wrap main .main_top .house_info p:first-child span {
+    background: url(../images/Home.png) no-repeat;
+}
+
+#wrap main .main_top .house_info p:last-child span {
+    background: url(../images/call.png) no-repeat;
+}
+/* =====================메인 컨텐츠 */
+#wrap main .main_top,.main_btm {text-align: center;}
+#wrap main .main_btm {}
+/* =====================메인 컨텐츠 - 탭 & 지도 */
+#wrap main .main_btm .main_b_top {background-color: #eee;}
+#wrap main .main_btm .main_b_top .tap_menu {}
+#wrap main .main_btm .main_b_top .tap_menu a {}
+#wrap main .main_btm .main_b_top .tap_menu .active {}
+#wrap main .main_btm .main_b_top .map_view {}
+#wrap main .main_btm .main_b_top .map_view img {}
+/* =====================메인 컨텐츠 - 교통 정보 */
+#wrap main .main_btm .traffic_info {
+    display: flex; flex-flow: row nowrap;
+    background-color: lightyellow}
+#wrap main .main_btm .traffic_info h2 {}
+/* =====================버스 교통 정보 */
+#wrap main .main_btm .traffic_info .bus_info, .subway_info {width: calc(100% / 2);}
+#wrap main .main_btm .traffic_info .detail_info {text-align: left;}
+#wrap main .main_btm .traffic_info .bus_info {/* background-color: lightcyan; */}
+#wrap main .main_btm .traffic_info .bus_info h2 {}
+#wrap main .main_btm .traffic_info .bus_info .detail_info {}
+#wrap main .main_btm .traffic_info .bus_info .detail_info .info {}
+#wrap main .main_btm .traffic_info .bus_info .detail_info .info h3 {}
+#wrap main .main_btm .traffic_info .bus_info .detail_info .info h3, h3 > * {font-size:1.38rem; letter-spacing:-0.02em; font-weight:500;}
+#wrap main .main_btm .traffic_info .bus_info .detail_info .info h3 .departure {}
+#wrap main .main_btm .traffic_info .bus_info .detail_info .info h3 img {}
+#wrap main .main_btm .traffic_info .bus_info .detail_info .info .bus {}
+#wrap main .main_btm .traffic_info .bus_info .detail_info .info .route {}
+#wrap main .main_btm .traffic_info .bus_info .detail_info .info .route img {}
+/* =====================지하철 교통 정보 */
+#wrap main .main_btm .traffic_info .subway_info {/* background-color: lightgray; */}
+#wrap main .main_btm .traffic_info .subway_info h2 {}
+#wrap main .main_btm .traffic_info .subway_info .detail_info {}
+#wrap main .main_btm .traffic_info .subway_info .detail_info .info {}
+/* =====================메인 컨텐츠 - 지도 버튼 */
+#wrap main .main_btm .main_b_btm {}
+#wrap main .main_btm .main_b_btm button {}
+#wrap main .main_btm .main_b_btm .active {}
+#wrap main .main_btm .main_b_btm .nvmap_btn {}
+#wrap main .main_btm .main_b_btm .kkomap_btn {}
+/* ========================================푸터시작*/
+#wrap footer {
+    background-color: #5E4B4B;
+    color: #fff;
+    padding: 57px 80px;
+}
+#wrap footer .ft_left {letter-spacing:-0.02em;}
+#wrap footer .ft_left .ft_menu {margin-bottom: 20px; background-position-y: center;}
+#wrap footer .ft_left a {color: #fff;}
+#wrap footer .ft_left .ft_menu a {margin: 0 13px;}
+#wrap footer .ft_left .ft_menu .hr_ft {
+    display: inline-block; 
+    background-color: #fff;
+    height: 16px; width: 1px;
+    position: relative; top: 2px;
+}
+#wrap footer .ft_left address, p {line-height:1.7em;}
+#wrap footer .ft_left address {}
+#wrap footer .ft_left p {}
