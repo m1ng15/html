@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메포 연습용</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .header_bg {display: none;}
+        main {}
+        main .slides_wrap {
+            position: relative;
+            background-color: dimgray;
+        }
+        main .slides_container {
+            background-color: darkolivegreen;
+            height: 100%;
+            background-image: url(./images/bnr2.jpg);
+        }
+        /*===============================광고 배너 시작 */
+        main .slides_container .slide {
+            width: 1400px; margin: 0 auto; height: 650px;
+        }
+        main .slides_container .slide .contents {
+            border: 5px solid maroon;
+            overflow: hidden;
+        }
+        main .slides_container .slide .contents .title {
+            padding: 164px 194px 0 0;
+            width: min-content; float: right;
+            border: 5px solid mediumblue;
+        }
+        main .slides_container .slide .contents .title img {}
+        main .slides_container .slide .contents .title .bnr_link {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.25rem; letter-spacing: 0.01em; margin-top: 106px;
+            display: block; width: min-content; color: #D5CFCD;
+            border: 2px solid #D5CFCD; border-radius: 13px; padding: 10px 20px;
+        }
+        /*===============================광고 배너 버튼 시작 */
+        main .slides_container > a {
+            background-color: darkorange;
+            position: absolute; top: 45%;
+        }
+        main .slides_container > a img {}
+        main .slides_container .pre_btn {left: 196px;}
+        main .slides_container .pre_btn img {}
+        main .slides_container .next_btn {right: 196px;}
+        main .slides_container .next_btn img {}
+    </style>
+</head>
+<body>
+    <div class="header_bg">
+        <header>
+            <h1><a href="#"><img src="./images/logo.png" alt="메이크업 포에버"></a></h1>
+            <div class="hd_right">
+                <div class="menu_top">
+                    <div class="search">
+                        <a href="#" class="search_btn"><img src="./images/serach.png" alt="상품검색"></a>
+                        <div class="search_pop">
+                            <a href="#"><img src="./images/close.png" alt="검색창 닫기"></a>
+                            <form action="#" method="get" class="searchFrm" id="searchFrm">
+                                <input type="text" class="user_search" placeholder="검색어를 입력하세요">
+                            </form>
+                            <h2>실시간 인기 검색어</h2>
+                            <ol class="search_trends">
+                                <li>
+                                    <p class="ranking">1</p>
+                                    <a href="#" class="keywords">쿠션</a>
+                                    <p class="rank_change rank_up"></p>
+                                </li>
+                                <li>
+                                    <p class="ranking">2</p>
+                                    <a href="#" class="keywords">파운데이션</a>
+                                    <p class="rank_change rank_down"></p>
+                                </li>
+                                <li>
+                                    <p class="ranking">3</p>
+                                    <a href="#" class="keywords">파우더</a>
+                                    <p class="rank_change rank_stable"></p>
+                                </li>
+                                <li>
+                                    <p class="ranking">4</p>
+                                    <a href="#" class="keywords">마스카라</a>
+                                    <p class="rank_change rank_stable"></p>
+                                </li>
+                                <li>
+                                    <p class="ranking">5</p>
+                                    <a href="#" class="keywords">아이브로우</a>
+                                    <p class="rank_change rank_down"></p>
+                                </li>
+                            </ol>
+                            <h2>추천 키워드</h2>
+                            <div class="recommeded_keywords">
+                                <a href="#">프라이머</a>
+                                <a href="#">아이브로우</a>
+                                <a href="#">파운데이션</a>
+                                <a href="#">쿠션</a>
+                                <a href="#">아이쉐도우</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">고객센터</a>
+                </div>
+                <div class="menu_btm">
+                    <div class="brand">
+                        <a href="#">브랜드</a>
+                        <a href="#">이벤트</a>
+                        <a href="#">미용소품</a>
+                    </div>
+                </div>
+                <nav>
+                    <a href="#">BEST</a>
+                    <a href="#">FACE</a>
+                    <a href="#">LIPS</a>
+                    <a href="#">EYES</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="slides_wrap">
+            <div class="slides_container">
+                <div class="slide slide1">
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/bnr2_txt.png" alt="new the profession all MASCARA the new volumizing lash tool our best pro techniques for all, in 2 easy steps">
+                            <a href="#" class="bnr_link">discover.</a>
+                        </div>
+                    </div>
+                </div>
+            <a href="#" class="pre_btn"><img src="./images/pre2_btn.png" alt="이전광고보기"></a>
+            <a href="#" class="next_btn"><img src="./images/next2_btn.png" alt="다음광고보기"></a>
+            <div class="scroll_bg">
+                <div class="scrollbar"></div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
