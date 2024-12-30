@@ -118,3 +118,88 @@
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 li {}
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 li a {}
 /* =========================================header 서브(E) */
+/* =========================================main */
+main {}
+/* =========================================main1. 광고배너 */
+main .slides_wrap {
+    height: 650px; /* 배너 높이 고정(광고배너는 광고 요소에 따라 글자 단락이 다 다르기 때문에 내용 기준으로 자동높이 설정 시 높낮이가 배너에 따라 달라지는 불균형 문제가 발생한다. 따라서 광고 배저는 높이를 px로 고정해야하는 경우들이 많다. */
+    position: relative;
+    background-color: dimgray;
+}
+main .slides_wrap .slides_container {
+    background-color: darkolivegreen;
+    height: 100%; /* slides_wrap과 높이가 동일함 */
+}
+main .slides_wrap .slides_container .slide {
+    height: 100%; /* slides_container와 높이가 동일함 */
+}
+main .slides_wrap .slides_container .slide .contents {
+    width: 1400px; margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid maroon;
+}
+main .slides_wrap .slides_container .slide .contents .title {
+    border: 5px solid navy;
+    width: 50%; float: right;
+    padding-top: 132px;
+}
+main .slides_wrap .slides_container .slide .contents .title img {}
+main .slides_wrap .slides_container .slide .contents .title .bnr_link {
+    padding: 10px 20px; border-radius: 20px;
+    background-color: #222; color: #EAD5C2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25rem; letter-spacing: 0.01em;
+    display: block; width: min-content; margin-top: 75px;
+}
+main .slides_wrap .slides_container .slide .contents .title .bnr_link:hover {
+    border: 2px solid #222; background-color: #EAD5C2; color: #222;
+    padding: 8px 18px;
+}
+/* =========================================슬라이드 이전-다음 버튼 */
+main .slides_wrap .pre_btn, 
+main .slides_wrap .next_btn {
+    position: absolute; top: 44%;
+    background-color: darkorange;
+}
+main .slides_wrap .pre_btn img,
+main .slides_wrap .next_btn img {}
+main .slides_wrap .pre_btn {left: 196px;}
+main .slides_wrap .next_btn {right: 196px;}
+main .slides_wrap .scroll_bg {
+    width: 1400px; margin: 0 auto; height: 3px;
+    position: relative; bottom: 38px;
+    background-color: #ccc;
+}
+main .slides_wrap .scroll_bg .scrollbar {
+    width: 200px; height: 100%;
+    background-color: #111;
+}
+/* =========================================main1. 광고배너 (개별 배너) */
+/* =========================================배너1 */
+main .slides_wrap .slides_container .slide1 {
+    display: none;
+    background-image: url(../images/bnr1.jpg);
+}
+main .slides_wrap .slides_container .slide1 .contents {}
+main .slides_wrap .slides_container .slide1 .contents .title {}
+main .slides_wrap .slides_container .slide1 .contents .title img {}
+main .slides_wrap .slides_container .slide1 .contents .title .bnr_link {}
+/* =========================================배너2 */
+main .slides_wrap .slides_container .slide2 {
+    background-image: url(../images/bnr2.jpg);
+}
+main .slides_wrap .slides_container .slide2 .contents {}
+main .slides_wrap .slides_container .slide2 .contents .title {
+    width: 50%; float: right;
+    padding-left: 75px; padding-top: 164px;
+    
+}
+main .slides_wrap .slides_container .slide2 .contents .title img {}
+main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {
+    margin-top: 96px;
+    border: 2px solid #D5CFCD; color: #D5CFCD;
+    padding: 8px 18px;
+}
+main .slides_wrap .slides_container .slide2 .contents .title .bnr_link:hover {
+    background-color: #D5CFCD; color: #18191E;
+}
