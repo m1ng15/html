@@ -53,13 +53,16 @@ let lunch = 6000;
 let total = coffee+lunch;
 console.log(`오늘의 총 지출액은 ${total}원 입니다.`)
 console.log('----------------------2단 구구단 출력하기---------------------')
-let dan = 78;
-console.log(`${dan} x 1은 ${dan*1} 입니다.`)
-console.log(`${dan} x 2는 ${dan*2} 입니다.`)
-console.log(`${dan} x 3은 ${dan*3} 입니다.`)
-console.log(`${dan} x 4는 ${dan*4} 입니다.`)
-console.log(`${dan} x 5는 ${dan*5} 입니다.`)
-console.log(`${dan} x 6은 ${dan*6} 입니다.`)
-console.log(`${dan} x 7은 ${dan*7} 입니다.`)
-console.log(`${dan} x 8은 ${dan*8} 입니다.`)
-console.log(`${dan} x 9는 ${dan*9} 입니다.`)
+function timesTable(){
+    let dan = window.prompt('구구단 몇 단이 궁금하신가요? (숫자 입력)')
+    console.log(`<구구단 ${dan}단>`)
+    console.log(`${dan} x 1은 ${dan*1} 입니다.`)
+    console.log(`${dan} x 2는 ${dan*2} 입니다.`)
+    console.log(`${dan} x 3은 ${dan*3} 입니다.`)
+    console.log(`${dan} x 4는 ${dan*4} 입니다.`)
+    console.log(`${dan} x 5는 ${dan*5} 입니다.`)
+    console.log(`${dan} x 6은 ${dan*6} 입니다.`)
+    console.log(`${dan} x 7은 ${dan*7} 입니다.`)
+    console.log(`${dan} x 8은 ${dan*8} 입니다.`)
+    console.log(`${dan} x 9는 ${dan*9} 입니다.`)
+}
