@@ -1,21 +1,16 @@
-#wrap {
-    background-color: #fff;
-}
+#wrap {background-color: #fff;}
 /* ========================================헤더시작 */
 #wrap .header_bg {
     background-color: #fff;
-    width: 1920px;
-    position: fixed; top: 0; left: 0; z-index: 999;
+    width: 100%; position: fixed; top: 0; left: 0; z-index: 999;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 #wrap .header_bg header {
-    width: 1760px; margin: 0 auto;
-    height: 100px;
-    padding-top: 8px;
+    padding: 11px 80px 0 80px; height: 100px;
     display: flex; flex-flow: row nowrap; align-items: center;
 }
-#wrap .header_bg header h1 {position: relative; bottom: -2px;}
-#wrap .header_bg header h1 a {}
+#wrap .header_bg header h1 {}
+#wrap .header_bg header h1 a {display: inline-block;}
 #wrap .header_bg header h1 a img {}
 #wrap .header_bg header .right_hd {width: calc(100% - 250px);}
 #wrap .header_bg header .right_hd .login {
@@ -25,57 +20,58 @@
 }
 #wrap .header_bg header .right_hd .login a {
     font-size:0.94rem; letter-spacing:-0.02em;
-    margin-right: 20px; color: #aaa;
+    padding-right: 20px; color: #aaa;
 }
 #wrap .header_bg header .right_hd .login a:hover {font-weight:600;}
 #wrap .header_bg header .right_hd .login a:last-child,
-#wrap .header_bg header .right_hd nav a:last-child {margin-right: 0;}
+#wrap .header_bg header .right_hd nav a:last-child {padding-right: 0;}
 #wrap .header_bg header .right_hd nav {
+    width: min-content;
     display: flex; flex-flow: row nowrap;
-    position: relative;
+    padding: 25px 0;
 }
 #wrap .header_bg header .right_hd nav a {
     font-size:1.13rem; letter-spacing:-0.02em;
     display: flex; flex-flow: row nowrap;
-    align-items: center;
-    padding-top: 20px; padding-left: 15px; margin-right: 50px;
+    padding-right: 50px;
 }
+#wrap .header_bg header .right_hd nav a::before {content: ""; width: 8px; height: 8px;}
 #wrap .header_bg header .right_hd nav a:hover::before {
-    content: ""; width: 8px; height: 8px;
     background-color:#6A8A00; border-radius: 50px;
-    position: absolute; top: 15px; left: 0;
+    position: relative; bottom: 15px;
 }
-#wrap .header_bg header .right_hd nav a:hover {position: relative; bottom: 2px;}
 /* ========================================메인시작*/
 #wrap main {}
 /* ==================================================★공통선택자★*/
-#wrap main .container {width: 100%; padding: 48px 0;}
-#wrap main .container button {font-size:1.5rem; letter-spacing:-0.02em; font-weight:500;}
-#wrap main .container .contents {width: 100%; margin: 0 auto;}
-#wrap main .container .title {width: 1260px; margin: 0 auto; margin-bottom:78px;}
-#wrap main .container .title .text p {font-size:1.63rem; line-height:1.5em; letter-spacing:-0.02em; font-weight:500;}
-#wrap main .container .title .text h2 {font-size:3.5rem; line-height:1.3em; letter-spacing:-0.02em; font-weight:700; color: #6A8A00;}
+#wrap main .container {padding: 48px 0;}
+#wrap main .container .contents {max-width: 1260px; min-width: 320px; margin: 0 auto;}
+#wrap main .container .contents .title {margin-bottom: 78px;}
+#wrap main .container .contents .title .text p {font-size:1.63rem; line-height:1.5em; letter-spacing:-0.02em; font-weight:500;}
+#wrap main .container .contents .title .text h2 {font-size:3.5rem; line-height:1.3em; letter-spacing:-0.02em; font-weight:700; color: #6A8A00;}
+#wrap main .container a {font-size:1.5rem; letter-spacing:-0.02em; font-weight:500;}
 /* ========================================1행 main_title*/
 #wrap main .main_title {
-    height: 90vh; 
+    height: 90vh;
     background-image: url(../images/header_img.jpg);
     background-size: cover;
     background-position: center;
+    padding: 100px 0 0 0;
     position: relative;
 }
 #wrap main .main_title .contents_bg {
-    width: 100%; background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
     position: absolute; bottom: 96px; left: 0;
+    padding: 20px 0;
 }
-#wrap main .main_title .contents_bg .title {
-    height: 272px; margin-bottom:0;
-    padding: 20px 0; color: #fff;
+#wrap main .main_title .contents_bg .contents {
+    color: #fff;
 }
-#wrap main .main_title .contents_bg .title p {font-size:1.63rem; line-height:1.5em; letter-spacing:-0.02em; font-weight:500;}
-#wrap main .main_title .contents_bg .title h1 {font-size:3.5rem; line-height:1.3em; letter-spacing:-0.02em; font-weight:700;}
+#wrap main .main_title .contents_bg .contents p {font-size:1.63rem; line-height:1.5em; letter-spacing:-0.02em; font-weight:500;}
+#wrap main .main_title .contents_bg .contents h1 {font-size:3.5rem; line-height:1.3em; letter-spacing:-0.02em; font-weight:700;}
 /* ========================================2행 img_bnr*/
 #wrap main .img_bnr {padding: 110px 0;}
-#wrap main .img_bnr .contents{text-align: center; }
+#wrap main .img_bnr .contents {text-align: center; }
 #wrap main .img_bnr .contents .hr_title {margin-bottom: 78px;}
 #wrap main .img_bnr .contents .hr_title .dot {
     display: inline-block; background-color: #6A8A00;
@@ -84,48 +80,45 @@
 }
 #wrap main .img_bnr .contents .hr_title p {}
 #wrap main .img_bnr .contents .bnr_wrap {}
-#wrap main .img_bnr .contents .bnr_wrap img {margin-bottom: 56px;}
+#wrap main .img_bnr .contents .bnr_wrap img {width: 100%; margin-bottom: 56px;}
 #wrap main .img_bnr .contents .bnr_wrap .progress {}
 #wrap main .img_bnr .contents .bnr_wrap .progress a {margin-right: 10px;}
+#wrap main .img_bnr .contents .bnr_wrap .progress a:last-child {margin-right: 0;}
 #wrap main .img_bnr .contents .bnr_wrap .progress a span {
     display: inline-block; background-color: rgba(51,51,51,0.5);
     width: 35px; height: 3px;
 }
-#wrap main .img_bnr .contents .bnr_wrap .progress span:last-child {margin-right: 0;}
-#wrap main .img_bnr .contents .bnr_wrap .progress .active {}
-#wrap main .img_bnr .contents .bnr_wrap .progress span:hover {background-color: rgba(51,51,51,0.7);}
-#wrap main .img_bnr .contents .bnr_wrap .progress .active span {background-color: #333;}
+#wrap main .img_bnr .contents .bnr_wrap .progress a:hover span {background-color: rgba(51,51,51,0.7);}
 /* ========================================3행 편하고 안락한 객실*/
-#wrap main .rooms {
-    background-color: #eee;
-}
-#wrap main .rooms .title {display: flex; flex-flow: row nowrap; justify-content: space-between;}
-#wrap main .rooms .title .text p {}
-#wrap main .rooms .title .text h2 {}
-#wrap main .rooms .title .room_btn {align-self: flex-end;}
-#wrap main .rooms .title .room_btn button {
+#wrap main .rooms {background-color: #eee;} 
+#wrap main .rooms .contents {width: 1420px;}
+#wrap main .rooms .contents .title {display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: flex-end;}
+#wrap main .rooms .contents .title .text {}
+#wrap main .rooms .contents .title .text p {}
+#wrap main .rooms .contents .title .text h2 {}
+#wrap main .rooms .contents .title .more_btn {}
+#wrap main .rooms .contents .title .more_btn .more_rooms {
     background-color: #6A8A00; color: #fff;
     padding: 15px 25px; border-radius: 10px;
+    display: inline-block;
 }
-#wrap main .rooms .title .room_btn button:hover {position: relative; right: -2px; bottom: -2px; padding: 17px 27px;}
-#wrap main .rooms .contents {}
-#wrap main .rooms .contents .rooms_wrap {
-    width: 1420px; margin: 0 auto;
-    display: flex; flex-flow: row nowrap; justify-content: center;
+#wrap main .rooms .title .more_btn .more_rooms:hover {padding: 17px 27px;}
+/* ===============================================룸 슬라이드 시작 */
+#wrap main .rooms .contents .rooms_wrap {position: relative;}
+#wrap main .rooms .contents .rooms_wrap > a {padding: 65px 20px; position: absolute; top: 50%;}
+#wrap main .rooms .contents .rooms_wrap > a img {width: 100%;}
+#wrap main .rooms .contents .rooms_wrap > a:hover {
+    background-color: rgba(255,255,255,0.25); border-radius: 10px;
 }
-#wrap main .rooms .contents .rooms_wrap button {height: 250px; padding: 45px 20px; align-self: center;}
-#wrap main .rooms .contents .rooms_wrap button:hover {
-    background-color: rgba(255,255,255,0.25); border-radius: 10px; 
-}
-#wrap main .rooms .contents .rooms_wrap .pre_btn {margin-right: 15px;}
+#wrap main .rooms .contents .rooms_wrap .pre_btn {left: -95px;}
 #wrap main .rooms .contents .rooms_wrap .pre_btn img {}
-#wrap main .rooms .contents .rooms_wrap .next_btn {margin-left: 15px;}
+#wrap main .rooms .contents .rooms_wrap .next_btn {right: -95px;}
 #wrap main .rooms .contents .rooms_wrap .next_btn img {}
 #wrap main .rooms .contents .rooms_wrap .room_group {display: flex; flex-flow: row nowrap;}
 #wrap main .rooms .contents .rooms_wrap .room_group .room {margin-right: 22px;}
 #wrap main .rooms .contents .rooms_wrap .room_group .room:last-child {margin-right: 0;}
-#wrap main .rooms .contents .rooms_wrap .room_group .room a {}
-#wrap main .rooms .contents .rooms_wrap .room_group .room a img {}
+#wrap main .rooms .contents .rooms_wrap .room_group .room > a {}
+#wrap main .rooms .contents .rooms_wrap .room_group .room > a img {width: 100%;}
 #wrap main .rooms .contents .rooms_wrap .room_group .room .room_info {
     margin-top: 36px; padding-left: 15px;
     border-bottom: 1px solid #ccc;
@@ -144,70 +137,71 @@
 #wrap main .rooms .contents .rooms_wrap .room_group .room .room_info .detail {font-size:1.13rem; line-height:1.7em; letter-spacing:-0.02em; padding-bottom: 15px;}
 /* ========================================4행 주변 관광지*/
 #wrap main .travel {}
-#wrap main .travel .title {text-align: right;}
-#wrap main .travel .title .text p {}
-#wrap main .travel .title .text h2 {}
 #wrap main .travel .contents {}
+#wrap main .travel .contents .title {text-align: right;}
+#wrap main .travel .contents .title .text p {}
+#wrap main .travel .contents .title .text h2 {}
 #wrap main .travel .contents .travel_wrap {
-    width: 1260px; margin: 0 auto;
-    display: flex; flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
+
+}
+#wrap main .travel .contents .travel_wrap .unactive_place {
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: center;
     overflow: hidden;
 }
-#wrap main .travel .contents .travel_wrap .place {position: relative;}
+#wrap main .travel .contents .travel_wrap .unactive_place .place,
+#wrap main .travel .contents .travel_wrap .active_place .move_btn > a {position: relative; top: 60px;}
+#wrap main .travel .contents .travel_wrap .unactive_place .place:first-child {left: 15px;}
+#wrap main .travel .contents .travel_wrap .unactive_place .place:last-child {right: 15px;}
 #wrap main .travel .contents .travel_wrap .place::before {
-    content: ""; display: block; background-color: rgba(255,255,255,0.6);
-    width: 100%; height: 310px; position: absolute;
+    content: ""; display: inline-block; background-color: rgba(255,255,255,0.6);
+    width: 100%; height: 100%; position: absolute;
 }
-#wrap main .travel .contents .travel_wrap .place img {}
-#wrap main .travel .contents .travel_wrap .active_travel {
-    width: 680px; height: 100%;
-    display: flex; flex-flow: row nowrap;
-}
-#wrap main .travel .contents .travel_wrap .active_travel button {padding: 45px 20px;}
-#wrap main .travel .contents .travel_wrap .active_travel button img {width: 24px;}
-#wrap main .travel .contents .travel_wrap .active_travel .pre_btn {margin-right: 15px;}
-#wrap main .travel .contents .travel_wrap .active_travel .pre_btn:hover img {position: relative; right: 5px;}
-#wrap main .travel .contents .travel_wrap .active_travel .travel_card {padding: 15px 0;}
-#wrap main .travel .contents .travel_wrap .active_travel .travel_card p {}
-#wrap main .travel .contents .travel_wrap .active_travel .travel_card p img {}
-#wrap main .travel .contents .travel_wrap .active_travel .travel_card .travel_info {margin-top: 35px; text-align: center;}
-#wrap main .travel .contents .travel_wrap .active_travel .travel_card .travel_info h3 {font-size:1.69rem; letter-spacing:-0.02em; font-weight:600;}
-#wrap main .travel .contents .travel_wrap .active_travel .travel_card .travel_info p {
+#wrap main .travel .contents .travel_wrap .place img {width: 483px;}
+#wrap main .travel .contents .travel_wrap .active_place {}
+#wrap main .travel .contents .travel_wrap .active_place .move_btn {display: flex; flex-flow: row nowrap; align-items: center;}
+#wrap main .travel .contents .travel_wrap .active_place .move_btn > a {padding: 65px 10px;}
+#wrap main .travel .contents .travel_wrap .active_place .move_btn > .pre_btn:hover {left: -5px;}
+#wrap main .travel .contents .travel_wrap .active_place .move_btn > .next_btn:hover {right: -5px;}
+#wrap main .travel .contents .travel_wrap .active_place .move_btn > a img {width: 40px;}
+#wrap main .travel .contents .travel_wrap .active_place .move_btn .pre_btn {}
+#wrap main .travel .contents .travel_wrap .active_place .travel_card {width: 563px; margin: 0 15px; text-align: center;}
+#wrap main .travel .contents .travel_wrap .active_place .travel_card > p {}
+#wrap main .travel .contents .travel_wrap .active_place .travel_card > p img {width: 100%;}
+#wrap main .travel .contents .travel_wrap .active_place .travel_card .travel_info {margin-top: 35px; text-align: center;}
+#wrap main .travel .contents .travel_wrap .active_place .travel_card .travel_info h3 {font-size:1.69rem; letter-spacing:-0.02em; font-weight:600;}
+#wrap main .travel .contents .travel_wrap .active_place .travel_card .travel_info p {
     font-size:1.13rem; line-height:1.7em; letter-spacing:-0.02em;
     margin: 27px 0;
 }
-#wrap main .travel .contents .travel_wrap .active_travel .travel_card .travel_info a {font-size:1.25rem; letter-spacing:-0.02em; font-weight:500; color: #6A8A00; border-bottom: 1px solid #6A8A00;}
-#wrap main .travel .contents .travel_wrap .active_travel .next_btn {margin-left: 15px;}
-#wrap main .travel .contents .travel_wrap .active_travel .next_btn img {}
-#wrap main .travel .contents .travel_wrap .active_travel .next_btn img:hover {position: relative; left: 5px;}
+#wrap main .travel .contents .travel_wrap .active_place .travel_card .travel_info a {font-size:1.25rem; letter-spacing:-0.02em; font-weight:500; color: #6A8A00; border-bottom: 1px solid #6A8A00;}
+#wrap main .travel .contents .travel_wrap .active_place .move_btn .next_btn {}
+#wrap main .travel .contents .travel_wrap .active_place .move_btn .next_btn img {}
 /* ========================================5행 찾아오시는 길*/
 #wrap main .map {
     background-color: #eee;
 }
 #wrap main .map .contents {
-    width: 1260px; padding: 0 54px;
     display: flex; flex-flow: row nowrap;
 }
-#wrap main .map .contents a {}
-#wrap main .map .contents a img {}
-#wrap main .map .contents .text {width: 100%; margin-left: 84px;}
+#wrap main .map .contents > a {}
+#wrap main .map .contents > a img {width: 100%;}
+#wrap main .map .contents .text {margin-left: 84px;}
 #wrap main .map .contents .text h3 {font-size:1.63rem; line-height:1.5em; letter-spacing:-0.02em; font-weight:500;}
 #wrap main .map .contents .text .map_info {margin: 20px 0;}
 #wrap main .map .contents .text .map_info h4 {color: #6A8A00; font-size:1.25rem; letter-spacing:-0.02em; font-weight:500; margin-bottom: 6px;}
 #wrap main .map .contents .text .map_info p {font-size:1.25rem; line-height:1.5em; letter-spacing:-0.02em; margin-bottom: 13px;}
 #wrap main .map .contents .text .map_info p:last-child {margin-bottom: 0;}
 #wrap main .map .contents .text .map_btn {}
-#wrap main .map .contents .text .map_btn button {
-    width: 100%; padding: 15px; border-radius: 50px;
-    background: #6A8A00 url(../images/map_btn.png) no-repeat;
+#wrap main .map .contents .text .map_btn a {
+    padding: 15px; border-radius: 50px;
+    background: #6A8A00 url(../images/wh_map.png) no-repeat;
     background-position: right 15px center; padding-right: 64px;
+    background-size: 24px 24px;
     color: #fff;
     display: flex; flex-flow: column nowrap;
     align-items: flex-end;
 }
-#wrap main .map .contents .text .map_btn button:hover {background-position: right 10px center;}
+#wrap main .map .contents .text .map_btn a:hover {background-position: right 10px center;}
 #wrap main .map .contents .map_btn .more_traffic {margin-bottom: 10px;}
 #wrap main .map .contents .map_btn .more_foot {}
 /* ========================================푸터시작*/
@@ -219,13 +213,16 @@
 #wrap footer .ft_left {letter-spacing:-0.02em;}
 #wrap footer .ft_left .ft_menu {margin-bottom: 20px; background-position-y: center;}
 #wrap footer .ft_left a {color: #fff;}
-#wrap footer .ft_left .ft_menu a {margin: 0 13px;}
-#wrap footer .ft_left .ft_menu .hr_ft {
+#wrap footer .ft_left .ft_menu a {}
+#wrap footer .ft_left .ft_menu a:last-child::after {display: none;}
+#wrap footer .ft_left .ft_menu a::after {
+    content: '';
     display: inline-block; 
     background-color: #fff;
     height: 16px; width: 1px;
     position: relative; top: 2px;
+    margin: 0 13px;
 }
-#wrap footer .ft_left address, p {line-height:1.7em;}
+#wrap footer .ft_left address, #wrap footer .ft_left p {line-height:1.7em;}
 #wrap footer .ft_left address {}
 #wrap footer .ft_left p {}
