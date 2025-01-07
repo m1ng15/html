@@ -31,7 +31,7 @@ body {}
 .hd_bg header .hd_center .service li:last-child,
 .hd_bg header .hd_center nav a:last-child {margin-right: 40px;}
 .hd_bg header .hd_center .service li a {}
-.hd_bg header .hd_center .service .main_product::before /* 특가이벤트 표시점 */ {
+.hd_bg header .hd_center .service li:first-child::before /* 특가이벤트 표시점 */ {
     content: ''; display: inline-block; width: 8px; height: 8px;
     border-radius: 50px; background-color: #336477; margin: 0 9px 9px 0;
 } 
