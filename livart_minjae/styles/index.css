@@ -31,7 +31,7 @@ body {}
 .hd_bg header .hd_center .service li:last-child,
 .hd_bg header .hd_center nav a:last-child {margin-right: 40px;}
 .hd_bg header .hd_center .service li a {}
-.hd_bg header .hd_center .service li:first-child::before /* 특가이벤트 표시점 */ {
+.hd_bg header .hd_center .service .main_product::before /* 특가이벤트 표시점 */ {
     content: ''; display: inline-block; width: 8px; height: 8px;
     border-radius: 50px; background-color: #336477; margin: 0 9px 9px 0;
 } 
@@ -57,11 +57,11 @@ body {}
 .hd_bg header .hd_right .login li a {}
 .hd_bg header .hd_right .icon {}
 .hd_bg header .hd_right .icon li {}
-.hd_bg header .hd_right .icon li:first-child {margin-right: 15px;}
+.hd_bg header .hd_right .icon .main_product {margin-right: 15px;}
 .hd_bg header .hd_right .icon li a {}
 /* ===========================================Start : 광고 배너 */
 main {}
-main .bnr_wrap {height: 905px; position: relative;}
+main .bnr_wrap {height: 905px; position: relative; margin-bottom: 120px;}
 /* ===========================================광고 배너 공통선택자 */
 main .bnr_wrap .bnr_container {height: 100%;}
 main .bnr_wrap .bnr_container .all_bnr {height: 100%;}
@@ -76,7 +76,7 @@ main .bnr_wrap .bnr_container .all_bnr .contents .title .txt a {color: #fff;}
 main .bnr_wrap .bnr_container .all_bnr .contents .title .txt .sub_txt {
     display: flex; flex-flow: row nowrap;
 }
-main .bnr_wrap .bnr_container .all_bnr .contents .title .txt .sub_txt a:first-child::after /* 배너 서브 타이틀 구분선 */{
+main .bnr_wrap .bnr_container .all_bnr .contents .title .txt .sub_txt.main_product::after /* 배너 서브 타이틀 구분선 */{
     content: ''; display: inline-block; width: 2px; height: 24px;
     background-color: #fff;
     position: relative; top: 3px;
@@ -130,57 +130,105 @@ main .bnr_wrap .progress_wrap .progress_bar .bar {
 }
 /* ===========================================1행 이 달의 상품 */
 /* ===========================================START : main 공통선택자 */
-main .container {}
-main .container .title {width: 1520px; margin: 0 auto;}
-main .container .title .txt {}
-main .container .title .txt h2 {}
-main .container .title .txt p {}
-/* ===========================================END : main 공통선택자 */
-main .month_product {
-    background-color: pink;
+main .container {margin-bottom: 120px;}
+main .container .title {
+    width: 1520px; margin: 0 auto; padding-bottom: 40px; margin-bottom: 65px;
+    border-bottom: 1px solid #eee;
 }
+main .container .title .txt { }
+main .container .title .txt h2 {
+    font-size:2.38rem; font-weight:600; line-height:1.5; letter-spacing:-0.02em;
+    color: #336477;
+}
+main .container .title .txt p {
+    font-weight:500; line-height:1.7; letter-spacing:-0.02em;
+    color: #999;
+}
+/* ===========================================END : main 공통선택자 */
+main .month_product {}
 main .month_product .title {
-    background-color: palevioletred;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
 main .month_product .title .txt {}
 main .month_product .title .txt h2 {}
 main .month_product .title .txt p {}
-main .month_product .title .more_btn {align-self: flex-end;}
+main .month_product .title .more_btn {
+    padding: 4px 8px; border-radius: 4px;
+    background-color: #336477; color: #fff;
+    font-weight:500; line-height:1.7; letter-spacing:-0.02em;
+    align-self: flex-end;
+}
 main .month_product .product_wrap {
-    background-color: powderblue;
     width: 1760px; margin: 0 auto;
     display: flex; flex-flow: row nowrap;
     position: relative;
 }
 main .month_product .product_wrap .product_slides {
-    background-color: palegreen;
     width: 1520px; margin: 0 auto;
     display: flex; flex-flow: row nowrap;
 }
-main .month_product .product_wrap .product_slides li:first-child {margin-right: 25px;}
-main .month_product .product_wrap .product_slides li:first-child a {}
-main .month_product .product_wrap .product_slides li:first-child a img {}
-main .month_product .product_wrap .product_slides li:first-child .name {}
-main .month_product .product_wrap .product_slides li:first-child .price {}
+/* 이 달의 상품 슬라이드 2열 너비 맞추기 */
+main .month_product .product_wrap .product_slides > ul {width: calc((100% - 25px) / 2);}
+main .month_product .product_wrap .product_slides .main_product {margin-right: 25px; position: relative;}
+main .month_product .product_wrap .product_slides .main_product li {}
+main .month_product .product_wrap .product_slides .main_product li a {}
+main .month_product .product_wrap .product_slides .main_product li a img {width: 100%;}
+main .month_product .product_wrap .product_slides .main_product li a::after {
+    content: ''; display: inline-block; width: 100%; height: 723px;
+    background: linear-gradient(transparent,rgba(0,0,0,0.4));
+    position: absolute; left: 0; top: 0;
+}
+main .month_product .product_wrap .product_slides .main_product .info {
+    color: #fff;
+    position: absolute; right: 0; bottom: 0;
+    padding: 0 30px 30px 0; text-align: right;
+    font-size:1.56rem; line-height:1.5; letter-spacing:-0.02em;
+}
+main .month_product .product_wrap .product_slides .main_product .info .name {margin-bottom: 15px;}
+main .month_product .product_wrap .product_slides .main_product .info .price {font-weight: 500;}
 main .month_product .product_wrap .product_slides .product_group {
-    background-color: papayawhip;
-    width: 1260px;
-    display: flex; flex-flow: row wrap; justify-content: space-between;
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between; align-content: space-between;
 }
-main .month_product .product_wrap .product_slides .product_group .m_product {
-    width: calc((100% - 25px) / 2);
-}
+main .month_product .product_wrap .product_slides .product_group .m_product {}
 main .month_product .product_wrap .product_slides .product_group .m_product .image {}
-main .month_product .product_wrap .product_slides .product_group .m_product .image a {}
-main .month_product .product_wrap .product_slides .product_group .m_product .image a img {}
-main .month_product .product_wrap .product_slides .product_group .m_product .info {}
-main .month_product .product_wrap .product_slides .product_group .m_product .info .name {}
-main .month_product .product_wrap .product_slides .product_group .m_product .info .price {}
+main .month_product .product_wrap .product_slides .product_group .m_product .image a {display: inline-block;}
+main .month_product .product_wrap .product_slides .product_group .m_product .image a img {width: 100%;}
+main .month_product .product_wrap .product_slides .product_group .m_product .info {
+    padding: 25px 0; text-align: center;
+    font-size:1.25rem; line-height:1.5; letter-spacing:-0.02em;
+    position: relative; top: -3px;
+}
+main .month_product .product_wrap .product_slides .product_group .m_product .info .name {margin-bottom: 15px;}
+main .month_product .product_wrap .product_slides .product_group .m_product .info .price {font-weight: 500;}
 main .month_product .product_wrap > a {
-    background-color: yellow;
-    position: absolute; top: 50%;
+    position: absolute; top: 40%;
 }
 main .month_product .product_wrap .pre_btn {left: 0;}
 main .month_product .product_wrap .next_btn {right: 0;}
-
+/* ===========================================2행 이 달의 쿠폰 */
+main .month_coupon {}
+main .month_coupon .title {}
+main .month_coupon .title .txt {}
+main .month_coupon .coupon_wrap {
+    width: 1520px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap;
+}
+main .month_coupon .coupon_wrap .coupon {
+    width: calc((100% - (25px * 4)) / 5);
+    margin-right: 25px;
+    padding: 25px 25px;
+}
+main .month_coupon .coupon_wrap .coupon:nth-child(1) {background-color: #336477;}
+main .month_coupon .coupon_wrap .coupon:nth-child(2) {background-color: #AB7F3C;}
+main .month_coupon .coupon_wrap .coupon:nth-child(3) {background-color: #333;}
+main .month_coupon .coupon_wrap .coupon:nth-child(4) {background-color: #3B6034;}
+main .month_coupon .coupon_wrap .coupon:nth-child(5) {background-color: #3C5FAB;}
+main .month_coupon .coupon_wrap .coupon:last-child {margin-right: 0;}
+main .month_coupon .coupon_wrap .coupon a {color: #fff;}
+main .month_coupon .coupon_wrap .coupon a p {}
+main .month_coupon .coupon_wrap .coupon a .c_name {font-size:1.44rem; font-weight:500; letter-spacing:-0.02em; margin-bottom: 9px;}
+main .month_coupon .coupon_wrap .coupon a .c_price {
+    text-align: right;
+    font-size:3.25rem; font-weight:600;
+}
