@@ -1,0 +1,129 @@
+body {background-color: dimgray;}
+.hd_bg {
+    background-color: rgba(255,255,255,0.65); width: 100%;
+    position: fixed; right: 0; top: 0; z-index: 999;
+}
+.hd_bg header {
+    width: 1520px; margin: 0 auto; height: 90px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: center;
+    letter-spacing: -0.02em;
+}
+.hd_bg header h1 {}
+.hd_bg header h1 a {}
+.hd_bg header h1 a img {}
+/* ===========================================헤더 공통선택자 */
+.hd_bg header .hd_center,
+.hd_bg header .hd_right,
+.hd_bg header .hd_center > *,
+.hd_bg header .hd_right > * {display: flex; flex-flow: row nowrap; align-items: center;}
+.hd_bg header .hd_center .service::after, /* 카테고리 중간 구분선 */
+.hd_bg header .hd_right .login::after {
+    content: ''; display: inline-block;
+    width: 2px; height: 20px; background-color: #bbb;
+}
+/* ===========================================헤더 개별선택자 */
+.hd_bg header .hd_center {font-size:1.06rem; font-weight:500;}
+.hd_bg header .hd_center .service {}
+.hd_bg header li {display: inline-block;} /* 이벤트 li & 로그인 li */
+.hd_bg header .hd_center .service li, 
+.hd_bg header .hd_center nav a {margin-right: 35px;} /* 가운데 카테고리 글자 여백 */
+.hd_bg header .hd_center .service li:last-child,
+.hd_bg header .hd_center nav a:last-child {margin-right: 40px;}
+.hd_bg header .hd_center .service li a {}
+.hd_bg header .hd_center .service li:first-child::before /* 특가이벤트 표시점 */ {
+    content: ''; display: inline-block; width: 8px; height: 8px;
+    border-radius: 50px; background-color: #336477; margin: 0 9px 9px 0;
+} 
+.hd_bg header .hd_center nav {}
+.hd_bg header .hd_center nav a {}
+.hd_bg header .hd_center nav a:first-child {margin-left: 35px;}
+.hd_bg header .hd_center #searchFrm {
+    background-color: #eee; color: #333;
+    border-radius: 50px;
+    display: flex; flex-flow: row nowrap;
+    padding: 3px 10px 3px 20px;
+}
+.hd_bg header .hd_center #searchFrm input[name$=search] {
+    background: none; 
+    
+}
+.hd_bg header .hd_center #searchFrm input[name$=search]::placeholder {color: #333;}
+.hd_bg header .hd_center #searchFrm #search_btn {}
+.hd_bg header .hd_right {font-size:0.88rem;}
+.hd_bg header .hd_right .login {}
+.hd_bg header .hd_right .login li,
+.hd_bg header .hd_right .login::after {margin-right: 20px;}
+.hd_bg header .hd_right .login li a {}
+.hd_bg header .hd_right .icon {}
+.hd_bg header .hd_right .icon li {}
+.hd_bg header .hd_right .icon li:first-child {margin-right: 15px;}
+.hd_bg header .hd_right .icon li a {}
+/* ===========================================Start : 광고 배너 */
+.bnr_wrap {height: 905px; position: relative;}
+/* ===========================================광고 배너 공통선택자 */
+.bnr_wrap .bnr_container {height: 100%;}
+.bnr_wrap .bnr_container .all_bnr {height: 100%;}
+.bnr_wrap .bnr_container .all_bnr .contents {}
+.bnr_wrap .bnr_container .all_bnr .contents .title {}
+.bnr_wrap .bnr_container .all_bnr .contents .title img {}
+.bnr_wrap .bnr_container .all_bnr .contents .title .txt {
+    width: max-content; 
+    position: absolute; top: 40%; left: 20%;
+}
+.bnr_wrap .bnr_container .all_bnr .contents .title .txt a {color: #fff;}
+.bnr_wrap .bnr_container .all_bnr .contents .title .txt .sub_txt {
+    display: flex; flex-flow: row nowrap;
+}
+.bnr_wrap .bnr_container .all_bnr .contents .title .txt .sub_txt a:first-child::after /* 배너 서브 타이틀 구분선 */{
+    content: ''; display: inline-block; width: 2px; height: 24px;
+    background-color: #fff;
+    position: relative; top: 3px;
+    margin: 0 10px;
+}
+.bnr_wrap .bnr_container .all_bnr .contents .title .txt .sub_txt a {
+    font-size:1.5rem; line-height:1.7; letter-spacing:-0.02em;
+}
+.bnr_wrap .bnr_container .all_bnr .contents .title .txt > a h1 {font-size:2.81rem; font-weight:600; line-height:1.5; letter-spacing:-0.02em;}
+.bnr_wrap > a {position: absolute; top: 50%; opacity: 20%;} /* 광고 배너 버튼 */
+.bnr_wrap > a:hover {opacity: 100%;} /* 광고 배너 버튼 */
+/* ===========================================광고 배너 개별선택자 */
+.bnr_wrap .bnr_container .bnr1 {}
+.bnr_wrap .bnr_container .bnr1 .contents {}
+.bnr_wrap .bnr_container .bnr1 .contents .title {}
+.bnr_wrap .bnr_container .bnr1 .contents .title img {}
+.bnr_wrap .bnr_container .bnr1 .contents .title .txt {}
+.bnr_wrap .bnr_container .bnr1 .contents .title .txt a {}
+.bnr_wrap .bnr_container .bnr1 .contents .title .txt a h1 {}
+.bnr_wrap .pre_btn {left: 80px;}
+.bnr_wrap .next_btn {right: 80px;}
+.bnr_wrap .progress_wrap {
+    text-align: right;
+    position: absolute; width: 100%;
+    bottom: 0; right: 0;
+}
+.bnr_wrap .progress_wrap .page_num span {font-size:1.13rem; font-weight:500;}
+.bnr_wrap .progress_wrap .page_num {
+    display: inline-block;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 50px;
+    padding: 8px 9px;
+    margin: 0 20px 20px 0;
+}
+.bnr_wrap .progress_wrap .page_num .now_pg {color: #fff;}
+.bnr_wrap .progress_wrap .page_num .all_pg {color: rgba(255,255,255,0.4);}
+.bnr_wrap .progress_wrap .page_num span:nth-child(2) {
+    content: ''; display: inline-block; background-color: #fff;
+    width: 2px; height: 18px;
+    margin: 0 5px;
+    position: relative;
+    top: 3px;
+}
+.bnr_wrap .progress_wrap .progress_bar {
+    height: 3px; background-color: #bbb;
+}
+.bnr_wrap .progress_wrap .progress_bar .bar {
+    background-color: #000;
+    width: calc(100% / 13);
+    height: 100%;
+}
