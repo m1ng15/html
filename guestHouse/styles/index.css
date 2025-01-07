@@ -1,4 +1,4 @@
-#wrap {background-color: #fff;}
+#wrap {}
 /* ========================================헤더시작 */
 #wrap .header_bg {
     background-color: #fff;
@@ -72,7 +72,7 @@
 /* ========================================2행 img_bnr*/
 #wrap main .img_bnr {padding: 110px 0;}
 #wrap main .img_bnr .contents {text-align: center; }
-#wrap main .img_bnr .contents .hr_title {margin-bottom: 78px;}
+#wrap main .img_bnr .contents .hr_title {margin-bottom: 27px;}
 #wrap main .img_bnr .contents .hr_title .dot {
     display: inline-block; background-color: #6A8A00;
     width: 14px; height: 14px; border-radius: 50%;
@@ -105,6 +105,7 @@
 #wrap main .rooms .title .more_btn .more_rooms:hover {padding: 17px 27px;}
 /* ===============================================룸 슬라이드 시작 */
 #wrap main .rooms .contents .rooms_wrap {position: relative;}
+/* ========================================== a = 이전/다음 버튼 */
 #wrap main .rooms .contents .rooms_wrap > a {padding: 65px 20px; position: absolute; top: 50%;}
 #wrap main .rooms .contents .rooms_wrap > a img {width: 100%;}
 #wrap main .rooms .contents .rooms_wrap > a:hover {
@@ -117,22 +118,18 @@
 #wrap main .rooms .contents .rooms_wrap .room_group {display: flex; flex-flow: row nowrap;}
 #wrap main .rooms .contents .rooms_wrap .room_group .room {margin-right: 22px;}
 #wrap main .rooms .contents .rooms_wrap .room_group .room:last-child {margin-right: 0;}
-#wrap main .rooms .contents .rooms_wrap .room_group .room > a {}
-#wrap main .rooms .contents .rooms_wrap .room_group .room > a img {width: 100%;}
+#wrap main .rooms .contents .rooms_wrap .room_group .room img {width: 100%;}
 #wrap main .rooms .contents .rooms_wrap .room_group .room .room_info {
     margin-top: 36px; padding-left: 15px;
     border-bottom: 1px solid #ccc;
 }
 #wrap main .rooms .contents .rooms_wrap .room_group .room .room_info .name {
     font-size:1.69rem; letter-spacing:-0.02em; font-weight:600;
+    padding-bottom: 39px;
 }
 #wrap main .rooms .contents .rooms_wrap .room_group .room .room_info .name span {
     display: block; color: #6A8A00;
     font-size:0.88rem; line-height:1.5em; letter-spacing:-0.02em;
-}
-#wrap main .rooms .contents .rooms_wrap .room_group .room .room_info .name a {
-    display: inline-block; width: 100%;
-    padding-bottom: 39px;
 }
 #wrap main .rooms .contents .rooms_wrap .room_group .room .room_info .detail {font-size:1.13rem; line-height:1.7em; letter-spacing:-0.02em; padding-bottom: 15px;}
 /* ========================================4행 주변 관광지*/
@@ -149,7 +146,7 @@
     overflow: hidden;
 }
 #wrap main .travel .contents .travel_wrap .unactive_place .place,
-#wrap main .travel .contents .travel_wrap .active_place .move_btn > a {position: relative; top: 60px;}
+#wrap main .travel .contents .travel_wrap .active_place .move_btn > a {position: relative; top: 20px;}
 #wrap main .travel .contents .travel_wrap .unactive_place .place:first-child {left: 15px;}
 #wrap main .travel .contents .travel_wrap .unactive_place .place:last-child {right: 15px;}
 #wrap main .travel .contents .travel_wrap .place::before {
@@ -163,7 +160,7 @@
 #wrap main .travel .contents .travel_wrap .active_place .move_btn > .pre_btn:hover {left: -5px;}
 #wrap main .travel .contents .travel_wrap .active_place .move_btn > .next_btn:hover {right: -5px;}
 #wrap main .travel .contents .travel_wrap .active_place .move_btn > a img {width: 40px;}
-#wrap main .travel .contents .travel_wrap .active_place .move_btn .pre_btn {}
+#wrap main .travel .contents .travel_wrap .active_place .move_btn .pre_btn {left: 15px;}
 #wrap main .travel .contents .travel_wrap .active_place .travel_card {width: 563px; margin: 0 15px; text-align: center;}
 #wrap main .travel .contents .travel_wrap .active_place .travel_card > p {}
 #wrap main .travel .contents .travel_wrap .active_place .travel_card > p img {width: 100%;}
@@ -174,7 +171,7 @@
     margin: 27px 0;
 }
 #wrap main .travel .contents .travel_wrap .active_place .travel_card .travel_info a {font-size:1.25rem; letter-spacing:-0.02em; font-weight:500; color: #6A8A00; border-bottom: 1px solid #6A8A00;}
-#wrap main .travel .contents .travel_wrap .active_place .move_btn .next_btn {}
+#wrap main .travel .contents .travel_wrap .active_place .move_btn .next_btn {right: 15px;}
 #wrap main .travel .contents .travel_wrap .active_place .move_btn .next_btn img {}
 /* ========================================5행 찾아오시는 길*/
 #wrap main .map {
