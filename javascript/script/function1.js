@@ -53,8 +53,16 @@ numPlus.addEventListener("click", function(){
     //3. 변경대상의 객체, 속성을 잘 구분하여 문법에 맞게 작성하기.
     //기존 수량의 값에 1을 더해서 수량 칸에 대입하기.
     num.value = Number(num.value) + 1;
-
+    
 })
 numMinus.addEventListener('click',function(){
     num.value = Number(num.value) - 1;
+})
+// ======================================================
+const total = document.querySelector('#total');
+const price1 = document.querySelector('#price1');
+const price2 = document.querySelector('#price2');
+total.addEventListener('click', function(){
+    const totalPrice = Number(price1.value) + Number(price2.value);
+    alert(`당신의 이번 달 수입은 총 ${totalPrice}원 입니다.`)
 })
