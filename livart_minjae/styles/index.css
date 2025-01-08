@@ -283,16 +283,17 @@ main .best_category .category_wrap .best_wrap .b_product {width: calc((100% - (2
 main .best_category .category_wrap .best_wrap .b_product li:first-child {margin-bottom: 25px;}
 main .best_category .category_wrap .best_wrap .b_product li:first-child a {}
 main .best_category .category_wrap .best_wrap .b_product li:first-child a img {width: 100%; border-radius: 30px;}
-main .best_category .category_wrap .best_wrap .b_product .info {background-color: orange; height: 150px; position: relative;}
-main .best_category .category_wrap .best_wrap .b_product .info .brand {color: #555; margin-bottom: 25px;}
-main .best_category .category_wrap .best_wrap .b_product .info .name {}
-main .best_category .category_wrap .best_wrap .b_product .info .name p {margin-bottom: 25px;}
-main .best_category .category_wrap .best_wrap .b_product .info .original_p {color: #bbb; margin-bottom: 15px; text-decoration: line-through;}
-main .best_category .category_wrap .best_wrap .b_product .info .now_p {
+main .best_category .category_wrap .best_wrap .b_product .info {height: 140px; position: relative;}
+main .best_category .category_wrap .best_wrap .b_product .info > li {}
+main .best_category .category_wrap .best_wrap .b_product .info li .brand {color: #555; margin-bottom: 25px;}
+main .best_category .category_wrap .best_wrap .b_product .info li .name {}
+main .best_category .category_wrap .best_wrap .b_product .info li .name p {}
+main .best_category .category_wrap .best_wrap .b_product .info .b_price {position: absolute; bottom: 0; left: 0;}
+main .best_category .category_wrap .best_wrap .b_product .info .b_price .original_p {color: #bbb; text-decoration: line-through; margin-bottom: 15px;}
+main .best_category .category_wrap .best_wrap .b_product .info .b_price .now_p {
     font-size:1.56rem; font-weight:500; letter-spacing:-0.02em;
-    position: absolute; bottom: 0; left: 0;
 }
-main .best_category .category_wrap .best_wrap .b_product .info .now_p .dc {color: #ED2650; font-weight:700; padding-right: 10px;}
+main .best_category .category_wrap .best_wrap .b_product .info .b_price .now_p .dc {color: #ED2650; font-weight:700; padding-right: 10px;}
 /* ===========================================End : 카테고리 상품 리스트 공통 선택자 */
 main .best_category .category_wrap .best_wrap .wrap_top{}
 main .best_category .category_wrap .best_wrap .wrap_top .b_product {}
