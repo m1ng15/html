@@ -326,7 +326,7 @@ main .best_category .category_wrap .best_wrap .more_btn {
 main .line_bnr_container {margin-bottom: 120px;}
 main .line_bnr_container .line_bnr {}
 main .line_bnr_container .line_bnr a {}
-main .line_bnr_container .line_bnr a img {}
+main .line_bnr_container .line_bnr a img {width: 100%;}
 /* ===========================================5행 매장 방문 및 예약 */
 main .store_reserve {width: 1760px; margin: 0 auto; margin-bottom: 120px;}
 main .store_reserve > .title {width: 100%;}
