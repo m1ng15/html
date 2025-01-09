@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자이해 | 자바스크립트</title>
+    <script src="./script/data5.js" defer></script>
+</head>
+<body>
+    <div class="calc">
+        <input type="number" name="val1" id="val1">
+        <span>+</span>
+        <input type="number" name="val2" id="val2">
+        <button type="button" id="btn">=</button>
+        <p id="result"></p>
+    </div>
+    <hr>
+    <ul class="calc2">
+        <li><input type="number" id="money1" placeholder="교통비"></li>
+        <li><input type="number" id="money2" placeholder="식비"></li>
+        <li><input type="number" id="money3" placeholder="커피"></li>
+        <li><button type="button" id="totalBtn">오늘의 총 지출금액</button></li>
+        <li class="todayResult"><span>0</span>원</li>
+    </ul>
+    <hr>
+    <h1>입금 시 1000원 주는 자바스크립트 은행</h1>
+    <div class="bank">
+        <p id="interest">오늘의 이자(원): <span>0</span>원</p>
+        <input type="number" name="bank_input" id="bank_input" placeholder="입금하려는 금액">
+        <input type="text" name="bank_total" id="bank_total" placeholder="총 잔액 표시" readonly>
+        <button type="button" id="deposit_btn">입금하기</button>
+    </div>
+    <hr>
+    <h1>입금 시 5000원 주는 자바스크립트 은행</h1>
+    <div class="bank">
+        <button type="button" id="dp_btn">입금하기</button>
+        <div class="view">
+            <p id="bk_input">입금액: <span>0</span>원</p>
+            <input type="text" name="bk_total" id="bk_total" placeholder="총 잔액 표시" readonly>
+        </div>
+        <hr>
+        <select name="drink" id="drink">
+            <option value="americano">아메리카노</option>
+            <option value="cafelatte">카페라떼</option>
+            <option value="milktea">밀크티</option>
+            <option value="juice">주스</option>
+        </select>
+        <input type="number" name="user_order" id="user_order" placeholder="수량">
+        <button type="button" id="func_btn">음료 주문하기</button>
+        <p id="func_result"></p>
+        <hr>
+        <div class="dan99">
+            <input type="number" name="dan" id="dan" placeholder="궁금한 구구단을 숫자만 입력하세요.">
+            <button type="button" id="danBtn">결과보기</button>
+            <p class="dan99Result"></p>
+        </div>
+    </div>
+</body>
+</html>
