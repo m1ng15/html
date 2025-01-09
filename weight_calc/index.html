@@ -10,6 +10,28 @@
     <script src="./script/index.js" defer></script>
 </head>
 <body>
+    <div class="calc_wrap">
+        <header>
+            <h1>나의 적정 몸무게 계산기</h1>
+        </header>
+        <main>
+            <div class="main_top">
+                <p>자신의 적정 체중은 자신의 신장에 100을 빼고 0.9를 곱한 값입니다.</p>
+                <div class="calc">
+                    <dl class="calc_left">
+                        <dt>신장</dt>
+                        <dd><input type="number" name="user_height">cm</dd>
+                        <dt>체중</dt>
+                        <dd><input type="number" name="user_weight">kg</dd>
+                    </dl>
+                    <button type="button" id="calcBtn">계산하기</button>
+                </div>
+            </div>
+            <div class="main_btm">
+                <p class="result_txt">적정 몸무게 계산 결과 : <span id="height_res"></span>cm 기준 적정 체중은 <span id="avr_weight"></span>kg 입니다. 현재 <span id="weight_res"></span>kg 초과했습니다.</p>
+            </div>
+        </main>
+    </div>
     
 </body>
 </html>

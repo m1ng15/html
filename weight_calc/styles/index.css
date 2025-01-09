@@ -1,0 +1,19 @@
+.calc_wrap {background-color: #eee;}
+.calc_wrap header {}
+.calc_wrap header h1 {}
+.calc_wrap main {}
+.calc_wrap main .main_top {}
+.calc_wrap main .main_top p {}
+.calc_wrap main .main_top .calc {}
+.calc_wrap main .main_top .calc .calc_left {}
+.calc_wrap main .main_top .calc .calc_left dt {}
+.calc_wrap main .main_top .calc .calc_left dd {}
+.calc_wrap main .main_top .calc .calc_left dd input[name$=height] {}
+.calc_wrap main .main_top .calc .calc_left dd input[name$=weight] {}
+.calc_wrap main .main_top .calc #calcBtn {}
+.calc_wrap main .main_btm {}
+.calc_wrap main .main_btm .result_txt {}
+.calc_wrap main .main_btm .result_txt span {}
+.calc_wrap main .main_btm .result_txt span #height_res {}
+.calc_wrap main .main_btm .result_txt span #avr_weight {}
+.calc_wrap main .main_btm .result_txt span #weight_res {}
