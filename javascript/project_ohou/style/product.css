@@ -1,0 +1,113 @@
+main {width: 1136px; margin: 0 auto;}
+/* ============================================== 경로 영역 */
+main .path {margin-bottom: 26px;}
+main .path a {font-size: 0.88rem; letter-spacing: -0.02em;}
+main .path span {}
+/* ============================================== 사진 영역 */
+main .product_container {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+/* 상품 미리보기 이미지 */
+main .product_container .photo {
+    width: 630px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .product_container .photo .thumbnail {}
+main .product_container .photo .thumbnail a {
+    width: 56px; display: block; margin: 0 0 10px;
+    border-radius: 5px; overflow: hidden;
+}
+main .product_container .photo .thumbnail a img {width: 100%;}
+main .product_container .photo .big {width: 559px;}
+main .product_container .photo .big img {width: 100%; border-radius: 5px; overflow: hidden;}
+/* 상품 미리보기 이미지 (JS 클래스 적용) */
+/* thumbnail a에 마우스를 올렸을 때 적용되는 테두리 디자인 */
+main .product_container .photo .thumbnail a.active {border: 2px solid #59AFFF;}
+/* ============================================== 글 영역 */
+main .product_container .contents {
+    width: calc(100% - 654px);
+}
+    main .product_container .contents * {letter-spacing: -0.02em;}
+main .product_container .contents .title {}
+main .product_container .contents .title > * {margin-bottom: 25px;}
+main .product_container .contents .title .brand {font-size: 0.88rem;}
+main .product_container .contents .title h1 {font-size: 1.38rem;}
+main .product_container .contents .title .review {display: block; font-size: 0.81rem;}
+main .product_container .contents > p {} /* price_before & price_after group*/
+main .product_container .contents .price_before {}
+main .product_container .contents .price_before {margin-bottom: 25px;}
+main .product_container .contents .price_before .sale {}
+main .product_container .contents .price_before .price {color: #777; text-decoration:line-through;}
+main .product_container .contents .price_result {font-size: 2rem; margin-bottom: 25px;}
+main .product_container .contents .price_result em {font-weight: 700;}
+main .product_container .contents dl {
+    display: flex; flex-flow: row wrap;
+    margin-bottom: 25px;
+}
+main .product_container .contents dl > * {padding: 15px 0;}
+main .product_container .contents dl dt {width: calc(100% - 402px);}
+main .product_container .contents dl dd {width: 402px;}
+main .product_container .contents dl dd:last-child > * {display: block; margin-bottom: 10px;}
+main .product_container .contents dl dd > em {font-weight: 700;}
+main .product_container .contents dl dd > span {}
+main .product_container .contents dl dd .ship_schedule,
+main .product_container .contents dl dd .schedule_open {margin-bottom: 0;}
+main .product_container .contents dl dd .ship_schedule {
+    padding: 15px 10px; border-radius: 7px;
+    background-color: #eee;
+}
+main .product_container .contents dl dd .ship_schedule em {font-weight: 700;}
+main .product_container .contents dl dd .schedule_open {
+    padding: 15px 10px; border-radius: 7px; background-color: #eee;
+    border-top: 1px solid #c5c5c5;
+    display: none;
+}
+main .product_container .contents dl dd .schedule_open > * {display: block;}
+main .product_container .contents dl dd .schedule_open em {border-bottom: 1px solid #aaa; padding-bottom: 15px;}
+main .product_container .contents dl dd .schedule_open em span {font-size: 0.94rem; font-weight: 700; }
+main .product_container .contents dl dd .schedule_open > span {
+    padding-top: 15px;
+    font-size: 0.75rem; line-height: 1.5; color: #757575;}
+main .product_container .contents .order_contents {}
+main .product_container .contents .order_contents .select_contents {}
+main .product_container .contents .order_contents .select_contents select {
+    display: block; width: 100%;
+    padding: 15px 17px;
+    border: 1px solid rgba(0,0,0,0.2); border-radius: 5px;
+    font-size: 0.88rem;
+    background-image: url(../images/play_arrow.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    margin-bottom: 25px;
+}
+main .product_container .contents .order_contents .select_contents select[name=color] {
+    border-color: rgba(89,175,255,0.63);
+    background-image: url(../images/play_arrow\ active.png);
+
+}
+main .product_container .contents .order_contents .select_contents select[name=color] option {}
+main .product_container .contents .order_contents .select_contents select[name=size] {}
+main .product_container .contents .order_contents .select_contents select[name=size] option {}
+main .product_container .contents .order_contents .order_price {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin-bottom: 25px;
+}
+main .product_container .contents .order_contents .order_price h2 {font-size: 0.88rem;}
+main .product_container .contents .order_contents .order_price p {font-size: 1.06rem; font-weight: 700;}
+main .product_container .contents .order_contents .order_price p .price {font-size: 1.25rem; font-weight: 700;}
+main .product_container .contents .order_contents .order_btn {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .product_container .contents .order_contents .order_btn button {
+    font-size: 1.06rem;
+    width: calc((100% - 10px) / 2);
+    border: 1px solid #59AFFF; border-radius: 5px;
+    padding: 20px 0;
+}
+main .product_container .contents .order_contents .order_btn #cart_btn {
+    background-color: #fff; color: #59AFFF;
+}
+main .product_container .contents .order_contents .order_btn #buy_btn {
+    background-color: #59AFFF; color: #fff;
+}
