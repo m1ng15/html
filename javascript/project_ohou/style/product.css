@@ -57,10 +57,14 @@ main .product_container .contents dl dd .ship_schedule {
     background-color: #eee;
 }
 main .product_container .contents dl dd .ship_schedule em {font-weight: 700;}
+/* ship_schedule 클릭 시 열리는 영역 */
+/* ========================================배송정보 (JS 클래스 적용) */
+/* toggle 메서드 활용 교차 클래스 생성 목적 */
+main .product_container .contents dl dd .hide {display: none !important;/* 강제우선순위설정 */}
 main .product_container .contents dl dd .schedule_open {
     padding: 15px 10px; border-radius: 7px; background-color: #eee;
     border-top: 1px solid #c5c5c5;
-    display: none;
+    display: block;
 }
 main .product_container .contents dl dd .schedule_open > * {display: block;}
 main .product_container .contents dl dd .schedule_open em {border-bottom: 1px solid #aaa; padding-bottom: 15px;}
@@ -89,6 +93,13 @@ main .product_container .contents .order_contents .select_contents select[name=c
 main .product_container .contents .order_contents .select_contents select[name=color] option {}
 main .product_container .contents .order_contents .select_contents select[name=size] {}
 main .product_container .contents .order_contents .select_contents select[name=size] option {}
+/* 주문 개수 설정 */
+main .product_container .contents .order_contents .num {}
+main .product_container .contents .order_contents .num #product_num {}
+main .product_container .contents .order_contents .num #minus {}
+main .product_container .contents .order_contents .num #plus {}
+main .product_container .contents .order_contents .num button {}
+/* 최종 주문 금액 */
 main .product_container .contents .order_contents .order_price {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     margin-bottom: 25px;
