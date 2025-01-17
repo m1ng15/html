@@ -45,16 +45,17 @@
                             </div>
                             <div class="ip_state">
                                 <a href="#" target="_blank">IP보안</a>
-                                <input type="checkbox" name="ip_on" id="ip_on">
+                                <input type="checkbox" name="ip_on" id="ip_on" checked>
                                 <label for="ip_on">
                                     <span class="switch"></span>
-                                    <span class="switch_state">OFF</span>
+                                    <span class="switch_state">ON</span>
                                 </label>
+                                <!-- 로그인 오류 메세지 출력 위치(JS) -->
                             </div>
-                            <!-- 로그인 오류 메세지 출력 위치(JS) -->
-                            <div class="login_btn">
-                                <button type="button" class="login">로그인</button>
-                            </div>
+                        </div>
+                        <p class="error_message"></p>
+                        <div class="login_btn">
+                            <button type="button" id="login">로그인</button>
                         </div>
                     </div>
                     <!-- 내용2. 일회용로그인 -->
@@ -72,7 +73,7 @@
                             <input type="number" name="login_number" id="login_number" placeholder="번호를 입력하세요">
                         </div>
                         <div class="login_btn">
-                            <button type="button" class="login">로그인</button>
+                            <button type="button" id="num_login">로그인</button>
                         </div>
                     </div>
                     <!-- 내용3. QR로그인 -->

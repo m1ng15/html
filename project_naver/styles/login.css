@@ -22,15 +22,18 @@
     display:flex;
 }
 #login_wrap main form .title h2 {
-    background-color: #f8f9fa; /* 비활성화 제목배경 */
+    background-color: #f8f9fa; /*비활성화 제목배경*/
     width:calc(100% / 3); position:relative;
     height:68px; border-bottom:1px solid #cdcdce;
-    border-top: 1px solid #cdcdce;
-    border-right: 1px solid #cdcdce;
+    border-top:1px solid #cdcdce;
+    border-right:1px solid #cdcdce;
 }
 #login_wrap main form .title h2.active { /* 활성화 제목배경 */
     border:1px solid #cdcdce; border-radius:10px;
-    border-bottom:0; border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+    border-bottom:0; 
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+    background-color: #fff;
 }
 #login_wrap main form .title h2.active::before {
     content:''; display:block;
@@ -48,8 +51,8 @@
     background-position:0 -176px;
     position:absolute; right:-2px; top:-1px;
 }
-#login_wrap main form .title h2:nth-child(1)::before {display:none;}
-#login_wrap main form .title h2:nth-child(3)::after {display:none;}
+#login_wrap main form .title h2:nth-child(1)::before {}
+#login_wrap main form .title h2:nth-child(3)::after {}
 #login_wrap main form .title h2 a {
     /* 부모의 높이가 px 정해져있고 정렬하는 자식요소가 한줄일 겨우 수직정렬 */
     line-height: 68px;
@@ -60,10 +63,12 @@
 #login_wrap main form .title h2 a em {}
 #login_wrap main form .title h2 a .message {
     background-color: #fff;
-    border: 1px solid #09aa5c; border-radius: 10px;
-    padding: 2px 10px; 
-    position: absolute; top: -10px; left: -50px;
-    text-wrap: nowrap;
+    border:1px solid #09aa5c;
+    position:absolute;
+    text-wrap:nowrap;
+    right: -30px; top: -10px;
+    border-radius: 25px;
+    padding: 1px 10px;
 }
 #login_wrap main form .title h2 a .message strong {
     font-size: 0.63rem; color: #09aa5c;
@@ -84,12 +89,8 @@
 #login_wrap main form .login_container .id_login ul li {
     border: 1px solid #cdcdce;
     padding: 15px 20px 15px 40px;
-    display: flex; flex-flow: row nowrap;
     position: relative;
 }
-#login_wrap main form .login_container .id_login ul li:nth-child(1) {border-radius: 8px 8px 0 0;}
-#login_wrap main form .login_container .id_login ul li:nth-child(2) {border-top: 0; border-radius: 0 0 8px 8px;}
-#login_wrap main form .login_container .id_login ul li input {width: 100%;}
 #login_wrap main form .login_container .id_login ul li::before {
     content: ''; display: block; width: 20px; height: 20px;
     background-image: url(../images/m_sp_login.png);
@@ -97,31 +98,69 @@
     background-position: -118px -256px;
     position: absolute; left: 10px;
 }
+#login_wrap main form .login_container .id_login ul li:nth-child(1) {border-radius: 8px 8px 0 0;}
+#login_wrap main form .login_container .id_login ul li:nth-child(2) {border-top: 0; border-radius: 0 0 8px 8px;}
+#login_wrap main form .login_container .id_login ul li input {width: 100%;}
 #login_wrap main form .login_container .id_login ul li:nth-child(2)::before {
     background-position-x: -163px;
 }
 #login_wrap main form .login_container .id_login ul li #user_id {}
 #login_wrap main form .login_container .id_login ul li #user_pw {}
-#login_wrap main form .login_container .id_login .state_group {margin-top: 12px; background-color: pink;}
-#login_wrap main form .login_container .id_login .state_group .login_state {}
+#login_wrap main form .login_container .id_login .state_group {
+    margin-top: 12px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-content: center;
+}
+/* ==============================================================로그인 상태 유지 */
+#login_wrap main form .login_container .id_login .state_group .login_state {position: relative; top: -5px;
+}
 #login_wrap main form .login_container .id_login .state_group .login_state #login_state_y {}
 #login_wrap main form .login_container .id_login .state_group .login_state #login_state_y:checked+label {}
-#login_wrap main form .login_container .id_login .state_group .login_state label {}
-#login_wrap main form .login_container .id_login .state_group .ip_state {}
-#login_wrap main form .login_container .id_login .state_group .ip_state a {}
+#login_wrap main form .login_container .id_login .state_group .login_state label {display: flex; align-items: center;}
+#login_wrap main form .login_container .id_login .state_group .login_state label::before {
+    content: ''; display: inline-block; width: 24px; height: 24px; margin-right: 6px;
+    background-image: url(../images/m_sp_login.png);
+    background-position: -308px -110px;
+}
+#login_wrap main form .login_container .id_login .state_group .login_state #login_state_y:checked+label::before {
+    background-position-y: -210px;
+}
+/* ==============================================================IP보안 ON/OFF */
+#login_wrap main form .login_container .id_login .state_group .ip_state {
+    display: flex; align-items: center;
+    position: relative;}
+#login_wrap main form .login_container .id_login .state_group .ip_state a {margin-right: 6px;}
 #login_wrap main form .login_container .id_login .state_group .ip_state #ip_on {}
-#login_wrap main form .login_container .id_login .state_group .ip_state #ip_on:checked+label {}
-#login_wrap main form .login_container .id_login .state_group .ip_state label {}
-#login_wrap main form .login_container .id_login .state_group .ip_state label .switch {}
-#login_wrap main form .login_container .id_login .state_group .ip_state label .switch_state {}
+#login_wrap main form .login_container .id_login .state_group .ip_state #ip_on:checked+label {background-color: #09aa5c;}
+#login_wrap main form .login_container .id_login .state_group .ip_state #ip_on:checked+label .switch {left: auto; right: 2px;}
+
+#login_wrap main form .login_container .id_login .state_group .ip_state #ip_on:checked+label .switch_state {left: 5px;}
+#login_wrap main form .login_container .id_login .state_group .ip_state label {
+    background-color: #cdcdce; width: 45px; height: 20px;
+    border-radius: 12px; display: inline-block; position: relative;
+    
+}
+
+#login_wrap main form .login_container .id_login .state_group .ip_state label .switch {
+    display: block; width: 16px; height: 16px;
+    background-color: #fff; border-radius: 50%;
+    position: absolute; top: 2px; left: 2px;
+}
+#login_wrap main form .login_container .id_login .state_group .ip_state label .switch_state {
+    font-size: 0.7rem; color: #fff;
+    font-family:AppleSDGothicNeoB, sans-serif;
+    position: absolute; top: 5px; right: 5px;
+}
+
 /* 로그인 버튼 공통 */
 #login_wrap main form .login_container .login_btn {
     text-align: center;
     padding: 13px 20px; border-radius: 8px;
     background-color: #09aa5c;
 }
-#login_wrap main form .login_container .login_btn .login {
-    font-size: 1.06rem; font-weight: 700;
+#login_wrap main form .login_container .login_btn #login,
+#login_wrap main form .login_container .login_btn #num_login {
+    font-size: 1.06rem; font-family:AppleSDGothicNeoB, sans-serif;
     letter-spacing: -0.02em; line-height: 1.5;
     color: #fff;
 }
@@ -135,7 +174,7 @@
     margin: 10px 0 30px 0;
 }
 #login_wrap main form .login_container .one_time_login .login_help >span {}
-#login_wrap main form .login_container .one_time_login .login_help >span .accent {color: #09aa5c; font-weight: 500;}
+#login_wrap main form .login_container .one_time_login .login_help >span .accent {color: #09aa5c; font-family:AppleSDGothicNeoB, sans-serif;}
 #login_wrap main form .login_container .one_time_login .login_help >span .accent em {
     display: inline-block; width: 16px; height: 16px;
     background-image: url(../images/m_sp_login2.png);
@@ -177,7 +216,7 @@
 #login_wrap main form .login_container .qr_login .qr_info .qr_time {text-align: left;}
 #login_wrap main form .login_container .qr_login .qr_info .qr_time .title {margin-bottom: 7px;}
 #login_wrap main form .login_container .qr_login .qr_info .qr_time .title span {font-size: 0.81rem; font-weight: 600; color: #555;}
-#login_wrap main form .login_container .qr_login .qr_info .qr_time .time {font-weight: 700; color: #09aa5c;}
+#login_wrap main form .login_container .qr_login .qr_info .qr_time .time {font-family:AppleSDGothicNeoB, sans-serif; color: #09aa5c;}
 #login_wrap main form .login_container .qr_login .login_help {text-align: center;}
 #login_wrap main form .login_container .qr_login .login_help .common_des {
     font-size: 0.88rem; font-weight: 500; line-height: 1.2;
