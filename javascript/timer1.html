@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머 함수 | 자바스크립트</title>
+    <script src="./script/timer1.js" defer></script>
+    <style>
+        .box {
+            width: 50px; height: 50px; background-color: pink;
+            border-radius: 50%;
+            animation: move 1s linear alternate infinite;
+        }
+        @keyframes move {
+            0% {transform: translateX(0);}
+            100% {transform: translateX(300px);}
+        }
+        .container {}
+        .container .text {font-size: 3rem; font-weight: 700;}
+        .container .cursor {
+            display: inline-block; width: 5px; height: 40px;
+            background-color: orange; margin-left: 2px;
+            animation: caret 1s infinite;
+        }
+        @keyframes caret {
+            from, to {background-color: transparent;}
+            50% {background-color: orange;}
+            /* 0% {}
+            50% {}
+            100% {} */
+        }
+        @keyframes move {
+            0% {}
+            100% {}
+        }
+        .container2 {}
+        .container2 .text {font-size: 3rem; font-weight: 600;}
+        .container2 .cursor {
+            display: inline-block; width: 4px; height: 42px;
+            background-color: purple;
+            animation: caret2 1s infinite;
+        }
+        @keyframes caret2 {
+            0% {background-color: transparent;}
+            100% {background-color: purple;}
+        }
+    </style>
+</head>
+<body>
+    <div class="timer">
+        <input type="number" id="user_time" placeholder="시간(초)">
+        <button id="timeset_btn">입력</button>
+        <p id="timerCount"><!-- 타이머 출력 --></p>
+    </div>
+    <div class="box"></div>
+    <hr>
+    <button type="button" id="stop">STOP!</button>
+    <button type="button" id="replay">PLAY!</button>
+    <hr>
+    <div class="container">
+        <span class="text"></span>
+        <span class="cursor"></span>
+    </div>
+    <hr>
+    <div class="container2">
+        <span class="text"></span>
+        <span class="cursor"></span>
+    </div>
+</body>
+</html>
