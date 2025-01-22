@@ -28,7 +28,7 @@
             background: #f6f5ef; font-size:0.875rem; letter-spacing:-1px;
             display:flex; align-items:center;
         }
-        #menu_title span {font-weight:800;}
+        #menu_title span {font-weight:800; font-size:0.875rem;}
         #menu_title img {padding:0 10px;}
         /* 메뉴내용 */
         .menu_contents {position:relative;}
@@ -77,22 +77,35 @@
         window.onload=function(){
             const category = document.querySelectorAll('.category_menu a');
             const menu = document.querySelectorAll('.menu');
-            console.log(menu);
+            const menuTitle = document.querySelector('#menu_title');
+            /* 카테고리 메뉴 시작화면 */
+            menu[0].style.display = 'flex';
+            menuOption('디카페인', '추가');
+            /* category menu 클릭 이벤트 */
             category[0].addEventListener('click', ()=>{
                 categoryReset();
                 category[0].classList.toggle('active');
                 menu[0].style.display = 'flex';
+                menuOption('디카페인', '추가');
+                
             });
             category[1].addEventListener('click', ()=>{
                 categoryReset();
                 category[1].classList.toggle('active');
                 menu[1].style.display = 'flex';
+                menuOption('에스프레소', '선택');
             });
             category[2].addEventListener('click', ()=>{
                 categoryReset();
                 category[2].classList.toggle('active');
                 menu[2].style.display = 'flex';
+                menuOption('프라푸치노', '추가');
             });
+                        /* category_title 출력 */
+                        function menuOption(txt1, txt2){
+                return menuTitle.innerHTML = `<span>${txt1} 에스프레소샷</span><img src="images/cup_icon.png" alt=""> ${txt2}가능(일부 음료 제외)`;
+            }
+            /* category menu 클릭 시, 메뉴 화면 초기화 */
             function categoryReset(){
                 category[0].classList.remove('active');
                 category[1].classList.remove('active');
