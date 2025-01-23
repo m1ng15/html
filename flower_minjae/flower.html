@@ -12,26 +12,29 @@
 <body>
     <div class="test_wrap">
         <div class="title">
-            <p><img src="#" alt="#"></p>
+            <p><img src="./images/flower_group.png" alt="#"></p>
             <h1>당신의 탄생화를 찾아드립니다.</h1>
         </div>
-        <ul id="user_birth">
-            <li><input type="number" name="user_year" id="user_year" placeholder="연도"><span>년</span></li>
-            <li><input type="number" name="user_month" id="user_month" placeholder="월"><span>월</span></li>
-            <li><input type="number" name="user_day" id="user_day" placeholder="일"><span>일</span></li>
+        <ul id="get_birth">
+            <ul id="user_info">
+                <li><input type="number" name="user_year" id="user_year" placeholder="연도"><span>년</span></li>
+                <li><input type="number" name="user_month" id="user_month" placeholder="월"><span>월</span></li>
+                <li><input type="number" name="user_day" id="user_day" placeholder="일"><span>일</span></li>
+            </ul>
+            <li><button type="button" id="result_btn">찾아보기</button></li>
         </ul>
         <div class="result_wrap">
-            <h2 class="flower_name">꽃이름</h2>
+            <h2 id="flower_name">꽃이름</h2>
             <div class="result_contents">
-                <p class="img"><img src="#" alt="#"></p>
-                <div class="txt">
-                    <p class="contents_title">키워드</p>
-                    <p id="keywords"><!-- 탄생화 특징 --></p>
+                <p class="flower_img"><img src="./images/21605_large.webp" alt="#"></p>
+                <div class="flower_info">
+                    <p class="keywords">키워드</p>
+                    <p id="keywords_list"><!-- 탄생화 특징 --></p>
                 </div>
             </div>
             <div class="res_btn">
-                <a href="#" class="save_btn">결과 저장하기</a>
-                <a href="#" class="share_btn">결과 공유하기</a>
+                <a href="#" id="save_btn">결과 저장하기</a>
+                <a href="#" id="share_btn">결과 공유하기</a>
             </div>
         </div>
     </div>

@@ -1,0 +1,70 @@
+.test_wrap {
+    width: 800px;
+    background-color: #FFF6DA;
+}
+/* ===========================테스트 제목 */
+.test_wrap .title {
+    text-align: center;
+}
+.test_wrap .title > p {
+    display: inline-block; width: 80px;
+}
+.test_wrap .title > p img {width: 100%;}
+.test_wrap .title h1 {}
+/* ===========================테스트 입력창 */
+.test_wrap #get_birth {
+    margin: 20px 0;
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+}
+.test_wrap #get_birth #user_info {
+    display: flex; flex-flow: row nowrap;
+    margin-bottom: 20px;
+}
+.test_wrap #get_birth #user_info li {margin-right: 15px;}
+.test_wrap #get_birth #user_info li input[name^=user] {
+    background: none; margin-right: 3px; padding: 2px 5px;
+    border: 1px solid #aaa; border-radius: 3px;
+}
+.test_wrap #get_birth #user_info li input[name$=year] {width: 85px;}
+.test_wrap #get_birth #user_info li input[name$=month] {}
+.test_wrap #get_birth #user_info li input[name$=month],
+.test_wrap #get_birth #user_info li input[name$=day] {width: 50px;}
+.test_wrap #get_birth #user_info li input[name$=day] {}
+.test_wrap #get_birth #user_info li span {}
+.test_wrap #get_birth li #result_btn {
+    background-color: #F4D793; color: #333;
+    font-weight: 500;
+    padding: 8px 17px; border-radius: 7px;
+}
+/* ===========================테스트 결과창 */
+.test_wrap .result_wrap {
+    background-color: #F4D793;
+    width: 600px; margin: 0 auto;
+    display: flex; flex-flow: column nowrap; align-items: center;
+    text-align: center;
+}
+.test_wrap .result_wrap #flower_name {
+    display: inline-block;
+    width: 200px; padding: 10px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #A94A4A; color: #FFF6DA;
+}
+.test_wrap .result_wrap .result_contents {
+    display: flex; flex-flow: row nowrap;
+    margin: 20px 30px; 
+}
+.test_wrap .result_wrap .result_contents > *{width: calc(100% / 2);}
+.test_wrap .result_wrap .flower_img {
+    margin-right: 30px; border-radius: 7px;
+    overflow: hidden;
+}
+.test_wrap .result_wrap .flower_img img {width: 100%;}
+.test_wrap .result_wrap .flower_info {text-align: left;}
+.test_wrap .result_wrap .flower_info .keywords {}
+.test_wrap .result_wrap .flower_info #keywords_list {}
+.test_wrap .result_wrap .res_btn {}
+.test_wrap .result_wrap .res_btn a {}
+.test_wrap .result_wrap .res_btn #save_btn {}
+.test_wrap .result_wrap .res_btn #share_btn {}

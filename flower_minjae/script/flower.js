@@ -49,3 +49,17 @@ const birthday_flower = [
         content:'축하, 감사'
     }
 ]
+
+const userMonth = document.querySelector('#user_month');
+const flowerName = document.querySelector('.result_wrap #flower_name')
+const keywords = document.querySelector('.flower_info #keywords_list');
+const resultBtn = document.querySelector('#result_btn');
+console.log(userMonth.value, flowerName);
+resultBtn.addEventListener('click', ()=>{
+    console.log('확인');
+    flowerName.textContent = birthday_flower[userMonth.value-1].flower;
+    keywords.textContent = birthday_flower[userMonth.value-1].content;
+    
+})
+
+
