@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper 1. 기본구성</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/swiper2.js" defer></script>
+    <style>
+        .best_swiper {
+            width: 100%; height: 100vh; margin: 0 auto;
+        }
+        .best_swiper .swiper-wrapper {}
+        .best_swiper .swiper-wrapper .swiper_slide {}
+        /* slide 공통 선택자 */
+        .best_swiper .swiper-wrapper .common_slide {
+            background-image: url(./images/bnr1.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .best_swiper .swiper-wrapper .common_slide .contents {
+            font-size: 1.38rem;
+            width: 1200px; /* margin: 0 auto; */ /* absolute를 적용하면 먹히지 않음 */
+            /* padding-top: 518px; */
+            position: absolute; left: 50%; transform: translateX(-50%);
+        }
+        .best_swiper .swiper-wrapper .common_slide .contents h1 {
+            font-size: 3.13rem; font-weight: 700; margin: 30px 0 35px 0;
+        }
+        .best_swiper .swiper-wrapper .common_slide .contents p:last-child {font-size: 1rem; line-height: 1.3em;}
+        /* ===========================================slide1 */
+        .best_swiper .swiper-wrapper .slide1 {}
+        .best_swiper .swiper-wrapper .slide1 .contents1 {bottom: 240px;}
+        .best_swiper .swiper-wrapper .slide1 .contents1 h1 {}
+        .best_swiper .swiper-wrapper .slide1 .contents1 p {}
+        /* ============================================slide2 */
+        .best_swiper .swiper-wrapper .slide2 {background-image: url(./images/bnr2.jpg);}
+        .best_swiper .swiper-wrapper .slide2 .contents2 {top: 263px; padding-left: 12px;}
+        .best_swiper .swiper-wrapper .slide2 .contents2 h1 {}
+        .best_swiper .swiper-wrapper .slide2 .contents2 p {}
+        /* ============================================slide3 */
+        .best_swiper .swiper-wrapper .slide3::before {
+            content: ''; display: inline-block; width: 100%; height: 100%;
+            background: linear-gradient(-180deg, transparent,rgba(0,0,0,0.6) 69%);
+            z-index: 90;
+        }
+        .best_swiper .swiper-wrapper .slide3 {background-image: url(./images/bnr3.jpg);}
+        .best_swiper .swiper-wrapper .slide3 .contents3 {
+            color: white;
+            text-align: right;
+            bottom: 145px; padding-right: 30px;
+            z-index: 100;
+        }
+        .best_swiper .swiper-wrapper .slide3 .contents3 h1 {}
+        .best_swiper .swiper-wrapper .slide3 .contents3 p {}
+    </style>
+</head>
+<body>
+    <!-- swiper 슬라이드가 보이는 영역 -->
+    <div class="swiper best_swiper">
+        <!--  실제 움직이는 영역 -->
+        <div class="swiper-wrapper">
+            <!-- 개별슬라이드(사용자정의클래스 작성권장) -->
+            <div class="swiper-slide common_slide slide1"><!-- bnr1 -->
+                <div class="contents contents1">
+                    <p>역사의 향기가 머무는곳</p>
+                    <h1>경복궁에서 만나는 시간여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가 보세요.</p>
+                </div>
+            </div>
+            <div class="swiper-slide common_slide slide2">
+                <div class="contents contents2">
+                    <p>역사의 향기가 머무는곳</p>
+                    <h1>경복궁에서 만나는 시간여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가 보세요.</p>
+                </div>
+            </div>
+            <div class="swiper-slide common_slide slide3">
+                <div class="contents contents3">
+                    <p>역사의 향기가 머무는곳</p>
+                    <h1>경복궁에서 만나는 시간여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가 보세요.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
