@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리바트몰</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="shorcut icon" href="./images/logo.png" type="images/x-icon">
+    <link rel="icon" href="./images/logo.png" type="images/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/product.css">
+</head>
+<body>
+    <div class="hd_bg">
+        <header>
+            <h1><a href="#"><img src="./images/h_logo.png" alt="리바트몰"></a></h1>
+            <div class="hd_center">
+                <ul class="service">
+                    <li><a href="#">특가 이벤트</a></li>
+                    <li><a href="#">상담 서비스</a></li>
+                    <li><a href="#">기타 서비스</a></li>
+                </ul>
+                <nav>
+                    <a href="#">모든 제품</a>
+                    <a href="#">공간별 제품</a>
+                    <a href="#">세계별 제품</a>
+                </nav>
+                <form action="#" method="get" id="searchFrm">
+                    <input type="search" name="user_search" id="user_search" placeholder="메트리스">
+                    <button type="button" id="search_btn"><img src="./images/search.png" alt="검색"></button>
+                </form>
+            </div>
+            <div class="hd_right">
+                <ul class="login">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+                <ul class="icon">
+                    <li><a href="#"><img src="./images/shopping_bag.png" alt="장바구니"></a></li>
+                    <li><a href="#"><img src="./images/person.png" alt="마이페이지"></a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="product_wrap">
+            <div class="page_path">
+                <a href="#">공간별 제품</a>
+                <a href="#">오피스</a>
+                <a href="#">컴퓨터 책상</a>
+                <a href="#">사무용책상</a>
+            </div>
+            <div class="product_container">
+                <div class="product_img">
+                    <p class="big_img"><img src="./images/big_item_001.jpg" alt=""></p>
+                    <div class="thumb_list">
+                        <a href="#" class="active"><img src="./images/item_001.jpg" alt=""></a>
+                        <a href="#"><img src="./images/item_002.jpg" alt=""></a>
+                        <a href="#"><img src="./images/item_003.jpg" alt=""></a>
+                        <a href="#"><img src="./images/item_004.jpg" alt=""></a>
+                        <a href="#"><img src="./images/item_005.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="product_txt">
+                    <ul class="item_tag">
+                        <li class="brand"><a href="#">리바트 하움</a></li>
+                        <li class="best"><a href="#">BEST</a></li>
+                    </ul>
+                    <div class="item_header">
+                        <div class="item_info">
+                            <div class="item_name">
+                                <h1 class="name">커리어 상부 선반 책상</h1>
+                                <p class="code">상품코드<a href="#">P2000012386</a></p>
+                            </div>
+                            <p class="item_review">
+                                <span class="star"><!-- 리뷰별 이미지 --></span>
+                                <span class="star"><!-- 리뷰별 이미지 --></span>
+                                <span class="star"><!-- 리뷰별 이미지 --></span>
+                                <span class="star"><!-- 리뷰별 이미지 --></span>
+                                <span class="star"><!-- 리뷰별 이미지 --></span>
+                                <a href="#">
+                                    254개 리뷰
+                                </a>
+                            </p>
+                        </div>
+                        <div class="item_btn">
+                            <a href="#" class="share_btn"><img src="./images/share.png" alt="상품 공유하기"></a>
+                            <a href="#" class="store_btn"><img src="./images/location.png" alt="매장 검색하기"></a>
+                        </div>
+                    </div>
+                    <div class="price_and_offers">
+                        <div class="item_price">
+                            <p class="original_price">225,000원</p>
+                            <p><span class="discount_rate">7%</span><em class="sale_price">210,000</em>원~</p>
+                        </div>
+                        <div class="offer_details">
+                            <dl class="benefit">
+                                <dt>혜택</dt>
+                                <dd>무이자 혜택<a href="#"><img src="./images/info_i.png" alt=""></a></dd>
+                                <dd>결제 혜택<a href="#"><img src="./images/info_i.png" alt=""></a></dd>
+                                <dd>H.POINT 적립 혜택<a href="#"><img src="./images/info_i.png" alt=""></a></dd>
+                            </dl>
+                            <dl class="shipping">
+                                <dt>배송</dt>
+                                <dd>무료배송</dd>
+                                <dd>직접배송</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="item_option">
+                        <select name="item_size" class="item_size">
+                            <option value="0">사이즈 선택 (가로 길이/mm)</option>
+                            <option value="size1200">1200</option>
+                            <option value="size1400">1400</option>
+                            <option value="size1600">1600</option>
+                        </select>
+                        <select name="item_color" class="item_color">
+                            <option value="0">색상 선택 (표면 + 다리)</option>
+                            <option value="OA_GY">오크+그레이(+40,000원)</option>
+                            <option value="OA_OA">오크+오크(+40,000원)</option>
+                            <option value="SW_GY">화이트+그레이(+40,000원)</option>
+                            <option value="SW_OA">화이트+오크(+40,000원)</option>
+                        </select>
+                        <select name="item_bundle" class="item_bundle">
+                            <option value="0">추가상품 (선택)</option>
+                            <option value="V2_chair">스탠다드 V2 의자</option>
+                            <option value="office_cabinet">오피스 이동서랍(2/3단)</option>
+                        </select>
+                    </div>
+                    <div class="item_pay">
+                        <div class="pay_info">
+                            <p class="coast_view">총 합계 금액 <span class="pay_coast">0</span> 원</p>
+                            <p>※ 장바구니 배송비 쿠폰은 주문서 작성시 적용됩니다.</p>
+                        </div>
+                        <div class="pay_action">
+                            <ul class="like_btn">
+                                <li><a href="#"><img src="./images/like.png" alt="좋아요"></a></li>
+                                <li><a href="#"><img src="./images/gift.png" alt="선물하기"></a></li>
+                            </ul>
+                            <ul class="get_btn">
+                                <li><button type="button" id="cart_btn">장바구니</button></li>
+                                <li><button type="button" id="pay_btn">구매하기</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item_bnr">
+                        <a href="#">
+                            <img src="./images/item_bnr(D).jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="ft_bg">
+        <footer>
+            <div class="ft_left">
+                <div class="ft_left_top">
+                    <div class="ft_t_left">
+                        <ul class="customer_info">
+                            <li><a href="#">AS예약</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">고객의 소리</a></li>
+                        </ul>
+                        <ul class="company_info">
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">제휴/대리점 문의</a></li>
+                            <li><a href="#">대량 구매 문의</a></li>
+                            <li><a href="#">경영이념</a></li>
+                            <li><a href="#">채용정보</a></li>
+                        </ul>
+                        <ul class="sns">
+                            <li><a href="#" class="blog" title="네이버블로그"></a></li>
+                            <li><a href="#" class="fb" title="페이스북"></a></li>
+                            <li><a href="#" class="post" title="포스트"></a></li>
+                            <li><a href="#" class="ig" title="인스타그램"></a></li>
+                            <li><a href="#" class="tw" title="트위터"></a></li>
+                            <li><a href="#" class="yt" title="유튜브"></a></li>
+                        </ul>
+                    </div>
+                    <div class="cs_info">
+                        <p class="cs_title">CS</p>
+                        <div class="cs_txt">
+                            <dl>
+                                <dt>운영시간</dt>
+                                <dd>평일: 9:00 ~ 18:00<br>토/일요일 및 공휴일 휴무</dd>
+                            </dl>
+                            <dl>
+                                <dt>고객센터</dt>
+                                <dd>1577-3332</dd>
+                            </dl>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="ft_left_btm">
+                    <address>
+                        상호명 : (주)현대리바트 | 대표이사 : 윤기철 | 경기도 용인시 남사읍 경기동로316 | 사업자등록번호 : 135-81-32239 <a href="#">사업자번호조회</a><br>통신판매업신고번호 : 2014-용인처인-00049 | 개인정보관리자 : 최재운 | 이메일 : livartcs@hyundailivart.co.kr
+                    </address>
+                    <p>Copyright&copy; HYUNDAI LIVART Corporation. All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="ft_right">
+                <select name="family_site">
+                    <option>FAMILY SITE</option>
+                    <option>현대백화점그룹</option>
+                    <option>현대백화점</option>
+                    <option>현대홈쇼핑</option>
+                </select>
+                <ul class="ft_img_g">
+                    <li>
+                        <a href="#"><img src="./images/footer_bi_b.png" alt="리바트몰"></a>
+                        <a href="#"><img src="./images/mark_ccm.png" alt="소비자중심 공정거래위원회"></a>
+                    </li>
+                    <li>
+                        <p class="qr_txt"><a href="#">모바일 앱</a>으로 더욱 편하게 쇼핑하세요</p>
+                        <p><img src="./images/qrcode_b.png" alt="리바트몰 모바일앱 바로가기 qr코드"></p>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
