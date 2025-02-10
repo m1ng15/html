@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COSRX 포트폴리오</title>
+    <!-- Swiper 연결 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Font 연결 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- favicon 설정 -->
+    <link rel="shorcut icon" href="./images/cosrx_favicon.webp" type="images/x-icon">
+    <link rel="icon" href="./images/cosrx_favicon.webp" type="images/x-icon">
+    <!-- Script 연결 -->
     <script src="./script/index.js" defer></script>
+    <!-- CSS 연결 -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
     <header>
-        <div class="header_bnr_wrap">
-            <div class="hd_bnr_message">
-                <ul class="message_group">
-                    <li><p>공식몰 회원가입 시, 무료배송 쿠폰 증정</p></li>
+        <div class="hd_top">
+            <div class="hd_message">
+                <ul class="message_list">
+                    <li><a href="#">공식몰 회원가입 시, 무료배송 쿠폰 증정</a></li>
                 </ul>
                 <a href="#"><img src="./images/right_btn.png" alt=""></a>
             </div>
@@ -27,7 +36,7 @@
             </div>
             <button type="button" id="close_btn"><img src="./images/close.png" alt=""></button>
         </div>
-        <div class="header_nav">
+        <div class="hd_navbar">
             <h1><a href="#"><img src="./images/cosrx_logo.png" alt="코스알엑스"></a></h1>
             <nav>
                 <ul class="path">
@@ -35,17 +44,39 @@
                     <li><a href="#">Bestsellers</a></li>
                     <li><a href="#">Skincare</a></li>
                     <li><a href="#">Event</a></li>
-                    <span class="line"></span>
+                    <li><span class="line"></span></li>
                     <li><a href="#">About COSRX</a></li>
                     <li><a href="#">Ingredient</a></li>
                 </ul>
             </nav>
-            <div class="header_icon">
+            <div class="hd_icon">
                 <a href="#"><img src="./images/search.png" alt="검색"></a>
                 <a href="#"><img src="./images/cart.png" alt="장바구니"></a>
                 <a href="#"><img src="./images/user.png" alt="마이페이지"></a>
             </div>
         </div>
     </header>
+    <main>
+        <div class="swiper main_bnr">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide main_bnr1">
+                    <div class="contents contents1">
+                        <h1>모두를 위한<br>트러블 흔적 고민 세럼</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide main_bnr2">
+                    <div class="contents contents2">
+                        <h1>모두를 위한<br>트러블 흔적 고민 세럼</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <!-- 아래 (사용자 커스텀 버전) -->
+            <button type="button" class="prev"><img src="./images/bnr_next.png" alt="이전 이벤트 보기"></button>
+            <button type="button" class="next"><img src="./images/bnr_next.png" alt="다음 이벤트 보기"></button>
+        </div>
+        <div class="swiper-pagination"><!-- 내용작성금지 --></div>
+    </main>
 </body>
 </html>

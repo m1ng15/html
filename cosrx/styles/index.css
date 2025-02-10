@@ -1,27 +1,96 @@
 header {
-    background-color: pink;
+    width: 100%;
+    position: fixed; top: 0; left: 0; z-index: 99;
 }
-header > * {padding: 0 80px;}
-header .header_bnr_wrap {
-    background-color: #111;
+header .hd_top {
+    background-color: #111; padding: 0 80px;
+    display: flex; flex-flow: row nowrap; justify-content: flex-end;
+}
+header .hd_top .hd_message {
+    position: absolute; left:50%;
+    transform:translateX(-50%);
+    align-self: center;
+}
+header .hd_top .hd_message .message_list {float: left; margin-right: 30px;}
+header .hd_top .hd_message .message_list li {}
+header .hd_top .hd_message .message_list li a {
+    font-size: 0.88rem; letter-spacing: -0.02em;
+    color: #fff;
+}
+header .hd_top .hd_message .message_list a {}
+header .hd_top .hd_message .message_list a img {}
+header .hd_top .page_setting {margin-right: 20px;}
+header .hd_top .page_setting a {
+    font-size: 0.88rem; letter-spacing: -0.02em; line-height: 21px;
+    color: #fff;
+}
+header .hd_top .page_setting .line {}
+header .hd_top #close_btn {}
+/* =========================header : nav 부분 */
+header .hd_navbar {
+    padding: 0 80px;
     display: flex; flex-flow: row nowrap;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
+    justify-content: space-between; align-items: center;
+    border: 3px solid #000;
 }
-header .header_bnr_wrap .hd_bnr_message {
+header .hd_navbar h1 {padding: 20px 0;}
+header .hd_navbar h1 a {}
+header .hd_navbar h1 a img {}
+header .hd_navbar nav {
     position: absolute; left:50%;
     transform:translateX(-50%);
 }
-header .header_bnr_wrap .hd_bnr_message .message_group {float: left; margin-right: 30px;}
-header .header_bnr_wrap .hd_bnr_message .message_group li {}
-header .header_bnr_wrap .hd_bnr_message .message_group li p {
-    font-size: 0.88rem; letter-spacing: -0.02em;
-    color: #fff;}
-header .header_bnr_wrap .hd_bnr_message a {}
-header .header_bnr_wrap .hd_bnr_message a img {}
-header .header_bnr_wrap .page_setting {margin-right: 20px;}
-header .header_bnr_wrap .page_setting a {
-    font-size: 0.88rem; letter-spacing: -0.02em; line-height: 21px;
-    color: #fff;}
-header .header_bnr_wrap .page_setting .line {}
+header .hd_navbar .path {display: flex; flex-flow: row nowrap;}
+header .hd_navbar .path li {margin-right: 65px;}
+header .hd_navbar .path li:last-child {margin-right: 0;}
+header .hd_navbar .path li a {font-weight: 500;}
+header .hd_navbar .path li .line {}
+header .hd_navbar .hd_icon {}
+header .hd_navbar .hd_icon a {}
+header .hd_navbar .hd_icon a:nth-child(2) {margin: 0 15px;}
+header .hd_navbar .hd_icon a img {}
+/* ========================= main_bnr 부분 */
+main {background-color: pink}
+/* main_bnr 공통 선택자 */
+main .main_bnr {width: 100%; height: 875px; margin: 0 auto;}
+main .main_bnr .swiper-wrapper {
+    background-size: cover;
+    background-position: center;
+}
+main .main_bnr .swiper-wrapper .swiper-slide {
+}
+main .main_bnr .swiper-wrapper .swiper-slide .contents {
+    width: 1360px;
+    position: absolute; left: 0; bottom: 0;
+}
+main .main_bnr .swiper-wrapper .swiper-slide .contents h1 {
+    font-size: 2.25rem; font-weight: 600; line-height: 1.3; letter-spacing: -0.02em;
+}
+main .main_bnr .swiper-wrapper .main_bnr1 {background-image: url(../images/main_bnr_001.jpg);}
+main .main_bnr .swiper-wrapper .main_bnr1 .contents1 {background-color: lemonchiffon;}
+main .main_bnr .swiper-wrapper .main_bnr1 .contents1 h1 {}
+main .main_bnr .swiper-wrapper .main_bnr2 {background-image: url(../images/main_bnr_002.jpg);}
+main .main_bnr .swiper-wrapper .main_bnr2 .contents2 {}
+main .main_bnr .swiper-wrapper .main_bnr2 .contents2 h1 {}
+/* main_bnr 페이지 위치(기본) */
+main .swiper-pagination-bullet {
+    background-color: #111;
+    opacity: 0.2;
+}
+main .swiper-pagination-bullet-active {
+    background-color: #111;
+    opacity: 0.8;
+}
+/* main_bnr 페이지 이동 버튼(기본) */
+.btn {
+    left: 20px; top: 20px;
+    background-color: aquamarine;
+    width: 100px; height: 100px;
+}
+.event-swiper .btn .swiper-button-next {color: #fff; opacity: 0.6; transform: scale(0.6);}
+.event-swiper .btn .swiper-button-prev {color: #fff; opacity: 0.6; transform: scale(0.6);}
+.event-swiper .btn .swiper-button-next:hover {opacity: 1;}
+.event-swiper .btn .swiper-button-prev:hover {opacity: 1;}
+.btn img {width: 100%;}
+.btn .prev {width: 50px;}
+.btn .next {width: 50px; transform: scaleX(-1);}
