@@ -103,3 +103,55 @@ main .main_bnr_wrap .bnr_btn {
     float: left; transform: scaleX(-1);
 }
 .bnr_btn .next {float: right;}
+/*================================================== 1행~행 컨테이너 <제목> 공통 선택자 */
+main .container {padding: 100px 0;}
+main .container .header_wrap {background-color: yellow;}
+main .container .header_wrap .title_wrap {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid rgba(187,187,187,0.65);
+    padding-bottom: 27px;
+}
+main .container .header_wrap .title_wrap .title {}
+main .container .header_wrap .title_wrap .title .title_en {
+    font-size: 0.88rem; line-height: 1.3; letter-spacing: -0.02em;
+    color: #777;
+    margin-bottom: 10px;
+}
+main .container .header_wrap .title_wrap .title .title_ko {
+    font-size: 1.75rem; letter-spacing: -0.02em; font-weight: 600;
+}
+main .container .header_wrap .title_wrap .more_btn {
+    display: inline-block;
+    background: palegoldenrod url(../images/more_arrow.png) no-repeat;
+    background-size: 28px 28px;
+    background-position: right top;
+}
+main .container .header_wrap .title_wrap .more_btn a {
+    font-size: 0.88rem; letter-spacing: -0.02em; line-height: 28px;
+    padding-right: 35px;
+}
+main .container .header_wrap .category {
+    padding-top: 27px;
+    display: flex; flex-flow: row nowrap;
+    background-color: magenta;}
+main .container .header_wrap .category li {margin-right: 35px;}
+main .container .header_wrap .category li:last-child {margin-right: 0;}
+main .container .header_wrap .category li a {display: inline-block; letter-spacing: -0.02em; font-weight: 600; padding: 5px 0;}
+main .container .header_wrap .category li .active {
+    background-color: #111; border-radius: 5px; padding: 5px 10px;
+    color: #fff;
+}
+/*================================================== 1행 베스트 상품 */
+main .best_container {margin: 0 80px; background-color: lemonchiffon;}
+main .best_container .header_wrap {}
+main .best_container .header_wrap .title_wrap {}
+main .best_container .header_wrap .title_wrap .title {}
+main .best_container .header_wrap .title_wrap .title .title_en {}
+main .best_container .header_wrap .title_wrap .title .title_ko {}
+main .best_container .header_wrap .title_wrap .more_btn {}
+main .best_container .header_wrap .title_wrap .more_btn a {}
+main .best_container .header_wrap .best_category {}
+main .best_container .header_wrap .best_category li {}
+main .best_container .header_wrap .best_category li a {}
+/*================================================== 1행 베스트 상품 슬라이드 */

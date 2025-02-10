@@ -10,3 +10,5 @@ const mainSwiper = new Swiper('.main_bnr',{
         prevEl:'.btn .prev',
     },
 });
+const bestSwiper = new Swiper('.best_slider',{
+});
