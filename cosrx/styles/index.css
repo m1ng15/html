@@ -52,7 +52,9 @@ header .hd_navbar .hd_icon a img {}
 /* ========================= main_bnr 부분 */
 main {background-color: pink}
 /* main_bnr 공통 선택자 */
-main .main_bnr {width: 100%; height: 875px; margin: 0 auto;}
+main .main_bnr {
+    width: 100%; height: 875px; margin: 0 auto;
+}
 main .main_bnr .swiper-wrapper {
     background-size: cover;
     background-position: center;
@@ -82,15 +84,14 @@ main .swiper-pagination-bullet-active {
     opacity: 0.8;
 }
 /* main_bnr 페이지 이동 버튼(기본) */
-.btn {
-    left: 20px; top: 20px;
-    background-color: aquamarine;
-    width: 100px; height: 100px;
+.bnr_btn {
+    overflow: hidden;
+    position: relative;
+    background-color: paleturquoise;
 }
-.event-swiper .btn .swiper-button-next {color: #fff; opacity: 0.6; transform: scale(0.6);}
-.event-swiper .btn .swiper-button-prev {color: #fff; opacity: 0.6; transform: scale(0.6);}
-.event-swiper .btn .swiper-button-next:hover {opacity: 1;}
-.event-swiper .btn .swiper-button-prev:hover {opacity: 1;}
-.btn img {width: 100%;}
-.btn .prev {width: 50px;}
-.btn .next {width: 50px; transform: scaleX(-1);}
+.bnr_btn img {width: 100%;}
+.bnr_btn .prev {
+    float: left;
+    width: 52px; transform: scaleX(-1);
+}
+.bnr_btn .next {float: right; width: 52px;}
