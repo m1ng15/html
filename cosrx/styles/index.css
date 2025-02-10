@@ -3,22 +3,27 @@ header {
     position: fixed; top: 0; left: 0; z-index: 99;
 }
 header .hd_top {
+    height: 37px;
     background-color: #111; padding: 0 80px;
-    display: flex; flex-flow: row nowrap; justify-content: flex-end;
+    display: flex; flex-flow: row nowrap; justify-content: flex-end; align-items: center;
 }
 header .hd_top .hd_message {
     position: absolute; left:50%;
     transform:translateX(-50%);
-    align-self: center;
+
 }
 header .hd_top .hd_message .message_list {float: left; margin-right: 30px;}
-header .hd_top .hd_message .message_list li {}
+header .hd_top .hd_message .message_list li {
+    background: url(../images/right_btn.png) no-repeat;
+    background-size: 14px 14px;
+    background-position: top right;
+    background-position-y: center;
+}
 header .hd_top .hd_message .message_list li a {
     font-size: 0.88rem; letter-spacing: -0.02em;
     color: #fff;
+    padding-right: 30px;
 }
-header .hd_top .hd_message .message_list a {}
-header .hd_top .hd_message .message_list a img {}
 header .hd_top .page_setting {margin-right: 20px;}
 header .hd_top .page_setting a {
     font-size: 0.88rem; letter-spacing: -0.02em; line-height: 21px;
@@ -52,15 +57,14 @@ header .hd_navbar .hd_icon a img {}
 /* ========================= main_bnr 부분 */
 main {background-color: pink}
 /* main_bnr 공통 선택자 */
+main .main_bnr_wrap {}
 main .main_bnr {
-    
     width: 100%; height: 875px; margin: 0 auto;
 }
-main .main_bnr .swiper-wrapper {
+main .main_bnr .swiper-wrapper {}
+main .main_bnr .swiper-wrapper .swiper-slide {
     background-size: cover;
     background-position: center;
-}
-main .main_bnr .swiper-wrapper .swiper-slide {
 }
 main .main_bnr .swiper-wrapper .swiper-slide .contents {
     width: 1360px; margin: 0 auto;
@@ -86,9 +90,9 @@ main .swiper-pagination-bullet-active {
     opacity: 0.8;
 }
 /* main_bnr 페이지 이동 버튼(기본) */
-.bnr_btn {
+main .main_bnr_wrap .bnr_btn {
+    width: 100%;
     overflow: hidden;
-    position: relative;
     background-color: paleturquoise;
 }
 .bnr_btn img {width: 100%;}
