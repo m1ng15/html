@@ -31,7 +31,7 @@ header .hd_top .page_setting a {
 }
 header .hd_top .page_setting .line {}
 header .hd_top #close_btn {}
-/* =========================header : nav 부분 */
+/*================================================== header : nav 부분 */
 header .hd_navbar {
     padding: 0 80px;
     display: flex; flex-flow: row nowrap;
@@ -54,7 +54,7 @@ header .hd_navbar .hd_icon {}
 header .hd_navbar .hd_icon a {}
 header .hd_navbar .hd_icon a:nth-child(2) {margin: 0 15px;}
 header .hd_navbar .hd_icon a img {}
-/* ========================= main_bnr 부분 */
+/*================================================== main_bnr 부분 */
 main {background-color: pink}
 /* main_bnr 공통 선택자 */
 main .main_bnr_wrap {position: relative;}
