@@ -77,7 +77,7 @@
                 <button type="button" class="prev"><img src="./images/bnr_next.png" alt="이전 이벤트 보기"></button>
                 <button type="button" class="next"><img src="./images/bnr_next.png" alt="다음 이벤트 보기"></button>
             </div>
-            <div class="swiper-pagination"><!-- 내용작성금지 --></div>
+            <div class="swiper-pagination main-pagination"><!-- 내용작성금지 --></div>
         </div>
         <!-- END 메인 배너 슬라이드 -->
         <!-- 1행 베스트 상품 -->
@@ -622,14 +622,18 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide collection_bnr1">
                         <div class="contents contents1">
-                            <h2><span>고효능 더마 제품</span>THE RX :</h2>
-                            <p>피부 고민 해결을 위한 단 하나의 솔루션</p>
+                            <div class="contents_title">
+                                <h2><span>고효능 더마 제품</span>THE RX :</h2>
+                                <p>피부 고민 해결을 위한 단 하나의 솔루션</p>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide collection_bnr2">
                         <div class="contents contents2">
-                            <h2><span>고효능 더마 제품</span>THE RX :</h2>
-                            <p>피부 고민 해결을 위한 단 하나의 솔루션</p>
+                            <div class="contents_title">
+                                <h2><span>고효능 더마 제품</span>THE RX :</h2>
+                                <p>피부 고민 해결을 위한 단 하나의 솔루션</p>
+                            </div>
                         </div>
                     </div>
                     <!-- !! 콜렉션 베너 내용 추가 부분 !! -->
@@ -648,7 +652,7 @@
                 </div>
             </div>
             <div class="main_wrap collection_wrap">
-                <ul id="collection_category">
+                <ul class="line_style_category"  id="collection_category">
                     <li class="active"><a href="#"><span>고효능 더마 제품</span>THE RX</a></li>
                     <li><a href="#"><span>평생 인생템</span>원스텝</a></li>
                     <li><a href="#"><span>꿀광 부스팅</span>풀핏</a></li>
@@ -662,7 +666,7 @@
                 <div id="collection_group">
                     <ul class="collc_row1">
                         <li class="contents colc_item1">
-                            <p class="item_img"></p>
+                            <p class="item_img"><img src="./images/collc_001.png" alt=""></p>
                             <div class="item_info">
                                 <div class="item_name">
                                     <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
@@ -677,7 +681,7 @@
                             </div>
                         </li>
                         <li class="contents colc_item2">
-                            <p class="item_img"></p>
+                            <p class="item_img"><img src="./images/collc_001.png" alt=""></p>
                             <div class="item_info">
                                 <div class="item_name">
                                     <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
@@ -692,7 +696,7 @@
                             </div>
                         </li>
                         <li class="contents colc_item3">
-                            <p class="item_img"></p>
+                            <p class="item_img"><img src="./images/collc_001.png" alt=""></p>
                             <div class="item_info">
                                 <div class="item_name">
                                     <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
@@ -709,7 +713,7 @@
                     </ul>
                     <ul class="collc_row2">
                         <li class="contents colc_item4">
-                            <p class="item_img"></p>
+                            <p class="item_img"><img src="./images/collc_001.png" alt=""></p>
                             <div class="item_info">
                                 <div class="item_name">
                                     <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
@@ -724,7 +728,7 @@
                             </div>
                         </li>
                         <li class="contents colc_item5">
-                            <p class="item_img"></p>
+                            <p class="item_img"><img src="./images/collc_001.png" alt=""></p>
                             <div class="item_info">
                                 <div class="item_name">
                                     <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
@@ -739,7 +743,7 @@
                             </div>
                         </li>
                         <li class="contents colc_item6">
-                            <p class="item_img"></p>
+                            <p class="item_img"><img src="./images/collc_001.png" alt=""></p>
                             <div class="item_info">
                                 <div class="item_name">
                                     <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
@@ -757,7 +761,273 @@
                 </div>
             </div>
         </div>
+        <!-- 5행 콜렉션 상품 추천 배너 -->
+        <div class="colc_product_bnr_wrap">
+            <div class="swiper colc_product_bnr">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide colc_product_bnr1">
+                        <p><img src="./images/hyd_main.jpg" alt=""></p>
+                        <div class="contents contents1">
+                            <div class="contents_title">
+                                <h2><span>수분채움</span>하이드리움</h2>
+                                <p>: 건조한 피부에 필요한 성분만 엄선한 필(fill)수(水)처방</p>
+                            </div>
+                            <!-- Start : 콜렉션 상품 추천 이중 배너-->
+                            <div class="swiper colc_product_slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide colc_product_slide1">
+                                        <a href="#" class="slide_contents slide_contents1">
+                                            <div class="slide_info">
+                                                <h3 class="colc_item_name"><span class="en">Hydrium Triple Hyaluronic Moisturizing Cleanser</span>하이드리움 모이스처 클렌저</h3>
+                                                <p class="colc_item_tag">#촉촉세안 #데일리쿠션버블 #식물유래계면활성제</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide colc_product_slide2">
+                                        <a href="#" class="slide_contents slide_contents2">
+                                            <div class="slide_info">
+                                                <h3 class="colc_item_name"><span class="en">Hydrium Watery Toner</span>하이드리움 워터리 토너</h3>
+                                                <p class="colc_item_tag">#수분길토너 #수분자석 #닦토</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide colc_product_slide3">
+                                        <a href="#" class="slide_contents slide_contents3">
+                                            <div class="slide_info">
+                                                <h3 class="colc_item_name"><span class="en">Hydrium Moisture Power Enriched Cream</span>하이드리움 크림</h3>
+                                                <p class="colc_item_tag">#속깊은수분크림 #피부보습 #수분보호막</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End : 콜렉션 상품 추천 이중 배너-->
+                        </div>
+                    </div>
+                    <div class="swiper-slide colc_product_bnr2">
+                        test
+                    </div>
+                </div>
+                <div class="swiper-pagination colc-pagination"><!-- 내용작성금지 --></div>
+            </div>
+        </div>
+        <!-- 6행 피부고민별 상품 -->
+        <div class="container concerns_container">
+            <div class="header_wrap">
+                <div class="title_wrap">
+                    <div class="title">
+                        <p class="title_en">Skin Concerns</p>
+                        <h2 class="title_ko">피부 고민별 맞춤 상품</h2>
+                    </div>
+                    <p class="more_btn" id="concerns_more"><a href="#">제품 더보기</a></p>
+                </div>
+            </div>
+            <div class="main_wrap concerns_wrap">
+                <ul class="line_style_category" id="concerns_category">
+                    <li class="active"><a href="#">모공&#47;피지</a></li>
+                    <li><a href="#">수분&#47;보습</a></li>
+                    <li><a href="#">미백&#47;선케어</a></li>
+                    <li><a href="#">주름&#47;탄력</a></li>
+                </ul>
+                <div id="concerns_slider_group">
+                    <div class="swiper concerns_slider" id="pore_slider">
+                        <!-- START 모공/피지 상품 슬라이드 -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide pore_slide1">
+                                <a href="#" class="contents contents1">
+                                    <p class="item_img"><img src="./images/concerns_001.jpg" alt=""></p>
+                                    <!-- 상품 정보 -->
+                                    <div class="item_info">
+                                        <!-- 상품 제목 -->
+                                        <div class="item_name">
+                                            <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
+                                        </div>
+                                        <!-- 상품 가격 -->
+                                        <div class="item_price">
+                                            <strong class="sale_price">34,500원</strong>
+                                            <div class="original_price">
+                                                <del class="original">45,000원</del>
+                                                <em class="sale">25%</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide pore_slide2">
+                                <a href="#" class="contents contents2">
+                                    <p class="item_img"><img src="./images/concerns_002.jpg" alt=""></p>
+                                    <!-- 상품 정보 -->
+                                    <div class="item_info">
+                                        <!-- 상품 제목 -->
+                                        <div class="item_name">
+                                            <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
+                                        </div>
+                                        <!-- 상품 가격 -->
+                                        <div class="item_price">
+                                            <strong class="sale_price">34,500원</strong>
+                                            <div class="original_price">
+                                                <del class="original">45,000원</del>
+                                                <em class="sale">25%</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide pore_slide3">
+                                <a href="#" class="contents contents3">
+                                    <p class="item_img"><img src="./images/concerns_003.jpg" alt=""></p>
+                                    <!-- 상품 정보 -->
+                                    <div class="item_info">
+                                        <!-- 상품 제목 -->
+                                        <div class="item_name">
+                                            <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
+                                        </div>
+                                        <!-- 상품 가격 -->
+                                        <div class="item_price">
+                                            <strong class="sale_price">34,500원</strong>
+                                            <div class="original_price">
+                                                <del class="original">45,000원</del>
+                                                <em class="sale">25%</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide pore_slide4">
+                                <a href="#" class="contents contents4">
+                                    <p class="item_img"><img src="./images/concerns_004.jpg" alt=""></p>
+                                    <!-- 상품 정보 -->
+                                    <div class="item_info">
+                                        <!-- 상품 제목 -->
+                                        <div class="item_name">
+                                            <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
+                                        </div>
+                                        <!-- 상품 가격 -->
+                                        <div class="item_price">
+                                            <strong class="sale_price">34,500원</strong>
+                                            <div class="original_price">
+                                                <del class="original">45,000원</del>
+                                                <em class="sale">25%</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide pore_slide5">
+                                <a href="#" class="contents contents5">
+                                    <p class="item_img"><img src="./images/concerns_001.jpg" alt=""></p>
+                                    <!-- 상품 정보 -->
+                                    <div class="item_info">
+                                        <!-- 상품 제목 -->
+                                        <div class="item_name">
+                                            <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
+                                        </div>
+                                        <!-- 상품 가격 -->
+                                        <div class="item_price">
+                                            <strong class="sale_price">34,500원</strong>
+                                            <div class="original_price">
+                                                <del class="original">45,000원</del>
+                                                <em class="sale">25%</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide pore_slide6">
+                                <a href="#" class="contents contents6">
+                                    <p class="item_img"><img src="./images/concerns_002.jpg" alt=""></p>
+                                    <!-- 상품 정보 -->
+                                    <div class="item_info">
+                                        <!-- 상품 제목 -->
+                                        <div class="item_name">
+                                            <p class="name">더 6 펩타이드 스킨 부스터 세럼 + RX SET</p>
+                                        </div>
+                                        <!-- 상품 가격 -->
+                                        <div class="item_price">
+                                            <strong class="sale_price">34,500원</strong>
+                                            <div class="original_price">
+                                                <del class="original">45,000원</del>
+                                                <em class="sale">25%</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 수분/보습 swiper -->
+                    <!-- 미백/선케어 swiper -->
+                    <!-- 주름/탄력 swiper -->
+                </div>
+            </div>
+        </div>
+        <!-- 7행 베스트 리뷰 -->
+        <div class="container review_container">
+            <div class="header_wrap"> <!-- 행의 헤더 (제목 + 카테고리) -->
+                <div class="title_wrap">
+                    <div class="title">
+                        <p class="title_en">Best Review</p>
+                        <h2 class="title_ko">베스트 리뷰</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 8행 브랜드 소개 -->
+        <div class="brand_bnr_wrap">
+            <div class="brand_info">
+                <div class="text">
+                    <p class="title">About COSRX</p>
+                    <p class="des">Cosmetics + RX(Prescription)<br>코스알엑스는 많은 사람들이 본연의 아름다움을<br>찾길 바라는 마음으로 정성을 다하고 있습니다.</p>
+                </div>
+                    <a href="#" id="brand_more">COSRX</a>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div class="ft_top">
+            <ul class="ft_header">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#"><em>개인정보보호방침</em></a></li>
+                <li><a href="#">제휴 및 수출문의</a></li>
+                <li><a href="#">직원전용</a></li>
+                <li><a href="#">채용안내</a></li>
+            </ul>
+        </div>
+        <div class="ft_btm">
+            <div class="site_info">
+                <ul>
+                    <li>(주)코스알엑스</li>
+                    <li><span class="line"></span></li>
+                    <li><em>대표이사</em> 전상훈</li>
+                    <li><span class="line"></span></li>
+                    <li>서울특별시 강남구 테헤란로 231 센터필드 WEST동 5층, (06142)</li>
+                </ul>
+                <ul>
+                    <li><em>개인정보담당자</em> 박찬우</li>
+                    <li><span class="line"></span></li>
+                    <li><em>통신판매업신고번호</em> 제2021-서울강남-06458호</li>
+                    <li><span class="line"></span></li>
+                    <li><em>사업자등록번호</em> 144-81-20381 <a href="#">사업자 정보 확인</a></li>
+                </ul>
+                <ul>
+                    <li><em>E-mail</em> cosrx_info@cosrx.co.kr</li>
+                    <li><span class="line"></span></li>
+                    <li><em>CS</em> 031-714-9488</li>
+                </ul>
+                <ul>
+                    <li>COSRX INC. 5F WEST Centerfield, 231, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</li>
+                    <li><span class="line"></span></li>
+                    <li>Copyright. COSRX All right reserved.</li>
+                </ul>
+                <li>안전거래를 위해 (주)이니시스의 구매안전(에스크로)에 가입하여 서비스를 제공하고 있습니다.</li>
+            </div>
+            <ul class="sns_group">
+                <li class="fb"><a href="#"></a></li>
+                <li class="insta"><a href="#"></a></li>
+                <li class="youtube"><a href="#"></a></li>
+                <li class="x"><a href="#"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
-<!-- Test Github -->
 </html>
