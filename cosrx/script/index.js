@@ -10,8 +10,8 @@ const mainHeaderSwiper = new Swiper('.main_bnr',{
         dynamicBullets: true,
     },
         navigation:{
-        nextEl:'.bnr_btn .next',
-        prevEl:'.bnr_btn .prev',
+        nextEl:'.next',
+        prevEl:'.prev',
     },
 });
 // 1행 베스트 상품 슬라이드 - 전체 상품
