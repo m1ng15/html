@@ -464,13 +464,17 @@ main .brand_bnr_wrap .brand_info * {
 main .brand_bnr_wrap .brand_info .text {}
 main .brand_bnr_wrap .brand_info .text .title {font-size: 1.75rem; font-weight: 700; margin-bottom: 15px;}
 main .brand_bnr_wrap .brand_info .text .des {line-height: 1.7;}
-main .brand_bnr_wrap .brand_info #brand_more {
+main .brand_bnr_wrap .brand_info > p {
+    text-align: right;
+}
+main .brand_bnr_wrap .brand_info p #brand_more {
     background: url(../images/brand_more.png) no-repeat right 15px center;
     display: inline-block;
     border: 1px solid #fff; border-radius: 80px;
     padding: 10px 50px 10px 15px;
+    margin-top: 20px;
 }
-/*===================================================< 9. Footer >*/
+/*=====================================================< 9. Footer >*/
 footer {padding: 80px 0;}
 footer .ft_top {}
 footer .ft_top .ft_header {

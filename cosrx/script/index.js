@@ -7,7 +7,7 @@ const mainHeaderSwiper = new Swiper('.main_bnr',{
         el:'main .main-pagination',
         type: 'bullets',
         clickable: true,
-        dynamicBullets:true,
+        dynamicBullets: true,
     },
         navigation:{
         nextEl:'.bnr_btn .next',
