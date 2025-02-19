@@ -1,12 +1,12 @@
-.main_hd_wrap {width: 100%; height: 104px; position: absolute; z-index: 200;}
 /*============<Header Top : 공지메세지 / 언어설정 / 고객센터 >*/
 .hd_top {
-    height: 37px;
+    width: 100%; height: 37px;
+    position: absolute; top: 0; left: 0; z-index: 999;
     background-color: #111; padding: 0 80px;
     display: flex; flex-flow: row nowrap; justify-content: flex-end; align-items: center;
 }
 .hd_top .hd_message {
-    position: absolute; left:50%;
+    position: absolute; left: 50%;
     transform:translateX(-50%);
     
 }
@@ -34,11 +34,15 @@
 .hd_top #close_btn {}
 .hd_top #close_btn img {width: 100%;}
 /*============Header 시작*/
-header {height: calc(100% - 37px);}
+header {
+    width: 100%;
+    height: 67px;
+    position: sticky; top: 0; z-index: 999;
+    margin-top: 37px;
+}
 /*===============================================< Header NAV >*/
 /* sticky 설정 및 opacity 변경 설정 */
 header .hd_navbar {
-    position: sticky; top: 0;
     padding: 0 80px;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
@@ -413,13 +417,20 @@ main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .swiper-slide .con
 }
 /*================================End : 콜렉션 상품 추천 배너 이중 슬라이드 */
 /* 이중 슬라이드 개별 선택자 (상품 슬라이드별 이미지) */
-main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .swiper-slide .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents1 {}
-main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .swiper-slide .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents2 {
-    background-image: url(../images/hyd_002.jpg);
-}
-main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .swiper-slide .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents3 {
-    background-image: url(../images/hyd_003.jpg);
-}
+/* ================================================(1) 하이드리움 */
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr1 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents1 {}
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr1 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents2 {background-image: url(../images/hyd_002.jpg);}
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr1 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents3 {background-image: url(../images/hyd_003.jpg);}
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr1 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents4 {background-image: url(../images/hyd_001.jpg);}
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr1 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents5 {background-image: url(../images/hyd_002.jpg);}
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr1 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents6 {background-image: url(../images/hyd_003.jpg);}
+/* ================================================(2) 시카 */
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr2 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents1 {background-image: url(../images/cica_001.jpg);}
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr2 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents2 {background-image: url(../images/cica_002.jpg);}
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr2 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents3 {background-image: url(../images/cica_003.jpg);}
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr2 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents4 {background-image: url(../images/cica_001.jpg);}
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr2 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents5 {background-image: url(../images/cica_002.jpg);}
+main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .colc_product_bnr2 .contents .colc_product_slider .swiper-wrapper .swiper-slide .slide_contents6 {background-image: url(../images/cica_003.jpg);}
 /*===================================================< 6. 피부 고민별 상품 >*/
 main .concerns_container .concerns_wrap {
     display: flex; flex-flow: row nowrap; justify-content: space-between;

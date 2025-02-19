@@ -10,8 +10,8 @@ const mainHeaderSwiper = new Swiper('.main_bnr',{
         dynamicBullets: true,
     },
         navigation:{
-        nextEl:'.next',
-        prevEl:'.prev',
+        nextEl:'main .bnr_btn .next',
+        prevEl:'main .bnr_btn .prev',
     },
 });
 // 1행 베스트 상품 슬라이드 - 전체 상품
@@ -44,6 +44,12 @@ const colcProductSwiper = new Swiper('.colc_product_bnr',{
 });
 // 5-1행 콜렉션 상품 추천 슬라이드
 const colcProductSwiper2 = new Swiper('.colc_product_slider',{
+    autoplay:{
+        delay:2000,
+        disableOnInteraction:false,
+    },
+    loop: true,
+    speed : 2000,
     slidesPerView:2.3,
     spaceBetween:15,
 });
