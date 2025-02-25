@@ -11,7 +11,7 @@
 .start .contents .title p:nth-child(1) {font-size: 2.8rem; font-style: italic;}
 .start .contents .title h1 {
     font-size: 9.7rem; font-weight: 500; z-index: 100;
-    animation: title_animation 2s;
+    animation: title_animation 2s 1s;
 }
 .start .contents .title p:nth-child(3) {
     font-family: 'pretendard', sans-serif; font-size: 2.8rem; font-weight: 500; color: #fff; z-index: 300;
@@ -54,7 +54,7 @@
 .about .about_wrap .about_left .profile_img .folder_img img {width: 100%;}
 .about .about_wrap .about_left .profile_img .folder_b {}
 .about .about_wrap .about_left .profile_img .folder_f {z-index: 300;}
-.about .about_wrap .about_left .profile_img .person_img {width: 325px; height: 412px; background-color: gray; position: relative; z-index: 100; animation: profile_animation 1s forwards;}
+.about .about_wrap .about_left .profile_img .person_img {width: 325px; height: 412px; background-color: gray; position: relative; z-index: 100; animation: profile_animation 1s forwards 2s;}
 .about .about_wrap .about_left .profile_img .profile_img img {width: 100%;}
 @keyframes profile_animation {
     0% {transform: rotate(0);}
@@ -117,5 +117,66 @@
 .about .about_wrap .about_right .profile_details .my_skills .contents ul .tool .level .level_on {background-color: #000;}
 .about .about_wrap .about_right .profile_details .my_skills .contents ul .tool .level .level_off {background-color: rgba(0,0,0,0.4);}
 /* =======================================================================<2 skill> */
-/* =======================================================================<3 web> */
-/* =======================================================================<4 others> */
+/* =======================================================================<3 web design> */
+.web_design {background-color: pink; padding: 100px 180px;}
+.web_design .title {
+    font-family: 'Playfair Display', serif;
+    font-size : 2.8rem; font-style: italic;
+    margin-bottom: 80px;
+}
+.web_design .web_works {
+    background-color: lemonchiffon;
+    border-top: 1px solid #000;
+}
+.web_design .web_works .web_work {
+    width: 100%;
+    display: flex; flex-flow: row nowrap;
+    background-color: plum;
+    border-bottom: 1px solid #000;
+    padding: 65px 0;
+}
+.web_design .web_works .web_work .work_header {
+    width: 300px;
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+    letter-spacing: -0.02em; background-color: yellow;
+}
+.web_design .web_works .web_work .work_header .work_header_top {}
+.web_design .web_works .web_work .work_header .work_header_top .work_name {height: 112px; margin-bottom: 35px; position: relative;}
+.web_design .web_works .web_work .work_header .work_header_top .work_name .name_tag {margin-bottom: 10px;}
+.web_design .web_works .web_work .work_header .work_header_top .work_name .name {font-size: 4.38rem; font-weight: 500; position: absolute; bottom: 0; right: -80px;}
+.web_design .web_works .web_work .work_header .work_header_top .work_tools {padding-left: 10px;}
+.web_design .web_works .web_work .work_header .work_header_top .work_tools li {margin-bottom: 15px;}
+.web_design .web_works .web_work .work_header .work_header_top .work_tools li:last-child {margin-bottom: 0;}
+.web_design .web_works .web_work .work_header .work_duration {background-color: pink; overflow: hidden;}
+.web_design .web_works .web_work .work_header .work_duration > p {float: left; font-weight: 500;}
+.web_design .web_works .web_work .work_header .work_duration .duration_txt {float: right;}
+.web_design .web_works .web_work .work_header .work_duration .duration_txt .date {margin-bottom: 20px;}
+.web_design .web_works .web_work .work_header .work_duration .duration_txt ul {}
+.web_design .web_works .web_work .work_header .work_duration .duration_txt ul li {}
+.web_design .web_works .web_work .work_header .work_duration .duration_txt ul li:first-child {margin-bottom: 10px;}
+.web_design .web_works .web_work .work_header .work_duration .duration_txt ul li .days {
+    display: inline-block; font-weight: 500; padding-left: 15px;
+}
+.web_design .web_works .web_work .work_thumbnail {width: 930px; margin: 0 30px;}
+.web_design .web_works .web_work .work_thumbnail img {}
+.web_design .web_works .web_work .work_link {align-self: flex-end; letter-spacing: -0.02em; width: calc(100% - (300px + 930px)); background-color: paleturquoise;}
+.web_design .web_works .web_work .work_link p {font-size : 1.25rem; font-weight: 500;}
+.web_design .web_works .web_work .work_link p span {
+    display: block; width: 2px; height: 128px; background-color: #000;
+    margin: 7px 5px;
+}
+.web_design .web_works .web_work .work_link ul {
+    border-top: 1px solid #000;
+}
+.web_design .web_works .web_work .work_link ul li {
+    padding: 10px 0 10px 3px;
+    border-bottom: 1px solid #000;
+}
+.web_design .web_works .web_work .work_link ul li a {
+    font-size: 1.69rem; line-height: 36px;
+    display: block;
+    width: 100%;
+    background: url(../images/link_btn.png) no-repeat center right;
+    background-size: 36px 36px;
+}
+/* =======================================================================<4 others design> */
