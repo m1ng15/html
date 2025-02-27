@@ -58,3 +58,7 @@ const concernsSwiper = new Swiper('#pore_slider',{
     slidesPerView:3.6,
     spaceBetween:15,
 });
+// 7행 베스트 리뷰 슬라이드
+const reviewSwiper = new Swiper('.review_swiper',{
+    slidesPerView:2,
+});

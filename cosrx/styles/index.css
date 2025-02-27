@@ -453,6 +453,51 @@ main .concerns_container .concerns_wrap #concerns_slider_group .swiper .swiper-w
 main .review_container {background-color: #F9F4EF;}
 main .review_container .header_wrap {}
 main .review_container .header_wrap .title_wrap {display: inline-block; text-align: center;}
+main .review_container .review_wrap {background-color: pink;}
+main .review_container .review_wrap .review_swiper {width: 100%; height: 494px;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper {}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide {
+    width: 978px;
+    padding: 70px 65px;
+    display: flex; flex-flow: row nowrap;
+}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide:first-child {background-color: yellowgreen;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide > * {width: calc(100% / 2);}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_img {
+    position: relative;
+    margin-right: 100px;
+    background-color: paleturquoise;
+}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_img .review_big {}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_img .review_product {position: absolute; bottom: -47px; right: -76px;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt {
+    background-color: palevioletred;
+}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .product_info {}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .product_info li {margin-bottom: 10px;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .product_info li .name {
+    font-weight: 700; line-height: 16px;
+    background: url(../images/item_next.png) no-repeat right top 60%;
+    background-size: 16px 16px;
+    padding-right: 19px;
+}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .review_info {background-color: lemonchiffon;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .review_info li {display: inline-block;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .review_info .score {font-size: 0.94rem; font-weight: 500; margin-right: 15px;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .review_info .score span {font-size: 0.63rem; position: relative; top: -4px; margin-right: 3px;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .review_info .comment {}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .review_info .comment a {font-size: 0.94rem;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .review_info .comment a span {font-weight: 500;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .user_review {
+    background-color: lightcyan;
+    padding-top: 30px;
+    font-size: 0.81rem;
+    border-top: 1px solid rgba(187,187,187,0.65);
+    border-bottom: 1px solid rgba(187,187,187,0.65);
+}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .user_review > * {display: inline-block; margin-bottom: 45px;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .user_review dt {margin-right: 20px;}
+main .review_container .review_wrap .review_swiper .swiper-wrapper .swiper-slide .review_txt .user_review dd {}
 /*===================================================< 8. 브랜드 소개 배너 >*/
 main .brand_bnr_wrap {
     width: 100%; height: 367px;
