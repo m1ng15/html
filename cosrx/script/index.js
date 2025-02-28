@@ -9,7 +9,7 @@ const mainHeaderSwiper = new Swiper('.main_bnr',{
         clickable: true,
         dynamicBullets: true,
     },
-        navigation:{
+    navigation:{
         nextEl:'main .bnr_btn .next',
         prevEl:'main .bnr_btn .prev',
     },
@@ -50,7 +50,7 @@ const colcProductSwiper2 = new Swiper('.colc_product_slider',{
     },
     loop: true,
     speed : 2000,
-    slidesPerView:2.3,
+    slidesPerView:2,
     spaceBetween:15,
 });
 // 6행 피부 고민별 상품 슬라이드 - 모공/피지
@@ -60,5 +60,22 @@ const concernsSwiper = new Swiper('#pore_slider',{
 });
 // 7행 베스트 리뷰 슬라이드
 const reviewSwiper = new Swiper('.review_swiper',{
-    slidesPerView:2,
+    loop:true,
+    autoplay:{delay:2000,},
+    initialSlide: 1,
+    slidesPerView: 2,
+    spaceBetween: 45,
+    centeredSlides:true,
+    on:{
+        slideChangeTransitionEnd :function(){
+            document.querySelectorAll('.review_swiper .swiper-slide').forEach(slide => slide.style.opacity = '0.2');
+            document.querySelectorAll('.review_swiper .swiper-slide').forEach(slide => slide.style.transform = 'scale(0.9)');
+            document.querySelector('.review_swiper .swiper-slide-active').style.opacity = '1';
+            document.querySelector('.review_swiper .swiper-slide-active').style.transform = 'scale(1)';
+        }
+    },
+    navigation:{
+        nextEl:'main .review_move_btn .next',
+        prevEl:'main .review_move_btn .prev',
+    },
 });

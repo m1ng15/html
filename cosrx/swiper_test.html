@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper-slide-center-active</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        #testS {width:1600px; height:500px;}
+        #testS .swiper-slide {transition:opacity 0.2s; opacity:0.2;}
+        #testS .s1 {background:yellow; opacity:1;}
+        #testS .s2 {background:lightcyan;}
+        #testS .s3 {background:orange;}
+        #testS .s4 {background:pink;}
+        #testS .s5 {background:lightgreen;}
+    </style>
+</head>
+<body>
+    <div class="swiper" id="testS">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide s1">1</div>
+            <div class="swiper-slide s2">2</div>
+            <div class="swiper-slide s3">3</div>
+            <div class="swiper-slide s4">4</div>
+            <div class="swiper-slide s5">5</div>
+        </div>
+    </div>
+    <script>
+        const testSlide = new Swiper('#testS', {
+            loop:true,
+            autoplay:{delay:2000,},
+            slidesPerView:2.5,
+            spaceBetween:10,
+            centeredSlides:true,
+            on:{
+                slideChangeTransitionEnd :function(){
+                    document.querySelectorAll('#testS .swiper-slide').forEach(slide => slide.style.opacity = '0.2');
+                    document.querySelector('#testS .swiper-slide-active').style.opacity = '1';
+                }
+            }
+        })
+    </script>
+</body>
+</html>
