@@ -90,11 +90,6 @@ main .main_bnr_wrap .main_bnr .swiper-wrapper .swiper-slide .contents {
     width: max-content;
     position: absolute; left: 340px; bottom: 145px;
     letter-spacing: -0.02em;
-    animation: titlePopUp 2s;
-}
-@keyframes titlePopUp {
-    0% {transform: translateY(20px); opacity: 0;}
-    100% {transform: translateY(0); opacity: 1;}
 }
 main .main_bnr_wrap .main_bnr .swiper-wrapper .swiper-slide .contents .title_des {font-size: 1.13rem; margin-bottom: 15px;}
 main .main_bnr_wrap .main_bnr .swiper-wrapper .swiper-slide .contents .title_des .line {

@@ -1,14 +1,14 @@
 // 0. 메인 배너 슬라이드
 const mainHeaderSwiper = new Swiper('.main_bnr',{
-/*     speed : 800,
+    speed : 800,
     autoplay:{delay:2000,},
-    loop: true, */
+    loop: true,
     on:{
-        slideChangeTransitionEnd :function(){
+        slideChangeTransitionStart :function(){
             document.querySelectorAll('.main_bnr .swiper-slide .contents').forEach(slide => slide.style.transform = 'translateY(20px)');
             document.querySelectorAll('.main_bnr .swiper-slide .contents').forEach(slide => slide.style.opacity = '0');
-            console.log('here');
-            console.log(document.querySelector('.main_bnr .swiper-slide-active .contents'));
+        },
+        slideChangeTransitionEnd :function(){
             document.querySelector('.main_bnr .swiper-slide-active .contents').style.transform = 'translateY(0)';
             document.querySelector('.main_bnr .swiper-slide-active .contents').style.opacity = '1';
             document.querySelector('.main_bnr .swiper-slide-active .contents').style.transition = 'all 1s';
