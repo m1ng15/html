@@ -1,17 +1,28 @@
 // 0. 메인 배너 슬라이드
 const mainHeaderSwiper = new Swiper('.main_bnr',{
-    speed : 800,
+/*     speed : 800,
     autoplay:{delay:2000,},
-    loop: true,
+    loop: true, */
+    on:{
+        slideChangeTransitionEnd :function(){
+            document.querySelectorAll('.main_bnr .swiper-slide .contents').forEach(slide => slide.style.transform = 'translateY(20px)');
+            document.querySelectorAll('.main_bnr .swiper-slide .contents').forEach(slide => slide.style.opacity = '0');
+            console.log('here');
+            console.log(document.querySelector('.main_bnr .swiper-slide-active .contents'));
+            document.querySelector('.main_bnr .swiper-slide-active .contents').style.transform = 'translateY(0)';
+            document.querySelector('.main_bnr .swiper-slide-active .contents').style.opacity = '1';
+            document.querySelector('.main_bnr .swiper-slide-active .contents').style.transition = 'all 1s';
+        }
+    },
     pagination:{
-        el:'main .main-pagination',
+        el:'.main_bnr_wrap .swiper-pagination',
         type: 'bullets',
         clickable: true,
         dynamicBullets: true,
     },
     navigation:{
-        nextEl:'main .bnr_btn .next',
-        prevEl:'main .bnr_btn .prev',
+        nextEl:'.main_bnr_wrap .bnr_btn .next',
+        prevEl:'.main_bnr_wrap .bnr_btn .prev',
     },
 });
 // 1행 베스트 상품 슬라이드 - 전체 상품
