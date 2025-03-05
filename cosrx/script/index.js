@@ -8,8 +8,7 @@ noticeClose.addEventListener('click',()=>{
 const navBar = document.querySelector('header .hd_navbar')
 navBar.classList.remove('navbar_shadow')
 window.addEventListener('scroll',()=>{
-    if ( window.pageYOffset > 800) {
+    if ( window.scrollY > 800) {
         navBar.classList.add('navbar_shadow')
-        console.log(window.pageYOffset);
     } else { navBar.classList.remove('navbar_shadow') }
 })
