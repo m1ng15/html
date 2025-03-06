@@ -43,12 +43,6 @@ const collectionSwiper = new Swiper('.collection_bnr',{
     speed : 800,
     autoplay:{delay:2000,},
     loop: true,
-    pagination:{
-        el:'main .swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-        dynamicBullets:true,
-    },
 });
 // 5행 콜렉션 상품 추천 배너
 const colcProductSwiper = new Swiper('.colc_product_bnr',{

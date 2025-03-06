@@ -271,7 +271,7 @@ main .products_container .all_wrap #all_products_group .all_group .contents {
     margin-right: 45px;
 }
 main .products_container .all_wrap #all_products_group .all_group .contents:last-child {margin-right: 0;}
-main .products_container .all_wrap #all_products_group .all_group .contents .item_img {height: 328px;}
+main .products_container .all_wrap #all_products_group .all_group .contents .item_img {position: relative; height: 328px;}
 main .products_container .all_wrap #all_products_group .all_group .contents .item_img img {width: 100%; height: 100%;}
 main .products_container .all_wrap #all_products_group .all_group .contents .item_info {
     height: calc(100% - 328px);
