@@ -13,7 +13,7 @@ window.addEventListener('scroll',()=>{
     } else { navBar.classList.remove('navbar_shadow') }
 })
 /* (메인 배너) 제품 더보기 버튼 오버 시, 슬라이드 정지 */
-const bnrMoreBtn = document.querySelectorAll('.main_bnr_wrap .main_bnr #bnr_more');
+const bnrMoreBtn = document.querySelectorAll('.main_bnr_wrap .main_bnr #bnr_more')
 bnrMoreBtn.forEach((btn) => {
     btn.addEventListener('mouseover',()=>{
         mainHeaderSwiper.autoplay.stop();
@@ -21,4 +21,15 @@ bnrMoreBtn.forEach((btn) => {
     btn.addEventListener('mouseout',()=>{
         mainHeaderSwiper.autoplay.start();
     }) 
-});
+})
+/* 콜렉션 상품 카테고리 활성화 */
+const lineCategory = document.querySelectorAll('.main_wrap .line_style_category li')
+console.log(lineCategory)
+lineCategory.forEach((list) => {
+    list.addEventListener('mouseover', ()=>{
+        list.classList.add('hover');
+    })
+    list.addEventListener('mouseleave', ()=>{
+        list.classList.remove('hover');
+    })
+})

@@ -346,11 +346,14 @@ main .container .main_wrap .line_style_category li a {
     font-size: 1.13rem; letter-spacing: -0.02em; font-weight: 500;
 }
 main .container .main_wrap .line_style_category li a span {
-    display: block; margin-bottom: 7px;
+    display: none;
+    margin-bottom: 7px;
     font-size: 0.81rem;
 }
-main .container .main_wrap .line_style_category .active {background-color: #111;}
-main .container .main_wrap .line_style_category .active a {color: #fff;}
+main .container .main_wrap .line_style_category .active, .hover {background-color: #111;}
+main .container .main_wrap .line_style_category .active a, .hover a {color: #fff;}
+main .container .main_wrap .line_style_category .active a span,
+main .container .main_wrap .line_style_category .hover a span {display: block;}
 /*================================================================모든 콜렉션 상품 레이아웃 - ★공통 선택자★ */
 main .collection_container .collection_wrap #collection_group {
     width: calc(100% - (80px + 360px));
