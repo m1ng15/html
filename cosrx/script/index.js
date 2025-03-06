@@ -12,3 +12,13 @@ window.addEventListener('scroll',()=>{
         navBar.classList.add('navbar_shadow')
     } else { navBar.classList.remove('navbar_shadow') }
 })
+/* (메인 배너) 제품 더보기 버튼 오버 시, 슬라이드 정지 */
+const bnrMoreBtn = document.querySelectorAll('.main_bnr_wrap .main_bnr #bnr_more');
+bnrMoreBtn.forEach((btn) => {
+    btn.addEventListener('mouseover',()=>{
+        mainHeaderSwiper.autoplay.stop();
+    })
+    btn.addEventListener('mouseout',()=>{
+        mainHeaderSwiper.autoplay.start();
+    }) 
+});

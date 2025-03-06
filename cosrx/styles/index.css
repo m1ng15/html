@@ -120,7 +120,7 @@ main .main_bnr_wrap .main_bnr .swiper-wrapper .main_bnr2 {background-image: url(
 main .main_bnr_wrap .main_bnr .swiper-wrapper .main_bnr2 .contents2 {}
 main .main_bnr_wrap .main_bnr .swiper-wrapper .main_bnr3 {background-image: url(../images/main_bnr_003.jpg);}
 /*=============================== 메인 베너 pagination */
-main .main_bnr_wrap .swiper-pagination {position: absolute; bottom: 40px; left: 0;}
+main .main_bnr_wrap .swiper-pagination {width: 100%; position: absolute; bottom: 40px; left: 0;}
 main .main_bnr_wrap .swiper-pagination-bullet {
     background-color: #111;
     opacity: 0.2;
