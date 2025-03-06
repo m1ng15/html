@@ -47,7 +47,7 @@ const collectionSwiper = new Swiper('.collection_bnr',{
 // 5행 콜렉션 상품 추천 배너
 const colcProductSwiper = new Swiper('.colc_product_bnr',{
 });
-// 5-1행 콜렉션 상품 추천 슬라이드
+// 5-1행 콜렉션 상품 내부 슬라이드
 const colcProductSwiper2 = new Swiper('.colc_product_slider',{
     autoplay:{
         delay:2000,
@@ -76,6 +76,7 @@ const reviewSwiper = new Swiper('.review_swiper',{
             document.querySelectorAll('.review_swiper .swiper-slide').forEach(slide => slide.style.transform = 'scale(0.9)');
             document.querySelector('.review_swiper .swiper-slide-active').style.opacity = '1';
             document.querySelector('.review_swiper .swiper-slide-active').style.transform = 'scale(1)';
+            document.querySelector('.review_swiper .swiper-slide-active').style.transition = 'all 0.4s';
         }
     },
     navigation:{

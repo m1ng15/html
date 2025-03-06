@@ -119,16 +119,17 @@ main .main_bnr_wrap .main_bnr .swiper-wrapper .main_bnr1 .contents1 {}
 main .main_bnr_wrap .main_bnr .swiper-wrapper .main_bnr2 {background-image: url(../images/main_bnr_002.jpg);}
 main .main_bnr_wrap .main_bnr .swiper-wrapper .main_bnr2 .contents2 {}
 main .main_bnr_wrap .main_bnr .swiper-wrapper .main_bnr3 {background-image: url(../images/main_bnr_003.jpg);}
-/*=============================== 메인 베너 pagination */
-main .main_bnr_wrap .swiper-pagination {width: 100%; position: absolute; bottom: 40px; left: 0;}
-main .main_bnr_wrap .swiper-pagination-bullet {
+/*===============================★ swiper pagination 디자인 공통 ★ */
+main .swiper-pagination-bullet {
     background-color: #111;
     opacity: 0.2;
 }
-main .main_bnr_wrap .swiper-pagination-bullet-active {
+main .swiper-pagination-bullet-active {
     background-color: #111;
     opacity: 0.8;
 }
+/*=============================== 메인 베너 pagination */
+main .main_bnr_wrap .main_pagination {bottom: 40px;}
 /*=============================== 메인 베너 페이지 이동 버튼 */
 main .main_bnr_wrap .bnr_btn {
     overflow: hidden;
@@ -371,12 +372,11 @@ main .collection_container .collection_wrap #collection_group .all_colc_group .c
 main .collection_container .collection_wrap #collection_group .all_colc_group .collc_row1 {margin-bottom: 40px;}
 /*===================================================< 5. 콜렉션 상품 추천 배너 >*/
 main .colc_product_bnr_wrap { /* 가장 큰 배너 */
+    position: relative;
     padding: 100px 0;
     background-color: #F9F4EF;
 }
-main .colc_product_bnr_wrap .colc_product_bnr {
-    width: 100%; height: 520px;
-}
+main .colc_product_bnr_wrap .colc_product_bnr {width: 100%; height: 520px;}
 main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper {}
 main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .swiper-slide {
     display: flex; flex-flow: row nowrap;
@@ -389,7 +389,6 @@ main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .swiper-slide > p 
 main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .swiper-slide > p > img {width: 100%; height: 100%;}
 main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .swiper-slide .contents { /* 배너 오른쪽 제목 부분 */width: calc(100% - 900px); height: max-content;}
 main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .swiper-slide .contents .contents_title {margin-bottom: 40px;}
-main .colc_product_bnr_wrap .colc-pagination {}
 /*================================Start : 콜렉션 상품 추천 배너 이중 슬라이드*/
 /* 이중 슬라이드 ★공통 선택자 (상품 이미지 및 정보 스타일)★ */
 main .colc_product_bnr_wrap .colc_product_bnr .swiper-wrapper .swiper-slide .contents .colc_product_slider {
