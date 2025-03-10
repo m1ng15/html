@@ -76,7 +76,6 @@ const reviewSwiper = new Swiper('.review_swiper',{
             document.querySelectorAll('.review_swiper .swiper-slide').forEach(slide => slide.style.transform = 'scale(0.9)');
             document.querySelector('.review_swiper .swiper-slide-active').style.opacity = '1';
             document.querySelector('.review_swiper .swiper-slide-active').style.transform = 'scale(1)';
-            document.querySelector('.review_swiper .swiper-slide-active').style.transition = 'all 0.4s';
         }
     },
     navigation:{
