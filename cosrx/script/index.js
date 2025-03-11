@@ -31,15 +31,19 @@ navMenu.forEach((menu)=>{
         menu.classList.add('active')
     })
     menu.addEventListener('mouseout',()=>{
+        subMenu.style.display = 'none';
         menu.classList.remove('active')
     })
 })
 /* nav - skincare hover시, 서브 메뉴 활성화 */
 subMenuActive.addEventListener('mouseover',()=>{
-    subMenu.classList.add('active');
+    subMenu.style.display = 'block';
 })
-subMenu.addEventListener('mouseout',()=>{
-    subMenu.classList.remove('active');
+subMenu.addEventListener('mouseover',()=>{
+    subMenu.style.display = 'block';
+})
+subMenu.addEventListener('mouseleave',()=>{
+    subMenu.style.display = 'none';
 })
 /* (메인 배너) 제품 더보기 버튼 오버시, 슬라이드 정지 */
 const bnrMoreBtn = document.querySelectorAll('.main_bnr_wrap .main_bnr #bnr_more')

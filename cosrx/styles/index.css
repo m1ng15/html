@@ -87,12 +87,12 @@ header .hd_navbar nav .path > li .line {
 }
 /* S :스킨케어 서브메뉴 */
 header .hd_navbar nav .sub_bg {
-    width: 100%; opacity: 1; background-color: #fff;
+    display: none;
+    width: 100%; height: max-content; background-color: #fff;
     position: absolute; top: 100%; left: 0;
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-    transition: opacity 0.5s ease;
 }
-header .hd_navbar nav .sub_bg.active {display: block; opacity: 1;}
+/* header .hd_navbar nav .sub_bg.active {display: block;} */
 header .hd_navbar nav .sub_bg .sub_contents {
     width: max-content; margin: 45px auto; overflow: hidden;
 }
