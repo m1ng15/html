@@ -87,22 +87,43 @@ header .hd_navbar nav .path > li .line {
 }
 /* S :스킨케어 서브메뉴 */
 header .hd_navbar nav .sub_bg {
-    display: none;
-    width: 100%; opacity: 0; background-color: #fff;
+    width: 100%; opacity: 1; background-color: #fff;
     position: absolute; top: 100%; left: 0;
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     transition: opacity 0.5s ease;
 }
 header .hd_navbar nav .sub_bg.active {display: block; opacity: 1;}
 header .hd_navbar nav .sub_bg .sub_contents {
-    width: 709px; margin: 40px auto;
-    background-color: orange;
+    width: max-content; margin: 45px auto; overflow: hidden;
 }
-header .hd_navbar nav .sub_bg .sub_contents .sub_column {
-    display: inline-block;
+header .hd_navbar nav .sub_bg .sub_contents .product_sub {
+    width: 580px; float: left;
+    display: flex; flex-flow: row nowrap;
+    padding-right: 45px;
+    border-right: 1px solid rgba(187,187,187,0.65);
 }
-header .hd_navbar nav .sub_bg .sub_contents .sub_column .depth_title {}
-header .hd_navbar nav .sub_bg .sub_contents .sub_column .depth_list {}
+    header .hd_navbar nav .sub_bg .sub_contents .product_sub .sub_column {flex: 1; margin-right: 10px;}
+    header .hd_navbar nav .sub_bg .sub_contents .product_sub .sub_column:last-child {margin-right: 0;}
+header .hd_navbar nav .sub_bg .sub_contents .product_sub .sub_column .depth_title {
+    font-weight: 500;
+    border-bottom: 1px solid rgba(187,187,187,0.65);
+    padding-bottom: 15px;
+}
+header .hd_navbar nav .sub_bg .sub_contents .product_sub .sub_column .depth_list {margin-top: 25px;}
+header .hd_navbar nav .sub_bg .sub_contents .product_sub .sub_column .depth_list > li {margin-bottom: 25px;}
+header .hd_navbar nav .sub_bg .sub_contents .product_sub .sub_column .depth_list > li:last-child {margin-bottom: 0;}
+header .hd_navbar nav .sub_bg .sub_contents .product_sub .sub_column .depth_list > li a {color: #777; display: block; width: 70%;}
+header .hd_navbar nav .sub_bg .sub_contents .event_sub {
+    float: right;
+    padding-left: 15px;
+}
+header .hd_navbar nav .sub_bg .sub_contents .event_sub li {
+    width: 357px;
+    margin-bottom: 15px;
+}
+header .hd_navbar nav .sub_bg .sub_contents .event_sub li:last-child {margin-bottom: 0;}
+header .hd_navbar nav .sub_bg .sub_contents .event_sub li a {}
+header .hd_navbar nav .sub_bg .sub_contents .event_sub li a img {width: 100%;}
 /* E :스킨케어 서브메뉴 */
 header .hd_navbar .hd_icon {width: 150px; text-align: right;}
 header .hd_navbar .hd_icon a {display: inline-block; width: 20px;}
