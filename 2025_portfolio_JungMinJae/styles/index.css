@@ -46,7 +46,7 @@ body {}
     margin-right: 145px; 
 }
 .about .about_wrap .about_left .profile_img {
-    background-color: palevioletred;
+    background-color: palevioletred; width: max-content;
     margin-bottom: 60px; position: relative; padding: 35px 0 80px 70px;
 }
 .about .about_wrap .about_left .profile_img .person_img {
@@ -275,7 +275,7 @@ body {}
     filter:invert(0%);
 } */
 /* =======================================================================<4 others design> */
-.other_design {background-color: lemonchiffon; padding: 100px 0;}
+.other_design {background-color: lemonchiffon; padding: 100px 0; overflow: hidden;}
 .other_design .title {text-align: center; margin-bottom: 80px;}
 .other_design .all_slide {position: relative;}
 .other_design .all_slide .bnr_slide_wrap {

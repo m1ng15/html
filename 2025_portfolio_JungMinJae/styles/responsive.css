@@ -1,3 +1,8 @@
+@media screen and (max-width:1270px) {
+    .about .about_wrap {width: 100%; flex-flow: column nowrap;}
+    .about .about_wrap .about_left .profile_img {}
+    .about .about_wrap .about_left {position: relative; width: 100%; margin: 0 auto;}
+}
 @media screen and (max-width:1730px) {
     .web_design .web_works .web_work .work_link ul li a::before {display: none;}
 }
@@ -7,8 +12,8 @@
 }
 @media screen and (max-width:876px) {
     .about {}
-    .about .about_wrap {flex-flow: column nowrap; width: 100%;}
-    .about .about_wrap .about_left {position: relative;}
+    .about .about_wrap {}
+    
     .about .about_wrap .about_left .profile_img {width: max-content; margin-right: 80px;}
     .about .about_wrap .about_left .profile_img .person_img {width: 320px;}
     .about .about_wrap .about_left .contact_info {}
