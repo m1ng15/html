@@ -2,8 +2,16 @@ const bnrSwiper = new Swiper('.bnr_swiper', {
     autoplay:{delay:0,},
     loop:true,
     speed: 5000,
-    slidesPerView: 4,
+    slidesPerView: 2,
+    spaceBetween: 20,
+    breakpoints: {
+        700: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+    }
 })
+
 const snsSwiper = new Swiper('.sns_swiper', {
     autoplay:{delay:0,},
     loop:true,
@@ -13,9 +21,9 @@ const snsSwiper = new Swiper('.sns_swiper', {
 })
 
 const detailSwiper = new Swiper('.detail_swiper', {
-    /* autoplay:{delay:0,}, */
+    /* autoplay:{delay:0,},
     loop:true,
-    /* speed: 7000, */
+    speed: 7000, */
     slidesPerView:2,
     spaceBetween:30,
 })
