@@ -46,10 +46,8 @@ const snsSwiper = new Swiper('.sns_swiper', {
 })
 
 const detailSwiper = new Swiper('.detail_swiper', {
-    /* autoplay:{delay:0,},
-    speed: 7000, */
     loop:true,
-    slidesPerView:1,
+    slidesPerView: 1,
     spaceBetween:30,
     breakpoints: {
         740: {
@@ -86,7 +84,7 @@ for(let i of snsImg){
         img_popup_bg.children[0].children[0].src = i.src;
         img_popup_bg.children[0].style.marginTop = '150px';
         if(window.innerWidth <= 560){
-            img_popup_bg.children[0].style.width = '385px';
+            img_popup_bg.children[0].style.width = '345px';
             img_popup_bg.children[0].style.marginTop = '200px';
         } else if(window.innerWidth <= 786){
             img_popup_bg.children[0].style.width = '540px';
@@ -103,7 +101,7 @@ for(let i of detailImg){
         img_popup_bg.style.display = 'block';
         img_popup_bg.children[0].children[0].src = i.src;
         if(window.innerWidth <= 560){
-            img_popup_bg.children[0].style.width = '380px';
+            img_popup_bg.children[0].style.width = '320px';
         } else if(window.innerWidth <= 786){
             img_popup_bg.children[0].style.width = '540px';
         }  else{
