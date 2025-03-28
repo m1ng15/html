@@ -87,9 +87,9 @@ main > * {padding: 100px 0;}
     margin-bottom: 65px; line-height: 1.6;
 }
 .about .about_wrap .about_right .key_message em {
-    display: inline-block;
-    padding: 4px 14px; border-radius: 6px;
-    font-weight: 600; color: #3D7ABD;
+    display: inline-block; width: max-content;
+    padding: 2px 16px; border-radius: 6px;
+    font-weight: 600; line-height: 1.3; color: #3D7ABD;
     background-color: #E2F1FE;
 }
 .about .about_wrap .about_right .detail_message {
@@ -103,6 +103,7 @@ main > * {padding: 100px 0;}
 /* ======================================================학력/경력/기술 공통 선택자 */
 .about .about_wrap .about_right .profile_details > ul {margin-bottom: 50px;}
 .about .about_wrap .about_right .profile_details ul li {margin-bottom: 20px;}
+.about .about_wrap .about_right .profile_details ul li p {line-height: 1.2;}
 .about .about_wrap .about_right .profile_details ul .title {
     font-size : 1.25rem; font-weight: 600;
     margin-bottom: 35px;
@@ -119,10 +120,12 @@ main > * {padding: 100px 0;}
 .about .about_wrap .about_right .profile_details .study_abroad {}
 .about .about_wrap .about_right .profile_details .my_skills {margin-bottom: 0;}
 .about .about_wrap .about_right .profile_details .my_skills .title {}
-.about .about_wrap .about_right .profile_details .my_skills .contents {display: flex; flex-flow: row nowrap;}
+.about .about_wrap .about_right .profile_details .my_skills .contents {
+    max-width: 460px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;}
 /* ======================================================프로그램 활용 레벨 공통 선택자 */
+.about .about_wrap .about_right .profile_details .my_skills .contents .skills_col:last-child {margin-right: 20px;}
 .about .about_wrap .about_right .profile_details .my_skills .contents .skills_col {display: flex; flex-flow: column nowrap;}
-.about .about_wrap .about_right .profile_details .my_skills .contents .skills_col:first-child {margin-right: 70px;}
 .about .about_wrap .about_right .profile_details .my_skills .contents .skills_col .tool {display: flex; flex-flow: row nowrap; align-items: center;}
 .about .about_wrap .about_right .profile_details .my_skills .contents .skills_col .tool .icon {width: 45px; margin-right: 15px;}
 .about .about_wrap .about_right .profile_details .my_skills .contents .skills_col .tool .icon img {width: 100%;}
@@ -132,9 +135,9 @@ main > * {padding: 100px 0;}
 .about .about_wrap .about_right .profile_details .my_skills .contents .skills_col .tool .level .level_on {background-color: #000;}
 .about .about_wrap .about_right .profile_details .my_skills .contents .skills_col .tool .level .level_off {background-color: rgba(0,0,0,0.4);}
 /* =======================================================================<2 skills> */
-.skills {background-color: lemonchiffon;}
+.skills {background-color: lemonchiffon; padding: 100px 80px;}
 .skills .title {text-align: center;}
-.skills .contents {background-color: pink; padding: 30px 180px;}
+.skills .contents {background-color: pink; padding: 30px 0;}
 .skills .contents .skills_group {display: flex; flex-flow: row wrap;}
 .skills .contents .skills_group .skills_row {
     display: flex; flex-flow: row wrap; justify-content: center;
@@ -143,14 +146,18 @@ main > * {padding: 100px 0;}
 .skills .contents .skills_group .skills_row .skill {
     display: flex; flex-flow: row nowrap; align-items: center;
     margin: 0 25px 30px 0;
+    padding: 5px;
     border: 1px solid #ccc; border-radius: 40px;
 }
+.skills .contents .skills_group .skills_row .skill .skill_name {display: flex; flex-flow: row nowrap; align-items: center;}
 .skills .contents .skills_group .skills_row .skill li {margin: 0 20px;}
 .skills .contents .skills_group .skills_row .skill li img {width: 100%;}
+.skills .contents .skills_group .skills_row .skill:last-child {margin-bottom: 0;}
 .skills .contents .skills_group .skills_row .skill .name {font-size: 1.13rem; font-weight: 500; margin-right: 15px;}
+.skills .contents .skills_group .skills_row .skill .name, .des {line-height: 1.5;}
 .skills .contents .skills_group .skills_row .skill .des {}
 /* =======================================================================<3 web design> */
-.web_design {background-color: palevioletred;}
+.web_design {background-color: palevioletred; padding: 0 80px;}
 /* ===========================================3,4행 디자인 공통 제목 */
 .web_design .title, .skills .title,
 .other_design .title {
@@ -188,7 +195,7 @@ main > * {padding: 100px 0;}
 .web_design .web_works .web_work .work_wrap .work_header .work_duration .duration_txt ul li .days {
     display: inline-block; font-weight: 500; padding-left: 15px;
 }
-.web_design .web_works .web_work .work_thumbnail {width: 60%; margin: 0 30px;}
+.web_design .web_works .web_work .work_thumbnail {width: 60%; margin: 0 30px; overflow: hidden;}
 .web_design .web_works .web_work .work_thumbnail img {width: 100%;}
 /* view 짝대기 애니메이션 */
 .web_design .web_works .web_work .work_link p span {background-color: #111;}
@@ -268,6 +275,7 @@ main > * {padding: 100px 0;}
 } */
 /* =======================================================================<4 others design> */
 /* 공통선택자 */
+.other_design .all_slide {background-color: aqua;}
 .other_design .all_slide > * {
     width: calc(100% + 200px);
     display: flex; flex-flow: row nowrap; align-items: flex-end;
@@ -275,11 +283,9 @@ main > * {padding: 100px 0;}
 }
 .other_design .swiper .swiper-wrapper .swiper-slide img {width: 100%; cursor: pointer;}
 .other_design .swiper {position: relative;}
-.other_design .folder_img {}
-
+.other_design .folder_img {width: 300px;}
 .other_design {background-color: lemonchiffon; width: 100%; overflow: hidden;}
 .other_design .title {text-align: center; margin-bottom: 80px;}
-.other_design .all_slide {background-color: aqua;}
 /* >> 배너 */
 .other_design .all_slide .bnr_slide_wrap {background-color: magenta;}
 
@@ -287,7 +293,7 @@ main > * {padding: 100px 0;}
 .other_design .bnr_slide_wrap .folder_img img {transform: rotate(90deg);}
 .other_design .bnr_slide_wrap .bnr_swiper {
     background-color: orange; width: 100%; height: max-content;
-    left: -183px;
+    left: -175px;
 }
 .other_design .bnr_slide_wrap .bnr_swiper .swiper-wrapper {transition-timing-function: linear; align-items: center;}
 .other_design .bnr_slide_wrap .bnr_swiper .swiper-wrapper .swiper-slide {margin-right: 15px;}
@@ -300,22 +306,24 @@ main > * {padding: 100px 0;}
     margin-bottom: 30px;
 }
 .other_design .sns_slide_wrap .sns_swiper .swiper-wrapper {transition-timing-function: linear;}
-.other_design .sns_slide_wrap .sns_swiper .swiper-wrapper .swiper-slide {}
+.other_design .sns_slide_wrap .sns_swiper .swiper-wrapper .swiper-slide {height: 100%;}
 .other_design .sns_slide_wrap .sns_swiper .swiper-wrapper .swiper-slide img {}
 .other_design .sns_slide_wrap .folder_img {left: -183px;}
 .other_design .sns_slide_wrap .folder_img img {transform: scaleX(-1);}
 /* >> 상세 */
 .other_design .detail_slide_wrap {
-    width: 60%;
     margin-bottom: 0;
     background-color: pink;
 }
 .other_design .detail_slide_wrap .detail_swiper {
+    background-color: palevioletred;
     width: 100%; height: 665px;
-    left: -140px;
+    left: -80px;
+    margin-bottom: 30px;
 }
+.other_design .detail_slide_wrap .folder_img {}
 .other_design .detail_slide_wrap .detail_swiper .swiper-wrapper {transition-timing-function: linear;}
-.other_design .detail_slide_wrap .detail_swiper .swiper-wrapper .swiper-slide {width: 20%;}
+.other_design .detail_slide_wrap .detail_swiper .swiper-wrapper .swiper-slide {max-width: 30%!important;}
 .other_design .detail_slide_wrap .detail_swiper .swiper-wrapper .swiper-slide img {}
 /* 팝업 부분 */
 .other_design .img_popup_bg {
@@ -332,7 +340,7 @@ main > * {padding: 100px 0;}
 .final {
     background-color: #f4f4f4;
     display: flex; flex-flow: column nowrap;
-    margin-bottom: 0;
+    padding: 100px 80px;
 }
 .final p {
     font-family: 'Playfair Display', serif;

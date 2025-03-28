@@ -2,12 +2,20 @@ const bnrSwiper = new Swiper('.bnr_swiper', {
     autoplay:{delay:0,},
     loop:true,
     speed: 5000,
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
     breakpoints: {
-        700: {
-            slidesPerView: 4,
-            spaceBetween: 20,
+        300: {
+            slidesPerView: 1.4,
+        },
+        500: {
+            slidesPerView: 2,
+        },
+        1020: {
+            slidesPerView: 3,
+        },
+        1500: {
+            slidesPerView: 3.8,
         },
     }
 })
@@ -17,15 +25,38 @@ const snsSwiper = new Swiper('.sns_swiper', {
     loop:true,
     speed: 7000,
     slidesPerView:4,
-    spaceBetween:30,
+    spaceBetween:20,
+    breakpoints: {
+        300:{
+            slidesPerView: 1.6,
+        },
+        700:{
+            slidesPerView: 2,
+        },
+        1020:{
+            slidesPerView: 3,
+        },
+        1400: {
+            slidesPerView: 3.5,
+        },
+        1520: {
+            slidesPerView: 4,
+        },
+    }
 })
 
 const detailSwiper = new Swiper('.detail_swiper', {
     /* autoplay:{delay:0,},
-    loop:true,
     speed: 7000, */
-    slidesPerView:2,
+    loop:true,
+    slidesPerView:1,
     spaceBetween:30,
+    breakpoints: {
+        740: {
+            slidesPerView: 2,
+            spaceBetween:30,
+        },
+    }
 })
 /* other design 팝업 */
 const img_popup_bg = document.querySelector('.img_popup_bg')
@@ -38,19 +69,31 @@ for(let i of bnrImg){
     i.addEventListener('click',()=>{
         img_popup_bg.style.display = 'block';
         img_popup_bg.children[0].children[0].src = i.src;
-        img_popup_bg.children[0].style.width = '750px';
         img_popup_bg.children[0].style.marginTop = '250px';
+        if(window.innerWidth <= 560){
+            img_popup_bg.children[0].style.width = '385px';
+            img_popup_bg.children[0].style.marginTop = '300px';
+        } else if(window.innerWidth <= 786){
+            img_popup_bg.children[0].style.width = '540px';
+        } else {
+            img_popup_bg.children[0].style.width = '750px';
+        }
     })
 }
 for(let i of snsImg){
     i.addEventListener('click',()=>{
         img_popup_bg.style.display = 'block';
         img_popup_bg.children[0].children[0].src = i.src;
-        console.log(i.height)
-        img_popup_bg.children[0].style.width = '700px';
         img_popup_bg.children[0].style.marginTop = '150px';
+        if(window.innerWidth <= 560){
+            img_popup_bg.children[0].style.width = '385px';
+            img_popup_bg.children[0].style.marginTop = '200px';
+        } else if(window.innerWidth <= 786){
+            img_popup_bg.children[0].style.width = '540px';
+        } else {
+            img_popup_bg.children[0].style.width = '700px';
+        }
         if(i.height > 419){
-            console.log('hell0');
             img_popup_bg.children[0].style.marginTop = '45px';
         }
     })
@@ -59,7 +102,13 @@ for(let i of detailImg){
     i.addEventListener('click',()=>{
         img_popup_bg.style.display = 'block';
         img_popup_bg.children[0].children[0].src = i.src;
-        img_popup_bg.children[0].style.width = '800px';
+        if(window.innerWidth <= 560){
+            img_popup_bg.children[0].style.width = '380px';
+        } else if(window.innerWidth <= 786){
+            img_popup_bg.children[0].style.width = '540px';
+        }  else{
+            img_popup_bg.children[0].style.width = '800px';
+        }
         img_popup_bg.children[0].style.marginTop = '45px';
     })
 }
