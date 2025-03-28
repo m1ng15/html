@@ -93,6 +93,7 @@ main > * {padding: 100px 0;}
     background-color: #E2F1FE;
 }
 .about .about_wrap .about_right .detail_message {
+    max-width: 640px;
     margin-bottom: 65px;
     font-size : 1.1rem; line-height: 1.8;
 }
