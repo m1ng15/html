@@ -3,17 +3,16 @@ main > * {padding: 100px 0;}
 .start {background-color: #f4f4f4; padding: 145px 15px 55px 15px;}
 .start .start_wrap {width: max-content; margin: 0 auto; position: relative;}
 .start .start_wrap .contents {
-    background-color: aquamarine;
     display: flex; flex-flow: column nowrap; align-items: center;
 }
-.start .contents .title {background-color: yellow; width: 100%; text-align: center;}
+.start .contents .title {width: 100%; text-align: center;}
 .start .contents .title > * {font-family: 'Playfair Display', serif; position: relative;}
 .start .contents .title p:nth-child(1) {font-size: 2.8rem; font-style: italic;}
 .start .contents .title h1 {
     font-size: 9.7rem; font-weight: 500; z-index: 100;
     animation: title_animation 2s;
 }
-.start .contents .contents_btm {background-color: hotpink; position: relative; bottom: 90px;}
+.start .contents .contents_btm {position: relative; bottom: 90px;}
 
 
 .start .contents .contents_btm .folder_img {margin-bottom: 40px;}
@@ -29,27 +28,21 @@ main > * {padding: 100px 0;}
     100% {opacity: 1; transform: translateY(0);}
 }
 /* =======================================================================<1 about> */
-.about {background-color: lightcoral;}
+.about {}
 .about .about_wrap {
-    background-color: powderblue;
     width: 1290px; margin: 0 auto;
     display: flex; flex-flow: row wrap; justify-content: space-between;
 }
 .about .about_wrap .about_left {
-    background-color: aquamarine;
     height: max-content;
     position: sticky; top: 0;
 }
-.about .about_wrap .about_left .profile_img {
-    background-color: palevioletred;
-    margin-bottom: 60px;
-}
+.about .about_wrap .about_left .profile_img {margin-bottom: 60px;}
 .about .about_wrap .about_left .profile_img .person_img {
-    background-color: yellow;
     width: 380px; position: relative; top: 160px; left: 100px; z-index: 100;
 }
 .about .about_wrap .about_left .profile_img .person_img img {width: 100%;}
-.about .about_wrap .about_left .profile_img .folder_img {background-color: orange; width: 290px;}
+.about .about_wrap .about_left .profile_img .folder_img {width: 290px;}
 .about .about_wrap .about_left .profile_img .folder_img img {width: 100%;}
 .about .about_wrap .about_left .profile_img .folder_b {}
 .about .about_wrap .about_left .profile_img .folder_f {z-index: 300;}
@@ -57,7 +50,7 @@ main > * {padding: 100px 0;}
     0% {transform: rotate(0);}
     100% {transform: rotate(15deg);}
 }
-.about .about_wrap .about_left .contact_info {background-color: pink;}
+.about .about_wrap .about_left .contact_info {}
 .about .about_wrap .about_left .contact_info,
 .final .contact_info {
     width: max-content; text-align: left;
@@ -78,7 +71,6 @@ main > * {padding: 100px 0;}
 .about .about_wrap .about_right {
     width: calc(100% - 580px);
     padding-top: 200px;
-    background-color: lightcyan;
 }
 .about .about_wrap .about_right_bg .right {}
 .about .about_wrap .about_right .key_message {
@@ -136,9 +128,9 @@ main > * {padding: 100px 0;}
 .about .about_wrap .about_right .profile_details .my_skills .contents .skills_col .tool .level .level_on {background-color: #000;}
 .about .about_wrap .about_right .profile_details .my_skills .contents .skills_col .tool .level .level_off {background-color: rgba(0,0,0,0.4);}
 /* =======================================================================<2 skills> */
-.skills {background-color: lemonchiffon; padding: 100px 80px;}
+.skills {padding: 100px 80px;}
 .skills .title {text-align: center;}
-.skills .contents {background-color: pink; padding: 30px 0;}
+.skills .contents {padding: 30px 0;}
 .skills .contents .skills_group {display: flex; flex-flow: row wrap;}
 .skills .contents .skills_group .skills_row {
     display: flex; flex-flow: row wrap; justify-content: center;
@@ -158,7 +150,7 @@ main > * {padding: 100px 0;}
 .skills .contents .skills_group .skills_row .skill .name, .des {line-height: 1.5;}
 .skills .contents .skills_group .skills_row .skill .des {}
 /* =======================================================================<3 web design> */
-.web_design {background-color: palevioletred; padding: 0 80px;}
+.web_design {padding: 0 80px;}
 /* ===========================================3,4행 디자인 공통 제목 */
 .web_design .title, .skills .title,
 .other_design .title {
@@ -166,7 +158,7 @@ main > * {padding: 100px 0;}
     font-size : 2.8rem; font-style: italic;
     margin-bottom: 80px;
 }
-.web_design .web_works {background-color: pink; border-top: 1px solid #111;}
+.web_design .web_works {border-top: 1px solid #111;}
 .web_design .web_works .web_work {}
 .web_design .web_works .web_work .work_wrap {
     width: 100%;
@@ -179,14 +171,14 @@ main > * {padding: 100px 0;}
     display: flex; flex-flow: column nowrap; justify-content: space-between;
     letter-spacing: -0.02em;
 }
-.web_design .web_works .web_work .work_wrap .work_header .work_header_top {background-color: orange;}
-.web_design .web_works .web_work .work_wrap .work_header .work_header_top .work_name {background-color: aquamarine; height: 112px; margin-bottom: 35px; position: relative;}
+.web_design .web_works .web_work .work_wrap .work_header .work_header_top {}
+.web_design .web_works .web_work .work_wrap .work_header .work_header_top .work_name {height: 112px; margin-bottom: 35px; position: relative;}
 .web_design .web_works .web_work .work_wrap .work_header .work_header_top .work_name .name_tag {margin-bottom: 10px;}
 .web_design .web_works .web_work .work_wrap .work_header .work_header_top .work_name .name {font-size: 4.38rem; font-weight: 500; position: absolute; bottom: 0; right: -80px;}
-.web_design .web_works .web_work .work_wrap .work_header .work_header_top .work_tools {background-color: magenta; padding-left: 10px;}
+.web_design .web_works .web_work .work_wrap .work_header .work_header_top .work_tools {}
 .web_design .web_works .web_work .work_wrap .work_header .work_header_top .work_tools li {margin-bottom: 15px;}
 .web_design .web_works .web_work .work_wrap .work_header .work_header_top .work_tools li:last-child {margin-bottom: 0;}
-.web_design .web_works .web_work .work_wrap .work_header .work_duration { background-color: yellow; overflow: hidden;}
+.web_design .web_works .web_work .work_wrap .work_header .work_duration {overflow: hidden;}
 .web_design .web_works .web_work .work_wrap .work_header .work_duration > p {float: left; font-weight: 500; margin: 0 10px 10px 0;}
 .web_design .web_works .web_work .work_wrap .work_header .work_duration .duration_txt {width: 157px; float: right;}
 .web_design .web_works .web_work .work_wrap .work_header .work_duration .duration_txt .date {margin-bottom: 20px;}
@@ -276,7 +268,7 @@ main > * {padding: 100px 0;}
 } */
 /* =======================================================================<4 others design> */
 /* 공통선택자 */
-.other_design .all_slide {background-color: aqua;}
+.other_design .all_slide {}
 .other_design .all_slide > * {
     width: calc(100% + 200px);
     display: flex; flex-flow: row nowrap; align-items: flex-end;
@@ -285,24 +277,24 @@ main > * {padding: 100px 0;}
 .other_design .swiper .swiper-wrapper .swiper-slide img {width: 100%; cursor: pointer;}
 .other_design .swiper {position: relative;}
 .other_design .folder_img {width: 300px;}
-.other_design {background-color: lemonchiffon; width: 100%; overflow: hidden;}
+.other_design {width: 100%; overflow: hidden;}
 .other_design .title {text-align: center; margin-bottom: 80px;}
 /* >> 배너 */
-.other_design .all_slide .bnr_slide_wrap {background-color: magenta;}
+.other_design .all_slide .bnr_slide_wrap {}
 
 .other_design .bnr_slide_wrap .folder_img {top: 0; left: -115px;}
 .other_design .bnr_slide_wrap .folder_img img {transform: rotate(90deg);}
 .other_design .bnr_slide_wrap .bnr_swiper {
-    background-color: orange; width: 100%; height: max-content;
+    width: 100%; height: max-content;
     left: -175px;
 }
 .other_design .bnr_slide_wrap .bnr_swiper .swiper-wrapper {transition-timing-function: linear; align-items: center;}
 .other_design .bnr_slide_wrap .bnr_swiper .swiper-wrapper .swiper-slide {margin-right: 15px;}
 .other_design .bnr_slide_wrap .bnr_swiper .swiper-wrapper .swiper-slide img {}
 /* >> sns */
-.other_design .sns_slide_wrap {background-color: yellow;}
+.other_design .sns_slide_wrap {}
 .other_design .sns_slide_wrap .sns_swiper {
-    background-color: orangered; width: 100%; height: 380px;
+    width: 100%; height: 380px;
     left: -145px;
     margin-bottom: 30px;
 }
@@ -312,12 +304,8 @@ main > * {padding: 100px 0;}
 .other_design .sns_slide_wrap .folder_img {left: -183px;}
 .other_design .sns_slide_wrap .folder_img img {transform: scaleX(-1);}
 /* >> 상세 */
-.other_design .detail_slide_wrap {
-    margin-bottom: 0;
-    background-color: pink;
-}
+.other_design .detail_slide_wrap {margin-bottom: 0;}
 .other_design .detail_slide_wrap .detail_swiper {
-    background-color: palevioletred;
     width: 100%; height: 665px;
     left: -80px;
     margin-bottom: 30px;

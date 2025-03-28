@@ -10,7 +10,7 @@
     .about .about_wrap .about_left {position: relative; width: 100%;}
     .about .about_wrap .about_right {padding-top: 100px; width: 100%;}
     /* 3. web design */
-    .web_design .web_works .web_work .work_link {background-color: aquamarine; width: 100%; align-self: flex-start; }
+    .web_design .web_works .web_work .work_link {width: 100%; align-self: flex-start; }
     .web_design .web_works .web_work .work_link p {display: none;}
     .web_design .web_works .web_work .work_link ul {display:flex; flex-flow: row wrap; width: 100%;}
     .web_design .web_works .web_work .work_link ul li {flex: 1; padding: 10px 30px 10px 10px; border: none;}
@@ -92,9 +92,9 @@
     .about .about_wrap .about_right .key_message {font-size: 1.63rem; line-height: 1.6;}
     .about .about_wrap .about_right .detail_message .em_strong {font-size: 1.38rem;}
     .about .about_wrap .about_right .detail_message {font-size: 1.0rem;}
-    .about .about_wrap .about_right .profile_details ul .title {font-size: 0.94rem;}
-    .about .about_wrap .about_right .profile_details ul li p {font-size: 1.0rem;}
-    .about .about_wrap .about_right .profile_details ul li .period {font-size: 1.0rem;}
+    .about .about_wrap .about_right .profile_details ul .title {font-size: 1rem;}
+    .about .about_wrap .about_right .profile_details ul li p {font-size: 1rem;}
+    .about .about_wrap .about_right .profile_details ul li .period {font-size: 1rem;}
     /* 2. skills */
     .skills .contents .skills_group .skills_row .skill {align-items: flex-start;}
     .about .about_wrap .about_right .profile_details .my_skills .contents .skills_col:first-child {margin-right: 30px;}
