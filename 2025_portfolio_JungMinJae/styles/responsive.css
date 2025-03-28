@@ -39,7 +39,7 @@
     .about .about_wrap .about_left .profile_img .folder_img {width: 245px;}
     .about .about_wrap .about_left .profile_img .person_img {width: 300px;}
     /* 2. skills */
-    .skills .contents {background-color: rgba(246,246,246,0.8);}
+    .skills .contents {background-color: rgba(246,246,246,0.6);}
     .skills .contents .skills_group .skills_row .skill:last-child {border-bottom: none; margin-bottom: 0;}
     .skills .contents .skills_group .skills_row .skill {
         flex-flow: column nowrap;
