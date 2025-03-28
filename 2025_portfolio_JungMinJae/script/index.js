@@ -3,7 +3,7 @@ const bnrSwiper = new Swiper('.bnr_swiper', {
     loop:true,
     speed: 5000,
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 10,
     breakpoints: {
         300: {
             slidesPerView: 1.4,

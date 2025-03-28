@@ -52,8 +52,9 @@
     /* 3. web design */
     .web_design .web_works .web_work .work_wrap .work_header {display: flex; flex-flow: column wrap;}
     .web_design .web_works .web_work .work_wrap .work_header .work_header_top {border-right: none;}
+    .web_design .web_works .web_work .work_wrap .work_header .work_header_top .work_tools {display: none;}
     .web_design .web_works .web_work .work_wrap .work_header .work_duration {
-        width: 100%;
+        width: 540px; max-width: 100%;
         margin: 0; margin-top: 20px;
     }
     .web_design .web_works .web_work .work_thumbnail img {transform: scale(1.4);}

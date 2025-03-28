@@ -168,7 +168,7 @@ main > * {padding: 100px 0;}
 }
 .web_design .web_works .web_work .work_wrap .work_header {
     width: 20%;
-    display: flex; flex-flow: column nowrap; justify-content: space-between;
+    display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: flex-start;
     letter-spacing: -0.02em;
 }
 .web_design .web_works .web_work .work_wrap .work_header .work_header_top {}
