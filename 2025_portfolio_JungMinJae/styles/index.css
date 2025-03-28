@@ -82,7 +82,7 @@ main > * {padding: 100px 0;}
 }
 .about .about_wrap .about_right_bg .right {}
 .about .about_wrap .about_right .key_message {
-    width: 65%;
+    max-width: 645px;
     font-size : 2.19rem; font-weight: 500; letter-spacing: -0.02em; line-height: 1.0;
     margin-bottom: 65px; line-height: 1.6;
 }
